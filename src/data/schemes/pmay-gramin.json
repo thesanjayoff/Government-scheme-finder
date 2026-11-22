@@ -1,0 +1,93 @@
+{
+  "id": "pmay-gramin",
+  "name": {
+    "ta": "பிரதான் மந்திரி ஆவாஸ் யோஜனா - கிராமீண் (PMAY-G)",
+    "en": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)"
+  },
+  "authority": {
+    "ta": "கிராமப்புற வளர்ச்சி அமைச்சகம், இந்திய அரசு",
+    "en": "Ministry of Rural Development, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["housing"],
+  "benefitSummary": {
+    "ta": "கிராமப்புறத்தில் வீடு இல்லாத அல்லது ஓலை/மண் வீட்டில் வசிக்கும் குடும்பங்களுக்கு உறுதியான வீடு கட்ட நிதியுதவி (சமவெளிப் பகுதிகளில் தோராயமாக ₹1.2 லட்சம், மலை/கடினமான பகுதிகளில் தோராயமாக ₹1.3 லட்சம்), கட்டுமான நிலையைப் பொறுத்து தவணைகளாக வரவு.",
+    "en": "Financial assistance to build a pucca house for rural families who are homeless or living in a kutcha/dilapidated house (around ₹1.2 lakh in plain areas, around ₹1.3 lakh in hilly/difficult areas), released in instalments as construction progresses."
+  },
+  "description": {
+    "ta": "இது மத்திய அரசின் கிராமப்புற வீட்டுவசதி திட்டம். கணக்கெடுப்பு பட்டியலின் அடிப்படையில் தகுதியான குடும்பங்களுக்கு வீடு கட்ட நிதி வழங்கப்படுகிறது. 2024-2029 க்கு இடையில் கூடுதலாக 2 கோடி வீடுகள் கட்ட மத்திய அமைச்சரவை ஒப்புதல் அளித்துள்ளது.",
+    "en": "A central rural housing scheme that funds house construction for eligible families identified through the government's rural housing survey list. The Union Cabinet has approved building an additional 2 crore houses between 2024 and 2029."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "rural-household",
+      "condition": { "op": "eq", "field": "areaType", "value": "rural" },
+      "explanation": { "ta": "நீங்கள் கிராமப்புறத்தில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must live in a rural area." }
+    },
+    {
+      "id": "no-pucca-house",
+      "condition": { "op": "in", "field": "houseOwnership", "values": ["own-kutcha", "homeless"] },
+      "explanation": {
+        "ta": "உங்கள் குடும்பத்தில் யாருக்கும் உறுதியான (pucca) வீடு இருக்கக்கூடாது -- தற்போது ஓலை/மண் வீட்டில் வசிப்பவர் அல்லது வீடு இல்லாதவர்கள் தகுதியுள்ளவர்கள்.",
+        "en": "No member of your household should already own a pucca house -- you must currently live in a kutcha/dilapidated house or be homeless."
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "govt-employee-exclusion",
+      "condition": { "op": "eq", "field": "occupation", "value": "salaried-govt" },
+      "explanation": {
+        "ta": "அரசு ஊழியர்கள் மற்றும் ஆண்டு வருமான வரி செலுத்துவோர் பொதுவாக இத்திட்டத்தில் விலக்கு பெற்றுள்ளனர்; உறுதி செய்ய உள்ளூர் பஞ்சாயத்து அலுவலகத்தில் விசாரிக்கவும்.",
+        "en": "Government employees and income-tax payers are generally excluded from this scheme; confirm your case with your local panchayat office."
+      }
+    }
+  ],
+  "requiredDocuments": [
+    {
+      "id": "job-card",
+      "name": { "ta": "வேலைவாய்ப்பு உறுதித் திட்ட அட்டை (MGNREGS)", "en": "MGNREGS job card" },
+      "description": { "ta": "கூலி நாட்களுடன் இணைந்த கட்டுமான உதவிக்கு பயன்படும் ஆவணம்.", "en": "Used to link wage days with the house-construction assistance." },
+      "howToGet": { "ta": "கிராம பஞ்சாயத்து அலுவலகத்தில் பெறலாம்.", "en": "Available from the Gram Panchayat office." }
+    },
+    {
+      "id": "ration-card",
+      "name": { "ta": "குடும்ப அட்டை", "en": "Ration card" },
+      "description": { "ta": "குடும்ப அடையாளத்திற்காக தேவை.", "en": "Needed for household identification." },
+      "howToGet": { "ta": "உணவு பொதுக்குறைவு விநியோகத் துறை அலுவலகத்தில் பெறலாம்.", "en": "Available from the Civil Supplies office." }
+    },
+    {
+      "id": "aadhaar-card",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாளச் சான்றுக்காக வைத்துக்கொள்ள வேண்டிய ஆவணம்; இந்த ஆப் உங்கள் ஆதார் எண்ணை கேட்காது/சேமிக்காது.", "en": "Kept as an identity document; this app never asks for or stores your Aadhaar number." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையைப் பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "கட்டுமான நிதி தவணைகள் இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "Construction instalments are credited into this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "pmayg.nic.in அல்லது Awaas+ பட்டியலில் உங்கள் பெயர் உள்ளதா எனச் சரிபார்க்க கிராம பஞ்சாயத்து அலுவலகத்தை அணுகவும்.", "en": "Visit your Gram Panchayat office or check pmayg.nic.in / the Awaas+ list to see if your name is already included." } },
+    { "step": 2, "description": { "ta": "பெயர் இல்லையெனில், கணக்கெடுப்பில் சேர்க்க வேண்டி பிளாக் வளர்ச்சி அலுவலகத்தில் விண்ணப்பிக்கவும்.", "en": "If not listed, apply at the Block Development Office requesting inclusion in the survey." } },
+    { "step": 3, "description": { "ta": "ஒப்புதல் பெற்றப் பின், அங்கீகரிக்கப்பட்ட வடிவமைப்பின்படி வீட்டைக் கட்டவும்; கட்டுமான நிலையைப் பொறுத்து நிதி தவணைகளாக வரவு செய்யப்படும்.", "en": "After approval, build the house as per the approved design; funds are released in instalments based on construction progress." } }
+  ],
+  "officialLinks": [
+    { "url": "https://pmayg.nic.in/", "domain": "pmayg.nic.in", "title": { "ta": "PMAY-G அலுவல் இணையதளம்", "en": "PMAY-G official portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "கணக்கெடுப்பு/பட்டியலில் சேர்க்கை ஆண்டு முழுவதும் நடைபெறும்; திட்டம் 2029 வரை நீட்டிக்கப்பட்டுள்ளது.", "en": "Inclusion in the survey/list continues through the year; the scheme has been extended until 2029." }
+  },
+  "sources": [
+    { "url": "https://pmayg.nic.in/", "domain": "pmayg.nic.in", "title": { "ta": "PMAY-G அலுவல் இணையதளம்", "en": "PMAY-G official portal" } },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/mar/doc2026331836801.pdf", "domain": "pib.gov.in", "title": { "ta": "PMAY-G முன்னேற்ற அறிக்கை - PIB", "en": "PMAY-G progress release - PIB" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (pmayg.nic.in, pib.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "high",
+  "benefitValue": 5
+}

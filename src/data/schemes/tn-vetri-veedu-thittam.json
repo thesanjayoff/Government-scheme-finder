@@ -1,0 +1,100 @@
+{
+  "id": "tn-vetri-veedu-thittam",
+  "name": {
+    "ta": "வெற்றி வீடு திட்டம் (தமிழ்நாடு)",
+    "en": "Vetri Veedu Thittam (Tamil Nadu State Housing Scheme for Hut Families)"
+  },
+  "authority": {
+    "ta": "கிராமப்புற வளர்ச்சி மற்றும் ஊராட்சி அமைப்புகள் துறை, தமிழ்நாடு அரசு",
+    "en": "Department of Rural Development and Panchayat Raj, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["housing"],
+  "benefitSummary": {
+    "ta": "ஓலை/குடிசை வீட்டில் வசிக்கும் கிராமப்புற ஏழைக் குடும்பங்களுக்கு இலவசமாக உறுதியான வீடு கட்டித் தரும் புதிய தமிழ்நாடு அரசு திட்டம் (வீடு ஒன்றுக்கு மதிப்பிடப்பட்ட செலவு தோராயமாக ₹5 லட்சம்).",
+    "en": "A new Tamil Nadu government scheme that builds a free pucca house for poor rural families currently living in huts (estimated unit cost around ₹5 lakh per house)."
+  },
+  "description": {
+    "ta": "2026-27 ஆம் ஆண்டு மாநில வரவு செலவுத் திட்டத்தில் அறிவிக்கப்பட்ட இந்தத் திட்டம், 'குடிசை இல்லாத தமிழ்நாடு' இலக்கை நோக்கி முந்தைய களைஞர் கனவு இல்லம் திட்டத்தைத் தொடர்கிறது. முதல் கட்டத்தில் 70,000 குடிசைகளை உறுதியான வீடுகளாக மாற்றும் இலக்கு நிர்ணயிக்கப்பட்டுள்ளது.",
+    "en": "Announced in the 2026-27 Tamil Nadu state budget, this scheme continues the earlier Kalaignar Kanavu Illam initiative toward a 'hut-free Tamil Nadu'. The first phase targets converting 70,000 huts into pucca houses."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "resident-tn",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    },
+    {
+      "id": "rural-household",
+      "condition": { "op": "eq", "field": "areaType", "value": "rural" },
+      "explanation": { "ta": "நீங்கள் கிராமப்புறத்தில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must live in a rural area." }
+    },
+    {
+      "id": "lives-in-hut",
+      "condition": { "op": "eq", "field": "houseOwnership", "value": "own-kutcha" },
+      "explanation": { "ta": "தற்போது ஓலை/மண் குடிசையில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must currently be living in a kutcha hut." }
+    },
+    {
+      "id": "income-ceiling",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 250000 },
+      "nearMissMargin": 25000,
+      "nearMissGuidance": {
+        "ta": "செய்தி அறிக்கைகளின்படி வருமான வரம்பு ₹2.5 லட்சம்; உங்கள் வருமானம் சற்று அதிகமாக இருந்தால் ஊராட்சி அலுவலகத்தில் உறுதி செய்து கொள்ளவும்.",
+        "en": "News reports indicate an income limit of around ₹2.5 lakh; if your income is a little above this, confirm the exact limit with your panchayat office."
+      },
+      "explanation": {
+        "ta": "குடும்ப ஆண்டு வருமானம் தோராயமாக ₹2.5 லட்சத்திற்குள் இருக்க வேண்டும் (இந்த வரம்பு அதிகாரப்பூர்வ வழிமுறைகளில் இன்னும் உறுதி செய்யப்பட வேண்டும்).",
+        "en": "Household annual income should be roughly within ₹2.5 lakh (this limit still needs confirmation against the official operational guidelines)."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "ration-card",
+      "name": { "ta": "குடும்ப அட்டை", "en": "Ration card" },
+      "description": { "ta": "குடும்ப அடையாளம் மற்றும் வருமானத் தகுதிக்காக தேவை.", "en": "Needed for household identification and income eligibility." },
+      "howToGet": { "ta": "உணவு பொதுக்குறைவு விநியோகத் துறை அலுவலகத்தில் பெறலாம்.", "en": "Available from the Civil Supplies office." }
+    },
+    {
+      "id": "residence-proof",
+      "name": { "ta": "வசிப்பிடச் சான்று (வோட்டர் அட்டை)", "en": "Residence proof (voter ID)" },
+      "description": { "ta": "குடிசையில் வசிப்பதை உறுதிப்படுத்த உதவும் ஆவணம்.", "en": "Helps confirm that you currently live in the hut." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள வோட்டர் அட்டையைப் பயன்படுத்தவும்.", "en": "Use your existing voter ID." }
+    },
+    {
+      "id": "aadhaar-card",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாளச் சான்றுக்காக வைத்துக்கொள்ள வேண்டிய ஆவணம்; இந்த ஆப் உங்கள் ஆதார் எண்ணை கேட்காது/சேமிக்காது.", "en": "Kept as an identity document; this app never asks for or stores your Aadhaar number." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையைப் பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "கட்டுமான நிதி தவணைகள் இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "Construction instalments are credited into this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "உங்கள் கிராம பஞ்சாயத்து அலுவலகம் அல்லது கிராம நிர்வாக அலுவலரை அணுகவும்.", "en": "Visit your Gram Panchayat office or the Village Administrative Officer." } },
+    { "step": 2, "description": { "ta": "குடிசை வசிப்பிடம் மற்றும் வருமானம் தொடர்பான ஆவணங்களுடன் விண்ணப்பிக்கவும்.", "en": "Apply with documents proving hut residence and income." } },
+    { "step": 3, "description": { "ta": "ஆய்வு மற்றும் ஒப்புதலுக்குப் பின், அங்கீகரிக்கப்பட்ட வடிவமைப்பின்படி வீடு கட்டப்படும்; நிதி நிலைகளில் வரவு செய்யப்படும்.", "en": "After survey and approval, the house is built as per the approved design; funds are released in stages." } }
+  ],
+  "officialLinks": [
+    { "url": "https://www.tnrd.tn.gov.in/policynotes/42--PN-RuralDev%20PN-2026-27--ENG--WEB.pdf", "domain": "tnrd.tn.gov.in", "title": { "ta": "கிராமப்புற வளர்ச்சித் துறை கொள்கைக் குறிப்பு 2026-27", "en": "Rural Development Department Policy Note 2026-27" } }
+  ],
+  "deadline": {
+    "type": "annual-cycle",
+    "description": { "ta": "முதல் கட்டத்தில் 70,000 வீடுகள் என இலக்கு நிர்ணயிக்கப்பட்டுள்ளது; மேலும் விவரங்களுக்கு ஊராட்சி அலுவலகத்தில் விசாரிக்கவும்.", "en": "The first phase targets 70,000 houses; check with your panchayat office for the current application window." },
+    "cycleNote": { "ta": "2026-27 மாநில வரவு செலவுத் திட்டத்தில் அறிவிக்கப்பட்டது.", "en": "Announced in the 2026-27 state budget." }
+  },
+  "sources": [
+    { "url": "https://www.tnrd.tn.gov.in/policynotes/42--PN-RuralDev%20PN-2026-27--ENG--WEB.pdf", "domain": "tnrd.tn.gov.in", "title": { "ta": "கிராமப்புற வளர்ச்சித் துறை கொள்கைக் குறிப்பு 2026-27", "en": "Rural Development Department Policy Note 2026-27" } },
+    { "url": "https://www.dtnext.in/news/tamilnadu/tn-budget-2026-70000-pucca-houses-in-1st-phase-of-vetri-veedu-thittam-announces-finance-minister", "domain": "dtnext.in", "title": { "ta": "வெற்றி வீடு திட்டம் பற்றிய செய்தி", "en": "News report on Vetri Veedu Thittam" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (tnrd.tn.gov.in) and news coverage (dtnext.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 5
+}

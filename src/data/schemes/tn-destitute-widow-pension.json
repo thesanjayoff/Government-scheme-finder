@@ -1,0 +1,108 @@
+{
+  "id": "tn-destitute-widow-pension",
+  "name": {
+    "ta": "ஏழ்மையான விதவைகள் ஓய்வூதியத் திட்டம் (தமிழ்நாடு)",
+    "en": "Destitute Widow Pension Scheme (Tamil Nadu)"
+  },
+  "authority": {
+    "ta": "வருவாய் நிர்வாகத் துறை, தமிழ்நாடு அரசு",
+    "en": "Commissionerate of Revenue Administration, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["seniors-widows", "women-family"],
+  "benefitSummary": {
+    "ta": "வழிவகையற்ற விதவைகளுக்கு (வயது 30-59) மாதந்தோறும் ₹1,000 ஓய்வூதியம்.",
+    "en": "A monthly pension of ₹1,000 for destitute widows aged 30 to 59 who have no adequate means of livelihood."
+  },
+  "description": {
+    "ta": "இது முதியோர் ஓய்வூதியத் திட்டத்திலிருந்து தனியான, 60 வயதிற்குக் குறைவான விதவைகளுக்கான ஒரு தனித் திட்டம். வருமானம் இல்லாத அல்லது மிகக் குறைவான வருமானம் உள்ள விதவைகளுக்கு மாத உதவித்தொகை வழங்கப்படுகிறது. 60 வயது நிரம்பியவுடன், இந்தப் பயனாளிகள் பொதுவாக முதியோர் ஓய்வூதியத் திட்டத்திற்கு மாற்றப்படுவார்கள்.",
+    "en": "A Tamil Nadu scheme, separate from the old-age pension, for widows below the age of 60 who have little or no income. Once a beneficiary turns 60, she is usually moved onto the old-age pension scheme instead."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "widow-gender",
+      "condition": { "op": "eq", "field": "gender", "value": "female" },
+      "explanation": { "ta": "இந்த ஓய்வூதியம் பெண்களுக்கு மட்டும்.", "en": "This pension is only for women." }
+    },
+    {
+      "id": "widowed-status",
+      "condition": { "op": "eq", "field": "maritalStatus", "value": "widowed" },
+      "explanation": { "ta": "விண்ணப்பிப்பவர் விதவையாக இருக்க வேண்டும்.", "en": "The applicant must be a widow." }
+    },
+    {
+      "id": "age-band",
+      "condition": { "op": "between", "field": "age", "min": 30, "max": 59 },
+      "nearMissMargin": 3,
+      "nearMissGuidance": {
+        "ta": "இந்த வயது வரம்புக்கு அருகில் இருந்தால், 60 வயதில் முதியோர் ஓய்வூதியத் திட்டத்தையும் பரிசீலிக்கலாம்.",
+        "en": "If you are close to this age range, also check the old-age pension scheme once you turn 60."
+      },
+      "explanation": { "ta": "வயது 30 முதல் 59 வரை இருக்க வேண்டும் (60 மற்றும் அதற்கு மேல் என்றால் முதியோர் ஓய்வூதியத் திட்டத்தைப் பார்க்கவும்).", "en": "Age must be between 30 and 59 (for age 60+, see the old-age pension scheme instead)." }
+    },
+    {
+      "id": "resident-tn-widow",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "already-other-pension-widow",
+      "condition": { "op": "in", "field": "receivesPension", "values": ["old-age-pension", "disability-pension", "other-pension"] },
+      "explanation": {
+        "ta": "வேறு ஒரு மாத ஓய்வூதியம் ஏற்கெனவே பெறுபவர்கள் பொதுவாக இரண்டையும் ஒருசேர பெற முடியாது; உள்ளூர் வருவாய் அலுவலகத்தில் உறுதி செய்யவும்.",
+        "en": "People already receiving another monthly pension usually cannot draw two at once; confirm with your local Revenue office."
+      }
+    }
+  ],
+  "requiredDocuments": [
+    {
+      "id": "destitute-widow-certificate",
+      "name": { "ta": "ஏழ்மையான விதவை சான்றிதழ் (REV-109)", "en": "Destitute Widow Certificate (REV-109)" },
+      "description": { "ta": "வழிவகையற்ற விதவை என்பதை உறுதிப்படுத்தும் ஆவணம்.", "en": "Document certifying destitute-widow status." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகம்/கிராம நிர்வாக அலுவலர் மூலம் பெறலாம்.", "en": "Available from the Taluk office or Village Administrative Officer." }
+    },
+    {
+      "id": "husband-death-certificate",
+      "name": { "ta": "கணவரின் இறப்புச் சான்றிதழ்", "en": "Husband's death certificate" },
+      "description": { "ta": "விதவைத் தகுதியை உறுதிப்படுத்த தேவை.", "en": "Needed to confirm widowhood." },
+      "howToGet": { "ta": "ஊராட்சி/நகராட்சி பிறப்பு-இறப்புப் பதிவு அலுவலகத்தில் பெறலாம்.", "en": "Available from the local Panchayat/Municipality birth-death registration office." }
+    },
+    {
+      "id": "income-cert-widow",
+      "name": { "ta": "வருமான சான்றிதழ்", "en": "Income certificate" },
+      "description": { "ta": "வருமானம் இல்லை அல்லது மிகக் குறைவு என்பதை உறுதிப்படுத்த.", "en": "To confirm little or no income." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk office." }
+    },
+    {
+      "id": "bank-passbook-widow",
+      "name": { "ta": "வங்கி/அஞ்சலக கணக்கு புத்தகம்", "en": "Bank or post-office passbook" },
+      "description": { "ta": "ஓய்வூதியம் நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The pension is credited directly into this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "அருகிலுள்ள e-Sevai மையம் அல்லது வட்டாட்சியர் அலுவலகத்தை அணுகவும்.", "en": "Visit your nearest e-Sevai Centre or Taluk office." } },
+    { "step": 2, "description": { "ta": "விண்ணப்பப் படிவத்தை (REV-202) பூர்த்தி செய்து தேவையான ஆவணங்களுடன் சமர்ப்பிக்கவும்.", "en": "Fill the application form (REV-202) and submit it with the required documents." } },
+    { "step": 3, "description": { "ta": "வருவாய் அலுவலர்களின் சரிபார்ப்புக்குப் பின் ஓய்வூதியம் தொடங்கப்படும்.", "en": "The pension begins after verification by Revenue Department officials." } }
+  ],
+  "officialLinks": [
+    { "url": "https://cra.tn.gov.in/eleg_schemes.php", "domain": "cra.tn.gov.in", "title": { "ta": "தகுதி விவரங்கள் - CRA தமிழ்நாடு", "en": "Eligibility criteria - CRA Tamil Nadu" } },
+    { "url": "https://kanniyakumari.nic.in/?p=31400", "domain": "kanniyakumari.nic.in", "title": { "ta": "ஏழ்மையான விதவைகள் ஓய்வூதியத் திட்டம் - காஞ்சிபுரம் மாவட்டம்", "en": "Destitute Widow Pension Scheme - Kanniyakumari district portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் விண்ணப்பிக்கலாம்.", "en": "You can apply at any time during the year." }
+  },
+  "sources": [
+    { "url": "https://kanniyakumari.nic.in/?p=31400", "domain": "kanniyakumari.nic.in", "title": { "ta": "ஏழ்மையான விதவைகள் ஓய்வூதியத் திட்டம் - மாவட்ட நிர்வாகம்", "en": "Destitute Widow Pension Scheme - district administration page" } },
+    { "url": "https://cra.tn.gov.in/eleg_schemes.php", "domain": "cra.tn.gov.in", "title": { "ta": "தகுதி விவரங்கள் - CRA தமிழ்நாடு", "en": "Eligibility criteria - CRA Tamil Nadu" } },
+    { "url": "https://www.dtnext.in/explainer/how-to-apply-for-destitute-widow-pension-scheme-in-tamil-nadu-a-complete-guide", "domain": "dtnext.in", "title": { "ta": "விண்ணப்ப வழிகாட்டி - DT Next", "en": "Application guide - DT Next explainer" } },
+    { "url": "https://www.myscheme.gov.in/schemes/dwps", "domain": "myscheme.gov.in", "title": { "ta": "myScheme - Destitute Widow Pension Scheme", "en": "myScheme listing - Destitute Widow Pension Scheme" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (cra.tn.gov.in, kanniyakumari.nic.in, myscheme.gov.in; dtnext.in secondary); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

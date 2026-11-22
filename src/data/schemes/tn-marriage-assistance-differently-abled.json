@@ -1,0 +1,100 @@
+{
+  "id": "tn-marriage-assistance-differently-abled",
+  "name": {
+    "ta": "ஊனமுற்றோர் இருவரும் திருமணம் செய்யும் திருமண உதவித் திட்டம்",
+    "en": "Marriage Assistance to Differently Abled Persons Marrying Differently Abled Persons"
+  },
+  "authority": {
+    "ta": "ஊனமுற்றோர் நலத்துறை, தமிழ்நாடு அரசு",
+    "en": "Department for the Welfare of Differently Abled Persons, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["disability", "women-family"],
+  "benefitSummary": {
+    "ta": "இரு ஊனமுற்றோரும் ஒருவரையொருவர் திருமணம் செய்தால் ₹25,000 பணமும் 8 கிராம் தங்க நாணயமும்; பட்டப்படிப்பு/டிப்ளமோ பெற்றிருந்தால் ₹50,000.",
+    "en": "₹25,000 cash plus an 8-gram gold coin when two persons with disabilities marry each other; ₹50,000 if either holds a degree or diploma."
+  },
+  "description": {
+    "ta": "இரு ஊனமுற்றோரும் ஒருவரையொருவர் திருமணம் செய்யும்போது, தமிழ்நாடு ஊனமுற்றோர் நலத்துறை இந்த நிதி உதவியை வழங்குகிறது. பட்டப்படிப்பு அல்லது அங்கீகரிக்கப்பட்ட டிப்ளமோ பெற்றுள்ள தம்பதியருக்கு அதிக தொகை வழங்கப்படும்.",
+    "en": "When two persons with disabilities marry each other, the Tamil Nadu Department for the Welfare of Differently Abled Persons provides this cash and gold-coin assistance. Couples where either partner holds a degree or a recognised diploma get the higher amount."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "benchmark-disability",
+      "condition": { "op": "gte", "field": "disabilityPercentage", "value": 40 },
+      "nearMissMargin": 5,
+      "nearMissGuidance": {
+        "ta": "உங்கள் ஊனச் சதவீதம் 40%-க்கு சற்று கீழ் இருந்தாலும், மருத்துவ வாரியத்திடம் மறு மதிப்பீடு கோரலாம்.",
+        "en": "If your disability percentage is only slightly below 40%, you can ask the medical board for a reassessment."
+      },
+      "explanation": {
+        "ta": "இரு துணைவரும் குறைந்தது 40% ஊனம் (benchmark disability) உள்ளவராக இருக்க வேண்டும்.",
+        "en": "Both partners must have at least 40% disability (a 'benchmark disability' under the RPWD Act, 2016)."
+      }
+    },
+    {
+      "id": "unmarried-disability",
+      "condition": { "op": "eq", "field": "maritalStatus", "value": "unmarried" },
+      "explanation": { "ta": "விண்ணப்பிப்பவர் இன்னும் திருமணமாகாதவராக இருக்க வேண்டும்.", "en": "The applicant must not yet be married." }
+    },
+    {
+      "id": "adult-age-disability-marriage",
+      "condition": { "op": "gte", "field": "age", "value": 18 },
+      "explanation": { "ta": "இருவரும் 18 வயது அல்லது அதற்கு மேல் இருக்க வேண்டும்.", "en": "Both partners must be 18 years of age or older." }
+    },
+    {
+      "id": "resident-tn-disability-marriage",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "disability-certificate-both",
+      "name": { "ta": "ஊனச் சான்றிதழ் (இருவருக்கும்)", "en": "Disability certificate (for both partners)" },
+      "description": { "ta": "இருவரும் ஊனமுற்றோர் என்பதை உறுதிப்படுத்தும் மருத்துவ வாரிய சான்றிதழ்/UDID அட்டை.", "en": "Medical-board certificate / UDID card confirming disability status for both partners." },
+      "howToGet": { "ta": "அரசு மருத்துவமனை மருத்துவ வாரியம் மூலம் பெறலாம்.", "en": "Issued by a government hospital medical board." }
+    },
+    {
+      "id": "marriage-proof-disability",
+      "name": { "ta": "திருமணச் சான்று/அழைப்பிதழ்", "en": "Marriage proof / invitation card" },
+      "description": { "ta": "திருமணம் நடந்ததை அல்லது நடைபெறவிருப்பதை உறுதிப்படுத்த.", "en": "To confirm the marriage has happened or is about to happen." },
+      "howToGet": { "ta": "திருமணப் பதிவுச் சான்றிதழ் அல்லது அழைப்பிதழைப் பயன்படுத்தவும்.", "en": "Use your marriage registration certificate or invitation card." }
+    },
+    {
+      "id": "degree-diploma-cert-disability",
+      "name": { "ta": "பட்டப்படிப்பு/டிப்ளமோ சான்றிதழ் (இருந்தால்)", "en": "Degree/diploma certificate (if applicable)" },
+      "description": { "ta": "அதிக தொகை (₹50,000) பெற இது தேவை.", "en": "Needed to claim the higher ₹50,000 amount." },
+      "howToGet": { "ta": "உங்கள் கல்லூரி/நிறுவனத்தில் இருந்து பெறலாம்.", "en": "Obtain from your college or institution." }
+    },
+    {
+      "id": "bank-passbook-disability-marriage",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "பணம் ECS மூலம் இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The cash assistance is credited to this account by ECS." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "மாவட்ட ஊனமுற்றோர் நலத்துறை அலுவலகத்தைச் சென்று விண்ணப்பப் படிவத்தைப் பெறவும்.", "en": "Visit your District Differently Abled Welfare Office and obtain the application form." } },
+    { "step": 2, "description": { "ta": "படிவத்தைப் பூர்த்தி செய்து, இருவரின் ஊனச் சான்றிதழ் மற்றும் திருமணச் சான்றுடன் சமர்ப்பிக்கவும்.", "en": "Fill the form and submit it along with both partners' disability certificates and marriage proof." } },
+    { "step": 3, "description": { "ta": "அலுவலர் சரிபார்ப்புக்குப் பின், பணம் ECS மூலம் வரவு செய்யப்பட்டு தங்க நாணயம் வழங்கப்படும்.", "en": "After officer verification, the cash is credited by ECS and the gold coin is handed over." } }
+  ],
+  "officialLinks": [
+    { "url": "https://chennai.nic.in/differently-abled-welfare-schemes/", "domain": "chennai.nic.in", "title": { "ta": "ஊனமுற்றோர் நலத் திட்டங்கள் - சென்னை மாவட்டம்", "en": "Differently Abled Welfare Schemes - Chennai district portal" } },
+    { "url": "https://cms.tn.gov.in/cms_migrated/document/docfiles/wda_e_cc_2019_20.pdf", "domain": "cms.tn.gov.in", "title": { "ta": "குடிமக்கள் உறுதிமொழி - ஊனமுற்றோர் நலத்துறை", "en": "Citizen's Charter - Department for the Welfare of Differently Abled Persons" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் விண்ணப்பிக்கலாம்.", "en": "You can apply at any time during the year." }
+  },
+  "sources": [
+    { "url": "https://chennai.nic.in/differently-abled-welfare-schemes/", "domain": "chennai.nic.in", "title": { "ta": "ஊனமுற்றோர் நலத் திட்டங்கள் - சென்னை மாவட்டம்", "en": "Differently Abled Welfare Schemes - Chennai district portal" } },
+    { "url": "https://cms.tn.gov.in/cms_migrated/document/docfiles/wda_e_cc_2019_20.pdf", "domain": "cms.tn.gov.in", "title": { "ta": "குடிமக்கள் உறுதிமொழி 2019-20", "en": "Citizen's Charter 2019-20" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (chennai.nic.in, cms.tn.gov.in citizen's charter); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

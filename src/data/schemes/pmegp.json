@@ -1,0 +1,77 @@
+{
+  "id": "pmegp",
+  "name": {
+    "ta": "பிரதமரின் வேலைவாய்ப்பு உருவாக்கத் திட்டம் (PMEGP)",
+    "en": "Prime Minister's Employment Generation Programme (PMEGP)"
+  },
+  "authority": {
+    "ta": "நுண்,சிறு மற்றும் நடுத்தரத் தொழில் அமைச்சகம் (கதார் மற்றும் கிராம தொழில்கள் ஆணையம் வழிநடத்துகிறது)",
+    "en": "Ministry of Micro, Small & Medium Enterprises (implemented via the Khadi and Village Industries Commission)"
+  },
+  "level": "central",
+  "lifeAreas": ["workers-employment"],
+  "benefitSummary": {
+    "ta": "புதிய சுயதொழில் தொடங்க வங்கிக் கடனில் 15%-35% தொகை அரசு மானியமாக (திட்டச் செலவில்); உற்பத்தித் துறையில் ₹50 லட்சம் வரையும், சேவை/வியாபாரத் துறையில் ₹20 லட்சம் வரையும் திட்டங்களுக்கு.",
+    "en": "A bank loan with a 15-35% government subsidy (of the project cost) to start a new self-employment venture, for projects up to ₹50 lakh (manufacturing) or ₹20 lakh (service/business)."
+  },
+  "description": {
+    "ta": "18 வயது நிரம்பிய எவரும் புதிய நுண்/சிறு தொழில் தொடங்க இந்த திட்டத்தின் மூலம் வங்கிக் கடன் பெறலாம். கடனில் ஒரு பகுதி 'margin money' என்ற அரசு மானியமாக வழங்கப்படும்; மீதமுள்ளதை வங்கி கடனாக வழங்கும். மானிய சதவீதம் உங்கள் வசிப்பிடம் (நகர்ப்புறம்/கிராமப்புறம்) மற்றும் சமூக வகையைப் பொறுத்து மாறுபடும்.",
+    "en": "Anyone aged 18 or above can get a bank loan to start a new micro/small enterprise under this scheme. Part of the loan is given as a government subsidy called 'margin money'; the bank finances the rest. The subsidy percentage varies by whether you live in a rural or urban area, and by social category."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "age-18-plus",
+      "condition": { "op": "gte", "field": "age", "value": 18 },
+      "explanation": { "ta": "விண்ணப்பதாரர் 18 வயது அல்லது அதற்கு மேல் இருக்க வேண்டும்.", "en": "The applicant must be 18 years of age or older." }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "aadhaar-pmegp",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாள சரிபார்ப்புக்காக தேவை.", "en": "Needed for identity verification." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "education-cert-pmegp",
+      "name": { "ta": "கல்வி சான்றிதழ்", "en": "Educational certificate" },
+      "description": { "ta": "₹10 லட்சத்திற்கும் (உற்பத்தி) ₹5 லட்சத்திற்கும் (சேவை) மேற்பட்ட திட்டங்களுக்கு 8ஆம் வகுப்பு தேர்ச்சி சான்றிதழ் தேவை.", "en": "Projects above ₹10 lakh (manufacturing) or ₹5 lakh (service) require proof of passing class 8." },
+      "howToGet": { "ta": "உங்கள் பள்ளியிலிருந்து பெற்ற சான்றிதழை பயன்படுத்தவும்.", "en": "Use the certificate you already received from your school." }
+    },
+    {
+      "id": "project-report-pmegp",
+      "name": { "ta": "திட்ட அறிக்கை", "en": "Project report" },
+      "description": { "ta": "நீங்கள் தொடங்க விரும்பும் தொழிலின் சுருக்கமான விவரம் மற்றும் செலவு மதிப்பீடு.", "en": "A brief description and cost estimate of the enterprise you plan to start." },
+      "howToGet": { "ta": "DIC/KVIC அலுவலகம் அல்லது வங்கி இதற்கு வழிகாட்டும் மாதிரி படிவங்களை அளிக்கும்.", "en": "Your District Industries Centre, KVIC office, or bank can give you a sample format." }
+    },
+    {
+      "id": "category-cert-pmegp",
+      "name": { "ta": "சமூக வகை சான்றிதழ் (இருந்தால்)", "en": "Social category certificate (if applicable)" },
+      "description": { "ta": "SC/ST/பெண்கள்/ஊனமுற்றோர் போன்ற சிறப்பு வகையினருக்கு அதிக மானியம் பெற இது தேவை.", "en": "Needed to claim the higher subsidy available for SC/ST, women, persons with disabilities and other special categories." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk office." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "நீங்கள் தொடங்க விரும்பும் தொழிலுக்கு ஒரு சுருக்கமான திட்ட அறிக்கையை தயார் செய்யவும்.", "en": "Prepare a brief project report for your proposed enterprise." } },
+    { "step": 2, "description": { "ta": "kviconline.gov.in PMEGP இ-போர்ட்டலில் ஆன்லைனில் விண்ணப்பித்து, செயல்படுத்தும் அமைப்பை (KVIC/KVIB/DIC) தேர்வு செய்யவும்.", "en": "Apply online on the PMEGP e-portal (kviconline.gov.in) and choose your implementing agency (KVIC/KVIB/DIC)." } },
+    { "step": 3, "description": { "ta": "வங்கி ஒப்புதல் அளித்தபின், மானியத் தொகை வரவு செய்யப்பட்டு கடன் தவணைகளாக வழங்கப்படும்.", "en": "After the bank sanctions the loan, the margin money subsidy is credited and the loan is disbursed in instalments." } }
+  ],
+  "officialLinks": [
+    { "url": "https://www.kviconline.gov.in/pmegpeportal/jsp/pmegponline.htm", "domain": "kviconline.gov.in", "title": { "ta": "PMEGP இ-போர்ட்டல்", "en": "PMEGP e-portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் விண்ணப்பிக்கலாம்.", "en": "You can apply at any time during the year." }
+  },
+  "sources": [
+    { "url": "https://www.kviconline.gov.in/pmegpeportal/jsp/pmegponline.htm", "domain": "kviconline.gov.in", "title": { "ta": "PMEGP இ-போர்ட்டல்", "en": "PMEGP e-portal" } },
+    { "url": "https://newsonair.gov.in/government-releases-%e2%82%b91000-crore-pmegp-subsidy-to-support-micro-enterprises/", "domain": "newsonair.gov.in", "title": { "ta": "PMEGP மானிய வெளியீடு - செய்தி அறிக்கை", "en": "PMEGP subsidy release - news report" } },
+    { "url": "https://www.iifl.com/blogs/business-loan/pmegp-subsidy-amount-and-eligibility", "domain": "iifl.com", "title": { "ta": "PMEGP மானிய விகிதங்கள் (இரண்டாம் நிலை ஆதாரம்)", "en": "PMEGP subsidy rates (secondary source)" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (kviconline.gov.in, newsonair.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "high",
+  "benefitValue": 4
+}

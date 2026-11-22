@@ -1,0 +1,89 @@
+{
+  "id": "ab-pmjay",
+  "name": {
+    "ta": "ஆயுஷ்மான் பாரத் - பிரதான் மந்திரி ஜன் ஆரோக்ய யோஜனா (PMJAY)",
+    "en": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PMJAY)"
+  },
+  "authority": {
+    "ta": "தேசிய சுகாதார ஆணையம், மத்திய சுகாதார மற்றும் குடும்ப நலத்துறை அமைச்சகம்",
+    "en": "National Health Authority, Ministry of Health & Family Welfare, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["health-insurance"],
+  "benefitSummary": {
+    "ta": "ஏழ்மையான மற்றும் பாதிப்புக்குள்ளான குடும்பங்களுக்கு ஆண்டுக்கு ஒரு குடும்பத்திற்கு ₹5 லட்சம் வரை இலவச, பணமில்லா மருத்துவமனை சிகிச்சை.",
+    "en": "Free, cashless hospital treatment up to ₹5 lakh per family per year for poor and vulnerable families."
+  },
+  "description": {
+    "ta": "இது மத்திய அரசின் ஒரு பெரிய சுகாதார காப்பீட்டுத் திட்டம். 2011 சமூக-பொருளாதார சாதி கணக்கெடுப்பில் (SECC) பாதிப்புக்குள்ளானவர்களாக பட்டியலிடப்பட்ட குடும்பங்கள், பட்டியலிடப்பட்ட அரசு மற்றும் தனியார் மருத்துவமனைகளில் பணம் செலுத்தாமலே சிகிச்சை பெறலாம். தகுதி உங்கள் தற்போதைய வருமானச் சான்றிதழை பொறுத்தது அல்ல -- 2011 கணக்கெடுப்பு பட்டியலை பொறுத்தது.",
+    "en": "A major central health insurance scheme. Families listed as deprived in the 2011 Socio-Economic Caste Census (SECC) can get treatment at empanelled government and private hospitals without paying anything. Eligibility is based on the 2011 census list, not on a current income certificate."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "likely-secc-deprived",
+      "condition": {
+        "op": "or",
+        "conditions": [
+          { "op": "in", "field": "rationCardType", "values": ["bpl", "aay"] },
+          { "op": "in", "field": "houseOwnership", "values": ["own-kutcha", "homeless"] }
+        ]
+      },
+      "explanation": {
+        "ta": "உங்கள் குடும்பம் 2011 கணக்கெடுப்பில் பாதிப்புக்குள்ளான குடும்பமாக பட்டியலிடப்பட்டிருக்க வேண்டும். வறுமைக்கோட்டிற்கு கீழ் (BPL/AAY) அட்டை வைத்திருப்பது அல்லது மண்/ஓலை வீட்டில் வசிப்பது/வீடு இல்லாதிருப்பது -- இவை இதற்கு நெருக்கமான அறிகுறிகள், ஆனால் இறுதி தகுதியை அரசு இணையதளத்தில் மட்டுமே உறுதி செய்ய முடியும்.",
+        "en": "Your family must be listed as deprived in the 2011 Census. Holding a BPL/AAY ration card, or living in a kutcha house or being homeless, are close indicators of this -- but only the official portal can confirm your final eligibility."
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "govt-comprehensive-health-cover",
+      "condition": { "op": "eq", "field": "occupation", "value": "salaried-govt" },
+      "explanation": {
+        "ta": "ஏற்கெனவே விரிவான சுகாதார காப்பீட்டு பலன் பெறும் சில அரசு ஊழியர் பிரிவினர் இதில் விலக்கு பெற்றுள்ளனர்; உங்கள் நிலையை உள்ளூர் அலுவலகத்தில் உறுதி செய்யவும்.",
+        "en": "Certain categories of government employees who already receive comprehensive health cover are excluded; confirm your specific case with the local office."
+      }
+    }
+  ],
+  "requiredDocuments": [
+    {
+      "id": "ration-card-pmjay",
+      "name": { "ta": "குடும்ப அட்டை", "en": "Ration card" },
+      "description": { "ta": "குடும்ப அடையாளத்திற்கும் தகுதி சரிபார்ப்பிற்கும் பயன்படும்.", "en": "Used for family identification and the eligibility check." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள குடும்ப அட்டையை பயன்படுத்தவும்.", "en": "Use your existing ration card." }
+    },
+    {
+      "id": "aadhaar-card-pmjay",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அட்டை தயாரிக்கும் போது அடையாள சரிபார்ப்புக்காக தேவை.", "en": "Needed for identity verification when your Ayushman card is created." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "family-id-pmjay",
+      "name": { "ta": "குடும்ப அடையாள ஆவணம்", "en": "Family ID proof" },
+      "description": { "ta": "அனைத்து குடும்ப உறுப்பினர்களையும் அடையாளம் காண உதவும் ஆவணம் (எ.கா. குடும்ப அட்டை பட்டியல்).", "en": "A document that lists all members of your family (e.g. the ration card list)." },
+      "howToGet": { "ta": "உங்கள் குடும்ப அட்டையிலேயே இந்த விவரம் இருக்கும்.", "en": "This is already part of your ration card." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "mera.pmjay.gov.in இணையதளத்தில் அல்லது 14555 எண்ணை அழைத்து உங்கள் தகுதியை சரிபார்க்கவும்.", "en": "Check your eligibility on mera.pmjay.gov.in or by calling the toll-free number 14555." } },
+    { "step": 2, "description": { "ta": "தகுதி உள்ளதாக தெரிந்தால், அருகிலுள்ள பட்டியலிடப்பட்ட மருத்துவமனை அல்லது பொது சேவை மையத்தில் ஆதார் மற்றும் குடும்ப அட்டையுடன் சென்று ஆயுஷ்மான் அட்டை தயார் செய்யவும்.", "en": "If eligible, visit a nearby empanelled hospital or Common Service Centre with your Aadhaar and ration card to get your Ayushman card made." } },
+    { "step": 3, "description": { "ta": "அட்டை கிடைத்தவுடன், எந்த பட்டியலிடப்பட்ட மருத்துவமனையிலும் பணமில்லாமல் சிகிச்சை பெறலாம்.", "en": "Once you have the card, you can get cashless treatment at any empanelled hospital." } }
+  ],
+  "officialLinks": [
+    { "url": "https://pmjay.gov.in/", "domain": "pmjay.gov.in", "title": { "ta": "PMJAY அலுவல் இணையதளம்", "en": "PMJAY official portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் அட்டை பெறலாம்; காலக்கெடு இல்லை.", "en": "You can get your card at any time during the year; there is no deadline." }
+  },
+  "sources": [
+    { "url": "https://pmjay.gov.in/", "domain": "pmjay.gov.in", "title": { "ta": "PMJAY அலுவல் இணையதளம்", "en": "PMJAY official portal" } },
+    { "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2290627", "domain": "pib.gov.in", "title": { "ta": "PIB செய்தி வெளியீடு - PMJAY விரிவாக்கம்", "en": "PIB press release on PMJAY expansion" } },
+    { "url": "https://www.oneindia.com/india/ayushman-card-2026-eligibility-rules-5-lakh-benefits-and-steps-to-apply-online-7983859.html", "domain": "oneindia.com", "title": { "ta": "ஆயுஷ்மான் அட்டை 2026 - தகுதி விவரம்", "en": "Ayushman card 2026 - eligibility explainer" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (pmjay.gov.in, pib.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "low",
+  "benefitValue": 5
+}

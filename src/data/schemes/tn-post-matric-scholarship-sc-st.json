@@ -1,0 +1,100 @@
+{
+  "id": "tn-post-matric-scholarship-sc-st",
+  "name": {
+    "ta": "தமிழ்நாடு பட்டியல் சாதி/பட்டியல் பழங்குடியின மாணவர்களுக்கான மேல்நிலைக்குப் பிந்தைய உதவித்தொகை",
+    "en": "Tamil Nadu Post-Matric Scholarship for SC/ST Students"
+  },
+  "authority": {
+    "ta": "ஆதி திராவிடர் மற்றும் பழங்குடியினர் நலத்துறை, தமிழ்நாடு அரசு",
+    "en": "Adi Dravidar and Tribal Welfare Department, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["education"],
+  "benefitSummary": {
+    "ta": "10ஆம் வகுப்புக்குப் பின் படிக்கும் பட்டியல் சாதி/பழங்குடியின மாணவர்களுக்கு முழு கல்விக் கட்டணம் மற்றும் மாத உதவித்தொகை (படிப்பு மற்றும் விடுதி/பகல் மாணவர் நிலையைப் பொறுத்து தொகை மாறுபடும்).",
+    "en": "Full tuition-fee reimbursement plus a monthly maintenance allowance for SC/ST students studying after Class 10 (amount varies by course and hosteller/day-scholar status)."
+  },
+  "description": {
+    "ta": "இது தமிழ்நாடு அரசின் திட்டம். பட்டியல் சாதி (SC) அல்லது பட்டியல் பழங்குடியின (ST) சமூகத்தைச் சேர்ந்த, குறைந்த வருமானம் உள்ள குடும்ப மாணவர்கள் 10ஆம் வகுப்புக்குப் பிறகு டிப்ளமோ, ஐடிஐ, இளநிலை, முதுநிலைப் படிப்பு படிக்கும் போது கல்விக் கட்டணம் மற்றும் மாத உதவித்தொகை பெறலாம். SC மாணவர்களுக்கு வருமான வரம்பு தோராயமாக ₹2 லட்சம், ST மாணவர்களுக்கு தோராயமாக ₹2.5 லட்சம் -- உங்கள் துறை அலுவலகத்தில் துல்லியமான வரம்பை சரிபார்க்கவும்.",
+    "en": "A Tamil Nadu scheme for students from Scheduled Caste (SC) or Scheduled Tribe (ST) communities, from low-income families, who are pursuing a diploma, ITI, undergraduate or postgraduate course after Class 10. It covers tuition fees and a monthly maintenance allowance. The income limit is roughly ₹2 lakh for SC students and ₹2.5 lakh for ST students -- confirm the exact figure with your department office."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "social-category-sc-st",
+      "condition": { "op": "in", "field": "socialCategory", "values": ["sc", "st"] },
+      "explanation": { "ta": "பட்டியல் சாதி (SC) அல்லது பட்டியல் பழங்குடியினர் (ST) சமூகத்தைச் சேர்ந்தவராக இருக்க வேண்டும்.", "en": "You must belong to a Scheduled Caste (SC) or Scheduled Tribe (ST) community." }
+    },
+    {
+      "id": "resident-tn",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    },
+    {
+      "id": "currently-studying",
+      "condition": { "op": "eq", "field": "currentlyStudying", "value": true },
+      "explanation": { "ta": "10ஆம் வகுப்புக்குப் பிறகு தற்போது படித்துக் கொண்டிருக்க வேண்டும்.", "en": "You must currently be studying, after Class 10." }
+    },
+    {
+      "id": "income-limit",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 250000 },
+      "nearMissMargin": 25000,
+      "nearMissGuidance": {
+        "ta": "வருமான வரம்பு SC, ST இடையே சற்று வேறுபடும் -- நெருக்கமாக இருந்தால் ஆதி திராவிடர் நலத்துறை அலுவலகத்தில் கேட்டறியவும்.", "en": "The income limit differs slightly between SC and ST -- if you are close, ask at your Adi Dravidar Welfare office."
+      },
+      "explanation": {
+        "ta": "குடும்ப ஆண்டு வருமானம் தோராயமாக ₹2-2.5 லட்சத்திற்கு குறைவாக இருக்க வேண்டும்.", "en": "Household annual income must be below roughly ₹2-2.5 lakh."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "community-certificate",
+      "name": { "ta": "சமூகச் சான்றிதழ்", "en": "Community certificate" },
+      "description": { "ta": "SC/ST சமூகத்தைச் சேர்ந்தவர் என்பதை உறுதிப்படுத்தும் ஆவணம்.", "en": "Proof that you belong to an SC/ST community." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk office." }
+    },
+    {
+      "id": "income-certificate",
+      "name": { "ta": "வருமானச் சான்றிதழ்", "en": "Income certificate" },
+      "description": { "ta": "குடும்ப வருமானத்தை உறுதிப்படுத்தும் அரசு ஆவணம்.", "en": "A government-issued proof of household income." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk office." }
+    },
+    {
+      "id": "previous-marksheet",
+      "name": { "ta": "முந்தைய வகுப்பு மதிப்பெண் சான்றிதழ்", "en": "Previous class marksheet" },
+      "description": { "ta": "முந்தைய படிப்பின் முடிவை உறுதிப்படுத்த வேண்டும்.", "en": "Confirms your result in the previous course." },
+      "howToGet": { "ta": "உங்கள் முந்தைய பள்ளி/கல்லூரியில் பெறலாம்.", "en": "Available from your previous school/college." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "ஆதார் இணைந்த வங்கிக் கணக்கு புத்தகம்", "en": "Aadhaar-seeded bank passbook" },
+      "description": { "ta": "மாத உதவித்தொகை நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The monthly allowance is credited directly into this account." },
+      "howToGet": { "ta": "உங்கள் பெயரில் உள்ள ஆதார் இணைந்த கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use your Aadhaar-linked bank account passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "உங்கள் கல்லூரி/நிறுவனம் மூலமாக அல்லது மாவட்ட ஆதி திராவிடர் நலத்துறை அலுவலகத்தில் விண்ணப்ப படிவத்தைப் பெறவும்.", "en": "Get the application form through your college/institution or the district Adi Dravidar Welfare office." } },
+    { "step": 2, "description": { "ta": "சமூகச் சான்றிதழ், வருமானச் சான்றிதழ் உள்ளிட்ட ஆவணங்களுடன் படிவத்தைப் பூர்த்தி செய்து சமர்ப்பிக்கவும்.", "en": "Fill the form and submit it with your community certificate, income certificate and other documents." } },
+    { "step": 3, "description": { "ta": "உங்கள் கல்லூரி விவரங்களை சரிபார்க்கும்.", "en": "Your college verifies your details." } },
+    { "step": 4, "description": { "ta": "ஆதி திராவிடர் நலத்துறை அலுவலர் ஒப்புதல் அளித்த பின், தொகை வரவு செய்யப்படும்.", "en": "After approval by the Adi Dravidar Welfare officer, the amount is credited." } }
+  ],
+  "officialLinks": [
+    { "url": "https://tntribalwelfare.tn.gov.in/scholarship_post_matric.php", "domain": "tntribalwelfare.tn.gov.in", "title": { "ta": "மேல்நிலைக்குப் பிந்தைய உதவித்தொகை - பழங்குடியினர் நலத்துறை", "en": "Post-matric scholarship - Tribal Welfare Department" } },
+    { "url": "https://myscheme.gov.in/schemes/pmstn", "domain": "myscheme.gov.in", "title": { "ta": "myScheme - தமிழ்நாடு SC/ST மேல்நிலைக்குப் பிந்தைய உதவித்தொகை", "en": "myScheme - Tamil Nadu SC/ST post-matric scholarship" } }
+  ],
+  "deadline": {
+    "type": "annual-cycle",
+    "description": { "ta": "ஒவ்வொரு கல்வி ஆண்டும் விண்ணப்பங்கள் திறக்கப்படும்; துல்லியமான தேதிகளை துறை அலுவலகத்தில் சரிபார்க்கவும்.", "en": "Applications open each academic year; check the department office for exact dates." }
+  },
+  "sources": [
+    { "url": "https://myscheme.gov.in/schemes/pmstn", "domain": "myscheme.gov.in", "title": { "ta": "myScheme - தமிழ்நாடு SC/ST மேல்நிலைக்குப் பிந்தைய உதவித்தொகை", "en": "myScheme - Tamil Nadu SC/ST post-matric scholarship" } },
+    { "url": "https://tntribalwelfare.tn.gov.in/scholarship_post_matric.php", "domain": "tntribalwelfare.tn.gov.in", "title": { "ta": "மேல்நிலைக்குப் பிந்தைய உதவித்தொகை - பழங்குடியினர் நலத்துறை", "en": "Post-matric scholarship - Tribal Welfare Department" } },
+    { "url": "https://www.indiascholarships.in/scholarships/tamil-nadu-post-matric-scholarship-for-scst", "domain": "indiascholarships.in", "title": { "ta": "இதர குறிப்பு - Tamil Nadu Post Matric Scholarship (SC/ST)", "en": "Secondary reference - Tamil Nadu Post Matric Scholarship (SC/ST)" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (tntribalwelfare.tn.gov.in, myscheme.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 4
+}

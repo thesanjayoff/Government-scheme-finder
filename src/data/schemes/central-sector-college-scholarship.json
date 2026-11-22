@@ -1,0 +1,96 @@
+{
+  "id": "central-sector-college-scholarship",
+  "name": {
+    "ta": "கல்லூரி மற்றும் பல்கலைக்கழக மாணவர்களுக்கான மத்திய அரசு உதவித்தொகைத் திட்டம் (CSSS)",
+    "en": "Central Sector Scheme of Scholarship for College and University Students (CSSS)"
+  },
+  "authority": {
+    "ta": "உயர்கல்வித் துறை, கல்வி அமைச்சகம், இந்திய அரசு",
+    "en": "Department of Higher Education, Ministry of Education, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["education"],
+  "benefitSummary": {
+    "ta": "12ஆம் வகுப்பு பொதுத் தேர்வில் உயர் மதிப்பெண் பெற்ற, குறைந்த வருமானம் உள்ள குடும்பங்களைச் சேர்ந்த மாணவர்களுக்கு, இளநிலை/முதுநிலைப் படிப்பின் போது ஆண்டுக்கு தோராயமாக ₹10,000-₹20,000 உதவித்தொகை.",
+    "en": "Roughly ₹10,000-₹20,000 per year for students who scored among the top performers in the Class 12 board exam, from low-income families, while pursuing a regular undergraduate or postgraduate course."
+  },
+  "description": {
+    "ta": "இது மத்திய அரசின் திட்டம். 12ஆம் வகுப்பு பொதுத் தேர்வில் மாநில/மத்திய வாரியத்தில் உயர் மதிப்பெண் பெற்றவர்களில் குறைந்த வருமானம் உள்ள குடும்பங்களைச் சேர்ந்த மாணவர்களுக்கு, முழு நேர இளநிலை/முதுநிலைப் படிப்புக்காக தேசிய உதவித்தொகை போர்ட்டல் மூலம் உதவித்தொகை வழங்கப்படுகிறது. ஒவ்வொரு ஆண்டும் குறிப்பிட்ட மதிப்பெண் பெற்றால் புதுப்பிக்கப்படும்.",
+    "en": "A central scheme for students who ranked among the top scorers of their state/central board in the Class 12 exam and come from low-income families, pursuing a regular full-time undergraduate or postgraduate course. Applied for through the National Scholarship Portal, and renewed each year on maintaining the required marks."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "currently-studying",
+      "condition": { "op": "eq", "field": "currentlyStudying", "value": true },
+      "explanation": { "ta": "தற்போது படித்துக் கொண்டிருக்க வேண்டும்.", "en": "You must currently be studying." }
+    },
+    {
+      "id": "ug-pg-level",
+      "condition": { "op": "in", "field": "educationLevel", "values": ["undergraduate", "postgraduate"] },
+      "explanation": {
+        "ta": "முழு நேர இளநிலை அல்லது முதுநிலைப் படிப்பு படிப்பவர்களுக்கு மட்டும்.", "en": "Only for students pursuing a regular full-time undergraduate or postgraduate course."
+      }
+    },
+    {
+      "id": "income-limit",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 450000 },
+      "nearMissMargin": 50000,
+      "nearMissGuidance": {
+        "ta": "குடும்ப வருமானம் வரம்பை சற்று தாண்டினாலும் தேசிய உதவித்தொகை போர்ட்டலில் தகுதியை சரிபார்க்கவும்.", "en": "If your household income is only slightly above the limit, check your eligibility on the National Scholarship Portal."
+      },
+      "explanation": {
+        "ta": "குடும்ப ஆண்டு வருமானம் ₹4,50,000-க்கு குறைவாக இருக்க வேண்டும்.", "en": "Household annual income must be below ₹4,50,000."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "class-12-marksheet",
+      "name": { "ta": "12ஆம் வகுப்பு மதிப்பெண் சான்றிதழ்", "en": "Class 12 marksheet" },
+      "description": { "ta": "உங்கள் மதிப்பெண் வாரியத்தின் தகுதி வரம்புக்குள் உள்ளதா எனப் பார்க்கப் பயன்படும்.", "en": "Used to check whether your marks meet your board's merit cut-off." },
+      "howToGet": { "ta": "உங்கள் பள்ளியில் அல்லது வாரியத்தின் இணையதளத்தில் பெறலாம்.", "en": "Available from your school or your board's website." }
+    },
+    {
+      "id": "income-certificate",
+      "name": { "ta": "வருமானச் சான்றிதழ்", "en": "Income certificate" },
+      "description": { "ta": "அரசு அதிகாரி வழங்கிய வருமானச் சான்றிதழ் மட்டுமே ஏற்கப்படும்; சுய சான்றிதழ் ஏற்கப்படாது.", "en": "Only an income certificate issued by a government authority is accepted; a self-declaration is not." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk/Tahsildar office." }
+    },
+    {
+      "id": "college-bonafide",
+      "name": { "ta": "கல்லூரி சேர்க்கை/பணாஃபைடு சான்று", "en": "College admission/bonafide certificate" },
+      "description": { "ta": "தற்போது படிக்கும் படிப்பை உறுதிப்படுத்த வேண்டும்.", "en": "Confirms the course you are currently enrolled in." },
+      "howToGet": { "ta": "உங்கள் கல்லூரியில் பெறலாம்.", "en": "Available from your college." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "உதவித்தொகை நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The scholarship is credited directly into this account." },
+      "howToGet": { "ta": "உங்கள் பெயரில் உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use a bank account passbook in your name." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "scholarships.gov.in (தேசிய உதவித்தொகை போர்ட்டல்) இல் புதிய மாணவராக பதிவு செய்யவும்.", "en": "Register as a new applicant on the National Scholarship Portal (scholarships.gov.in)." } },
+    { "step": 2, "description": { "ta": "12ஆம் வகுப்பு மதிப்பெண் மற்றும் வருமான விவரங்களை பதிவு செய்து ஆவணங்களை பதிவேற்றவும்.", "en": "Enter your Class 12 marks and income details, and upload the required documents." } },
+    { "step": 3, "description": { "ta": "உங்கள் கல்லூரி மற்றும் மாவட்ட/மாநில அலுவலர் சரிபார்ப்புக்காக காத்திருக்கவும்.", "en": "Wait for verification by your college and the district/state nodal officer." } },
+    { "step": 4, "description": { "ta": "ஒவ்வொரு ஆண்டும் தேவையான மதிப்பெண் பெற்றால் புதுப்பிக்க (renewal) விண்ணப்பிக்கவும்.", "en": "Apply for renewal each year as long as you maintain the required marks." } }
+  ],
+  "officialLinks": [
+    { "url": "https://scholarships.gov.in/", "domain": "scholarships.gov.in", "title": { "ta": "தேசிய உதவித்தொகை போர்ட்டல்", "en": "National Scholarship Portal" } }
+  ],
+  "deadline": {
+    "type": "annual-cycle",
+    "description": { "ta": "2026-27 ஆம் ஆண்டுக்கு இந்தத் திட்டம் 2 ஜூன் 2026 அன்று திறக்கப்பட்டு, மாணவர் விண்ணப்பங்கள் 30 நவம்பர் 2026 வரை ஏற்கப்பட்டன; ஒவ்வொரு ஆண்டும் தேதிகள் மாறுபடும், போர்ட்டலில் சரிபார்க்கவும்.", "en": "For 2026-27 the scheme opened on 2 June 2026 and student applications were accepted till 30 November 2026; dates shift each year, so check the portal." },
+    "cycleNote": { "ta": "பொதுவாக ஜூன் முதல் நவம்பர் வரை", "en": "Typically between June and November" }
+  },
+  "sources": [
+    { "url": "https://scholarships.gov.in/public/All-Scholarships", "domain": "scholarships.gov.in", "title": { "ta": "தேசிய உதவித்தொகை போர்ட்டல் - CSSS பட்டியல்", "en": "National Scholarship Portal - CSSS listing" } },
+    { "url": "https://www.education.gov.in/node/255", "domain": "education.gov.in", "title": { "ta": "உயர்கல்வி உதவித்தொகைகள் - கல்வி அமைச்சகம்", "en": "Higher education scholarships - Ministry of Education" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (scholarships.gov.in, education.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

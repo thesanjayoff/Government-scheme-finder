@@ -1,0 +1,104 @@
+{
+  "id": "nmmss",
+  "name": {
+    "ta": "தேசிய திறமை மற்றும் தேவை அடிப்படையிலான உதவித்தொகைத் திட்டம் (NMMSS)",
+    "en": "National Means-cum-Merit Scholarship Scheme (NMMSS)"
+  },
+  "authority": {
+    "ta": "பள்ளிக் கல்வி மற்றும் கல்வியறிவுத் துறை, கல்வி அமைச்சகம், இந்திய அரசு",
+    "en": "Department of School Education & Literacy, Ministry of Education, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["education"],
+  "benefitSummary": {
+    "ta": "9 முதல் 12ஆம் வகுப்பு வரை படிக்கும், குறைந்த வருமானம் உள்ள குடும்பங்களைச் சேர்ந்த திறமையான மாணவர்களுக்கு ஆண்டுக்கு ₹12,000 (மாதம் ₹1,000) உதவித்தொகை.",
+    "en": "₹12,000 per year (₹1,000 a month) for meritorious students from low-income families, from Class 9 through Class 12."
+  },
+  "description": {
+    "ta": "இது மத்திய அரசின் திட்டம். அரசு, அரசு உதவி பெறும் அல்லது உள்ளாட்சி பள்ளிகளில் 8ஆம் வகுப்பு முடித்து 9ஆம் வகுப்புக்குச் செல்லும் மாணவர்கள், ஒரு தேர்வு (MAT + SAT) எழுதி தேர்ச்சி பெற்றால் இந்த உதவித்தொகை பெறலாம். 12ஆம் வகுப்பு வரை ஒவ்வொரு ஆண்டும் தேர்ச்சி பெற்றால் புதுப்பிக்கப்படும். தனியார் பள்ளி மாணவர்களுக்கு இது பொதுவாக இல்லை.",
+    "en": "A central government scheme for students who complete Class 8 in a government, government-aided or local-body school and clear a selection test (MAT + SAT) to enter Class 9. The scholarship continues up to Class 12 as long as the student passes each year. It is generally not available to private school students."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "currently-studying",
+      "condition": { "op": "eq", "field": "currentlyStudying", "value": true },
+      "explanation": {
+        "ta": "நீங்கள் தற்போது பள்ளியில் படித்துக் கொண்டிருக்க வேண்டும்.",
+        "en": "You must currently be studying in school."
+      }
+    },
+    {
+      "id": "school-stage-9-to-12",
+      "condition": { "op": "in", "field": "educationLevel", "values": ["secondary", "higher-secondary"] },
+      "explanation": {
+        "ta": "9 முதல் 12ஆம் வகுப்பு வரை படிக்கும் மாணவர்களுக்கு மட்டும் இந்த உதவித்தொகை.",
+        "en": "This scholarship is only for students in Classes 9 to 12."
+      }
+    },
+    {
+      "id": "income-limit",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 350000 },
+      "nearMissMargin": 50000,
+      "nearMissGuidance": {
+        "ta": "குடும்ப வருமானம் வரம்பை சற்று தாண்டினாலும், உறுதி செய்ய பள்ளியில் விசாரிக்கவும்; சில நேரங்களில் விதிவிலக்கு இருக்கலாம்.",
+        "en": "If your household income is only slightly above the limit, check with your school -- exceptions are sometimes possible."
+      },
+      "explanation": {
+        "ta": "குடும்ப ஆண்டு வருமானம் ₹3,50,000-க்கு குறைவாக இருக்க வேண்டும்.",
+        "en": "Household annual income must be below ₹3,50,000."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "previous-marksheet",
+      "name": { "ta": "முந்தைய வகுப்பு மதிப்பெண் சான்றிதழ்", "en": "Previous class marksheet" },
+      "description": { "ta": "7 அல்லது 8ஆம் வகுப்பு தேர்ச்சி விவரம் தேவைப்படும்.", "en": "Needed to show your Class 7 or 8 academic record." },
+      "howToGet": { "ta": "உங்கள் பள்ளியில் பெறலாம்.", "en": "Available from your school." }
+    },
+    {
+      "id": "income-certificate",
+      "name": { "ta": "வருமானச் சான்றிதழ்", "en": "Income certificate" },
+      "description": { "ta": "குடும்ப வருமானத்தை உறுதிப்படுத்தும் அரசு ஆவணம்.", "en": "A government-issued proof of household income." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகம் அல்லது தாசில்தார் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk/Tahsildar office." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "உதவித்தொகை நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The scholarship is credited directly into this account." },
+      "howToGet": { "ta": "மாணவரின் பெயரில் உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use a bank account passbook in the student's name." }
+    },
+    {
+      "id": "aadhaar-card",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "தேசிய உதவித்தொகை போர்ட்டலில் பதிவு செய்ய வேண்டும்; எண் இந்த ஆப்பில் சேமிக்கப்படாது.", "en": "Needed to register on the National Scholarship Portal; this app never stores your Aadhaar number." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "முதலில் உங்கள் பள்ளி மூலமாக தேர்வுக்கு பதிவு செய்து MAT + SAT தேர்வு எழுதி தேர்ச்சி பெறவும்.", "en": "First register through your school and clear the MAT + SAT selection test." } },
+    { "step": 2, "description": { "ta": "தேர்ச்சி பெற்றபின் scholarships.gov.in (தேசிய உதவித்தொகை போர்ட்டல்) இல் புதிய மாணவராக பதிவு செய்யவும்.", "en": "After qualifying, register as a new applicant on the National Scholarship Portal (scholarships.gov.in)." } },
+    { "step": 3, "description": { "ta": "விவரங்கள் மற்றும் ஆவணங்களை பதிவேற்றி, பள்ளி மற்றும் மாவட்ட அலுவலர் சரிபார்ப்புக்காக சமர்ப்பிக்கவும்.", "en": "Upload your details and documents, then submit for verification by your school and the district nodal officer." } },
+    { "step": 4, "description": { "ta": "ஒவ்வொரு ஆண்டும் தேர்ச்சி பெற்றால் 12ஆம் வகுப்பு வரை புதுப்பிக்க (renewal) விண்ணப்பிக்கவும்.", "en": "Apply for renewal each year (as long as you pass) until Class 12." } }
+  ],
+  "officialLinks": [
+    { "url": "https://scholarships.gov.in/", "domain": "scholarships.gov.in", "title": { "ta": "தேசிய உதவித்தொகை போர்ட்டல்", "en": "National Scholarship Portal" } },
+    { "url": "https://dsel.education.gov.in/scheme/nmmss", "domain": "dsel.education.gov.in", "title": { "ta": "NMMSS திட்ட விவரம் - கல்வி அமைச்சகம்", "en": "NMMSS scheme page - Ministry of Education" } }
+  ],
+  "deadline": {
+    "type": "annual-cycle",
+    "description": { "ta": "ஒவ்வொரு கல்வி ஆண்டும் புதிய/புதுப்பிக்கும் விண்ணப்பங்கள் தேசிய உதவித்தொகை போர்ட்டலில் திறக்கப்படும்; துல்லியமான தேதிகளை போர்ட்டலில் சரிபார்க்கவும்.", "en": "Fresh and renewal applications open on the National Scholarship Portal each academic year; check the portal for exact dates as they vary (and are sometimes extended) year to year." },
+    "cycleNote": { "ta": "பொதுவாக ஆகஸ்ட் முதல் நவம்பர் வரை", "en": "Typically between August and November" }
+  },
+  "sources": [
+    { "url": "https://dsel.education.gov.in/scheme/nmmss", "domain": "dsel.education.gov.in", "title": { "ta": "NMMSS திட்ட விவரம் - கல்வி அமைச்சகம்", "en": "NMMSS scheme page - Ministry of Education" } },
+    { "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2317657", "domain": "pib.gov.in", "title": { "ta": "PIB செய்தி வெளியீடு - NMMSS 2026-27", "en": "PIB press release - NMMSS 2026-27" } },
+    { "url": "https://scholarships.gov.in/", "domain": "scholarships.gov.in", "title": { "ta": "தேசிய உதவித்தொகை போர்ட்டல்", "en": "National Scholarship Portal" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (dsel.education.gov.in, pib.gov.in, scholarships.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 2
+}

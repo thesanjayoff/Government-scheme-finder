@@ -1,0 +1,94 @@
+{
+  "id": "tn-pudhumai-penn",
+  "name": {
+    "ta": "புதுமைப் பெண் திட்டம் (மூவலூர் இராமாமிர்தம் அம்மையார் உயர்கல்வி உறுதித் திட்டம்)",
+    "en": "Pudhumai Penn Scheme (Moovalur Ramamirtham Ammaiyar Higher Education Assurance Scheme)"
+  },
+  "authority": {
+    "ta": "பள்ளிக் கல்வித் துறை, தமிழ்நாடு அரசு",
+    "en": "School Education Department, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["education", "women-family"],
+  "benefitSummary": {
+    "ta": "தமிழ்நாடு அரசுப் பள்ளியில் படித்த பெண் மாணவிகள், 12ஆம் வகுப்புக்குப் பிறகு இளநிலைப் படிப்பு/டிப்ளமோ/ஐடிஐ படிக்கும் போது மாதம் ₹1,000 (ஆண்டுக்கு ₹12,000) நேரடி உதவி.",
+    "en": "₹1,000 a month (₹12,000 a year) for girl students who studied in a Tamil Nadu government school and are now pursuing undergraduate, diploma or ITI courses."
+  },
+  "description": {
+    "ta": "இது தமிழ்நாடு அரசின் திட்டம். அரசுப் பள்ளியில் 12ஆம் வகுப்பு வரை படித்த பெண் மாணவிகள் உயர்கல்விக்குச் சென்றாலும் படிப்பை நிறுத்தாமல் தொடர உதவும் வகையில், அவர்களின் வங்கிக் கணக்கில் நேரடியாக மாத உதவித்தொகை வரவு செய்யப்படுகிறது. வருமான வரம்பு இல்லை.",
+    "en": "A Tamil Nadu government scheme to help girls who studied through a government school continue into higher education without dropping out, by crediting a monthly allowance directly to their bank account. There is no family income limit."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "is-female",
+      "condition": { "op": "eq", "field": "gender", "value": "female" },
+      "explanation": { "ta": "இத்திட்டம் பெண் மாணவிகளுக்கு மட்டும்.", "en": "This scheme is only for girl students." }
+    },
+    {
+      "id": "resident-tn",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டு அரசுப் பள்ளியில் படித்தவராக இருக்க வேண்டும்.", "en": "You must have studied in a Tamil Nadu government school." }
+    },
+    {
+      "id": "currently-studying",
+      "condition": { "op": "eq", "field": "currentlyStudying", "value": true },
+      "explanation": { "ta": "தற்போது படித்துக் கொண்டிருக்க வேண்டும்.", "en": "You must currently be studying." }
+    },
+    {
+      "id": "pursuing-higher-education",
+      "condition": { "op": "in", "field": "educationLevel", "values": ["undergraduate", "iti-polytechnic"] },
+      "explanation": {
+        "ta": "12ஆம் வகுப்புக்குப் பிறகு இளநிலைப் பட்டப்படிப்பு, டிப்ளமோ அல்லது ஐடிஐ படிக்க வேண்டும். தொலைநிலை/கடிதத் தொடர்பு படிப்புகளுக்கு இது பொருந்தாது.", "en": "You must be pursuing an undergraduate degree, diploma or ITI course after Class 12. Distance/correspondence courses are not covered."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "class-12-certificate",
+      "name": { "ta": "12ஆம் வகுப்பு தேர்ச்சி சான்றிதழ்", "en": "Class 12 pass certificate" },
+      "description": { "ta": "அரசுப் பள்ளியில் படித்ததை உறுதிப்படுத்தும் ஆவணம்.", "en": "Proof that you studied in a government school." },
+      "howToGet": { "ta": "உங்கள் முன்னாள் பள்ளியில் பெறலாம்.", "en": "Available from your former school." }
+    },
+    {
+      "id": "college-admission-proof",
+      "name": { "ta": "கல்லூரி/நிறுவன சேர்க்கை சான்று", "en": "College/institution admission proof" },
+      "description": { "ta": "தற்போது படிக்கும் படிப்பை உறுதிப்படுத்த வேண்டும்.", "en": "Confirms the course you are currently enrolled in." },
+      "howToGet": { "ta": "உங்கள் கல்லூரியில் பெறலாம்.", "en": "Available from your college." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "மாத உதவித்தொகை நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The monthly allowance is credited directly into this account." },
+      "howToGet": { "ta": "உங்கள் பெயரில் உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use a bank account passbook in your name." }
+    },
+    {
+      "id": "aadhaar-card",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "பதிவு செய்ய வேண்டிய ஆவணம்; இந்த ஆப் ஆதார் எண்ணை கேட்காது/சேமிக்காது.", "en": "Needed for registration; this app never asks for or stores your Aadhaar number." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "புதிய மாணவிகள் umis.tn.gov.in இணையதளத்தில் பதிவு செய்யவும்.", "en": "New students should register on the umis.tn.gov.in portal." } },
+    { "step": 2, "description": { "ta": "முன்னாள் பள்ளி மற்றும் தற்போதைய கல்லூரி விவரங்களுடன் படிவத்தை பூர்த்தி செய்யவும்.", "en": "Fill the form with your former school and current college details." } },
+    { "step": 3, "description": { "ta": "தேவையான ஆவணங்களை பதிவேற்றி சமர்ப்பிக்கவும்.", "en": "Upload the required documents and submit." } },
+    { "step": 4, "description": { "ta": "கல்லூரி சரிபார்ப்புக்குப் பின் மாத உதவித்தொகை உங்கள் வங்கிக் கணக்கில் வரவு செய்யப்படும்.", "en": "After college verification, the monthly allowance is credited to your bank account." } }
+  ],
+  "officialLinks": [
+    { "url": "https://dte.tn.gov.in/pudhumai-penn-schemes", "domain": "dte.tn.gov.in", "title": { "ta": "புதுமைப் பெண் திட்டம் - தொழில்நுட்பக் கல்வி இயக்குநரகம்", "en": "Pudhumai Penn Scheme - Directorate of Technical Education" } }
+  ],
+  "deadline": {
+    "type": "annual-cycle",
+    "description": { "ta": "ஒவ்வொரு ஆண்டும் 12ஆம் வகுப்பு முடிவுகள் வந்தபின் புதிய பதிவுகள் திறக்கப்படும்; துல்லியமான தேதிகளை போர்ட்டலில் சரிபார்க்கவும்.", "en": "New registrations typically open each year after Class 12 results are announced; check the portal for exact dates." }
+  },
+  "sources": [
+    { "url": "https://dte.tn.gov.in/pudhumai-penn-schemes", "domain": "dte.tn.gov.in", "title": { "ta": "புதுமைப் பெண் திட்டம் - தொழில்நுட்பக் கல்வி இயக்குநரகம்", "en": "Pudhumai Penn Scheme - Directorate of Technical Education" } },
+    { "url": "https://myscheme.gov.in/schemes/pudhumai-penn-scheme", "domain": "myscheme.gov.in", "title": { "ta": "myScheme - புதுமைப் பெண் திட்டம்", "en": "myScheme - Pudhumai Penn Scheme" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (dte.tn.gov.in, myscheme.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "low",
+  "benefitValue": 2
+}

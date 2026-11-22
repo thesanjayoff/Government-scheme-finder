@@ -1,0 +1,98 @@
+{
+  "id": "minority-post-matric-scholarship",
+  "name": {
+    "ta": "சிறுபான்மையினர் மாணவர்களுக்கான மேல்நிலைக்குப் பிந்தைய உதவித்தொகை",
+    "en": "Post-Matric Scholarship for Minority Communities"
+  },
+  "authority": {
+    "ta": "சிறுபான்மையோர் நலத்துறை அமைச்சகம், இந்திய அரசு",
+    "en": "Ministry of Minority Affairs, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["education"],
+  "benefitSummary": {
+    "ta": "11ஆம் வகுப்பு மற்றும் அதற்கு மேல் படிக்கும் சிறுபான்மை சமூக மாணவர்களுக்கு (வருடுக்கு ₹2 லட்சத்திற்கு குறைவான குடும்ப வருமானம்) கல்விக் கட்டணம் மற்றும் மாத உதவித்தொகை.",
+    "en": "Course-fee support plus a monthly maintenance allowance for minority-community students in Class 11 and above, from families earning under ₹2 lakh a year."
+  },
+  "description": {
+    "ta": "இது மத்திய அரசின் திட்டம். முஸ்லிம், கிறிஸ்தவர், சீக்கியர், பௌத்தர், ஜைனர், பார்சி ஆகிய சிறுபான்மை சமூகங்களைச் சேர்ந்த மாணவர்கள், 11ஆம் வகுப்பு முதல் முதுநிலைப் படிப்பு வரை படிக்கும்போது, குடும்ப வருமானம் குறைவாக இருந்தால் இந்த உதவித்தொகை பெறலாம். தேசிய உதவித்தொகை போர்ட்டல் மூலம் விண்ணப்பிக்க வேண்டும்.",
+    "en": "A central scheme for students from minority communities (Muslim, Christian, Sikh, Buddhist, Jain, Zoroastrian) studying from Class 11 through postgraduate level, from lower-income families. Applied for through the National Scholarship Portal."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "religion-minority",
+      "condition": { "op": "eq", "field": "religionMinority", "value": true },
+      "explanation": { "ta": "அறிவிக்கப்பட்ட சிறுபான்மை சமூகத்தைச் சேர்ந்தவராக இருக்க வேண்டும்.", "en": "You must belong to a notified minority community." }
+    },
+    {
+      "id": "currently-studying",
+      "condition": { "op": "eq", "field": "currentlyStudying", "value": true },
+      "explanation": { "ta": "தற்போது படித்துக் கொண்டிருக்க வேண்டும்.", "en": "You must currently be studying." }
+    },
+    {
+      "id": "post-matric-level",
+      "condition": { "op": "in", "field": "educationLevel", "values": ["higher-secondary", "iti-polytechnic", "undergraduate", "postgraduate", "professional"] },
+      "explanation": { "ta": "11ஆம் வகுப்பு முதல் முதுநிலைப் படிப்பு வரை படிப்பவர்களுக்கு மட்டும்.", "en": "Only for students studying from Class 11 through postgraduate/professional courses." }
+    },
+    {
+      "id": "income-limit",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 200000 },
+      "nearMissMargin": 20000,
+      "nearMissGuidance": {
+        "ta": "குடும்ப வருமானம் வரம்பை சற்று தாண்டினாலும் தேசிய உதவித்தொகை போர்ட்டலில் தகுதியை சரிபார்க்கவும்.", "en": "If your household income is only slightly above the limit, check your eligibility on the National Scholarship Portal."
+      },
+      "explanation": { "ta": "குடும்ப ஆண்டு வருமானம் ₹2,00,000-க்கு குறைவாக இருக்க வேண்டும்.", "en": "Household annual income must be below ₹2,00,000." }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "minority-declaration",
+      "name": { "ta": "சிறுபான்மை சமூக சான்று/சுய அறிக்கை", "en": "Minority community declaration/certificate" },
+      "description": { "ta": "அறிவிக்கப்பட்ட சிறுபான்மை சமூகத்தைச் சேர்ந்தவர் என்பதை உறுதிப்படுத்த வேண்டும்.", "en": "Confirms you belong to a notified minority community." },
+      "howToGet": { "ta": "பள்ளி/கல்லூரியில் அல்லது தேசிய உதவித்தொகை போர்ட்டலில் சுய அறிக்கையாக அளிக்கலாம்.", "en": "Can be given as a self-declaration on the National Scholarship Portal or obtained from your school/college." }
+    },
+    {
+      "id": "income-certificate",
+      "name": { "ta": "வருமானச் சான்றிதழ்", "en": "Income certificate" },
+      "description": { "ta": "அரசு அதிகாரி வழங்கிய குடும்ப வருமானச் சான்று.", "en": "A government-issued proof of household income." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk/Tahsildar office." }
+    },
+    {
+      "id": "previous-marksheet",
+      "name": { "ta": "முந்தைய வகுப்பு மதிப்பெண் சான்றிதழ்", "en": "Previous class marksheet" },
+      "description": { "ta": "முந்தைய படிப்பின் முடிவை உறுதிப்படுத்த வேண்டும்.", "en": "Confirms your result in the previous course." },
+      "howToGet": { "ta": "உங்கள் முந்தைய பள்ளி/கல்லூரியில் பெறலாம்.", "en": "Available from your previous school/college." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "உதவித்தொகை நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The scholarship is credited directly into this account." },
+      "howToGet": { "ta": "உங்கள் பெயரில் உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use a bank account passbook in your name." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "scholarships.gov.in (தேசிய உதவித்தொகை போர்ட்டல்) இல் புதிய மாணவராக பதிவு செய்யவும்.", "en": "Register as a new applicant on the National Scholarship Portal (scholarships.gov.in)." } },
+    { "step": 2, "description": { "ta": "சிறுபான்மை சமூகம், வருமானம் மற்றும் படிப்பு விவரங்களை பதிவு செய்து ஆவணங்களை பதிவேற்றவும்.", "en": "Enter your minority community, income and course details, and upload the required documents." } },
+    { "step": 3, "description": { "ta": "உங்கள் நிறுவனம் மற்றும் மாவட்ட/மாநில அலுவலர் சரிபார்ப்புக்காக காத்திருக்கவும்.", "en": "Wait for verification by your institution and the district/state nodal officer." } },
+    { "step": 4, "description": { "ta": "ஒவ்வொரு ஆண்டும் புதுப்பிக்க (renewal) விண்ணப்பிக்கவும்.", "en": "Apply for renewal each year." } }
+  ],
+  "officialLinks": [
+    { "url": "https://scholarships.gov.in/", "domain": "scholarships.gov.in", "title": { "ta": "தேசிய உதவித்தொகை போர்ட்டல்", "en": "National Scholarship Portal" } }
+  ],
+  "deadline": {
+    "type": "annual-cycle",
+    "description": { "ta": "ஒவ்வொரு கல்வி ஆண்டும் தேசிய உதவித்தொகை போர்ட்டலில் விண்ணப்பங்கள் திறக்கப்படும்; துல்லியமான தேதிகளை போர்ட்டலில் சரிபார்க்கவும்.", "en": "Applications open on the National Scholarship Portal each academic year; check the portal for exact dates." },
+    "cycleNote": { "ta": "பொதுவாக ஜூன்/ஜூலை முதல் அக்டோபர்/நவம்பர் வரை", "en": "Typically between June/July and October/November" }
+  },
+  "sources": [
+    { "url": "https://myscheme.gov.in/schemes/postsm", "domain": "myscheme.gov.in", "title": { "ta": "myScheme - சிறுபான்மையினர் மேல்நிலைக்குப் பிந்தைய உதவித்தொகை", "en": "myScheme - Post-matric scholarship for minorities" } },
+    { "url": "https://eparlib.nic.in/bitstream/123456789/660771/1/1537.pdf", "domain": "eparlib.nic.in", "title": { "ta": "நாடாளுமன்ற பதில் - சிறுபான்மையினர் உதவித்தொகை வருமான வரம்பு", "en": "Parliamentary reply - minority scholarship income limits" } },
+    { "url": "https://scholarships.gov.in/", "domain": "scholarships.gov.in", "title": { "ta": "தேசிய உதவித்தொகை போர்ட்டல்", "en": "National Scholarship Portal" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (myscheme.gov.in, eparlib.nic.in, scholarships.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 2
+}

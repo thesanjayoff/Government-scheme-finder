@@ -1,0 +1,93 @@
+{
+  "id": "atal-pension-yojana",
+  "name": {
+    "ta": "அடல் பென்ஷன் யோஜனா (APY)",
+    "en": "Atal Pension Yojana (APY)"
+  },
+  "authority": {
+    "ta": "நிதி சேவைகள் துறை, இந்திய அரசு (ஓய்வூதிய நிதி ஒழுங்குமுறை மற்றும் மேம்பாட்டு ஆணையம் மேற்பார்வையில்)",
+    "en": "Department of Financial Services, Government of India (regulated by PFRDA)"
+  },
+  "level": "central",
+  "lifeAreas": ["workers-employment"],
+  "benefitSummary": {
+    "ta": "60 வயதுக்குப் பிறகு மாதம் ₹1,000 முதல் ₹5,000 வரை உறுதியான ஓய்வூதியம்; சேர்க்கை வயது மற்றும் தேர்ந்தெடுக்கும் தொகையைப் பொறுத்து மாத பங்களிப்பு மாறுபடும்.",
+    "en": "A guaranteed monthly pension of ₹1,000 to ₹5,000 after age 60; the monthly contribution depends on your age at joining and the pension amount you choose."
+  },
+  "description": {
+    "ta": "அமைப்புசாரா தொழிலாளர்கள் மற்றும் முறையான ஓய்வூதியம் இல்லாத எவரும் இணையக்கூடிய ஒரு ஓய்வூதியத் திட்டம். 18 முதல் 40 வயது வரையிலவர்கள் இணையலாம்; குறைந்தது 20 ஆண்டுகள் பங்களிப்பு செய்ய வேண்டும். வருமான வரி செலுத்துவோர் 2022 அக்டோபர் முதல் புதிதாக இணைய முடியாது.",
+    "en": "A pension scheme open to unorganised-sector workers and anyone without a formal pension. People aged 18-40 can join, and contributions must continue for at least 20 years. Income-tax payers have not been allowed to newly enrol since October 2022."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "age-18-40-apy",
+      "condition": { "op": "between", "field": "age", "min": 18, "max": 40 },
+      "nearMissMargin": 2,
+      "nearMissGuidance": {
+        "ta": "18 முதல் 40 வயது வரை மட்டுமே புதிதாக இணைய முடியும்.",
+        "en": "New enrolment is only possible between ages 18 and 40."
+      },
+      "explanation": { "ta": "வயது 18 முதல் 40 வரை இருக்க வேண்டும்.", "en": "You must be between 18 and 40 years of age." }
+    },
+    {
+      "id": "has-bank-account-apy",
+      "condition": { "op": "eq", "field": "bankAccountExists", "value": true },
+      "explanation": {
+        "ta": "உங்கள் பெயரில் வங்கி அல்லது அஞ்சலக சேமிப்புக் கணக்கு இருக்க வேண்டும் (பங்களிப்பு அதிலிருந்து பிடிக்கப்படும்).",
+        "en": "You must have a bank or post-office savings account in your name (the contribution is auto-debited from it)."
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "govt-formal-pension-apy",
+      "condition": { "op": "eq", "field": "occupation", "value": "salaried-govt" },
+      "explanation": {
+        "ta": "சட்டப்பூர்வ ஓய்வூதியம்/NPS ஏற்கெனவே பெறும் அரசு ஊழியர்கள் பொதுவாக இதில் இணைய முடியாது.",
+        "en": "Government employees who already have a statutory pension/NPS generally cannot join this scheme."
+      }
+    }
+  ],
+  "requiredDocuments": [
+    {
+      "id": "aadhaar-apy",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாள சரிபார்ப்புக்காக தேவை.", "en": "Needed for identity verification." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "bank-passbook-apy",
+      "name": { "ta": "சேமிப்பு வங்கி/அஞ்சலக கணக்கு புத்தகம்", "en": "Savings bank or post-office account passbook" },
+      "description": { "ta": "மாத/காலாண்டு பங்களிப்பு இந்த கணக்கிலிருந்து தானாக பிடிக்கப்படும்.", "en": "Your monthly/quarterly contribution is auto-debited from this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    },
+    {
+      "id": "mobile-apy",
+      "name": { "ta": "மொபைல் எண்", "en": "Mobile number" },
+      "description": { "ta": "பதிவு மற்றும் அறிவிப்புகளுக்காக தேவை.", "en": "Needed for registration and notifications." },
+      "howToGet": { "ta": "உங்கள் சொந்த மொபைல் எண்ணை பயன்படுத்தவும்.", "en": "Use your own mobile number." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "உங்கள் வங்கி அல்லது அஞ்சலக கிளையை அணுகவும் (நெட்/மொபைல் பேங்கிங் மூலமும் இணையலாம்).", "en": "Visit your bank or post-office branch (net-banking/mobile-banking enrolment is also possible)." } },
+    { "step": 2, "description": { "ta": "APY பதிவு படிவத்தை பூர்த்தி செய்து, விரும்பும் மாத ஓய்வூதியத் தொகையை (₹1,000-₹5,000) தேர்வு செய்யவும்.", "en": "Fill the APY registration form and choose your desired monthly pension amount (₹1,000-₹5,000)." } },
+    { "step": 3, "description": { "ta": "மாதம்/காலாண்டு/அரையாண்டுக்கு ஒருமுறை பங்களிப்பு தானாக பிடிக்கப்பட ஒப்புதல் அளிக்கவும்.", "en": "Authorise automatic monthly, quarterly, or half-yearly deduction of your contribution." } }
+  ],
+  "officialLinks": [
+    { "url": "https://financialservices.gov.in/atal-pension-yojana-apy", "domain": "financialservices.gov.in", "title": { "ta": "APY - நிதி சேவைகள் துறை", "en": "APY - Department of Financial Services" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் பதிவு செய்யலாம் (18-40 வயதுக்கு உட்பட்டு).", "en": "You can register at any time during the year, as long as you are between 18 and 40." }
+  },
+  "sources": [
+    { "url": "https://financialservices.gov.in/atal-pension-yojana-apy", "domain": "financialservices.gov.in", "title": { "ta": "APY - நிதி சேவைகள் துறை", "en": "APY - Department of Financial Services" } },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/may/doc202558551701.pdf", "domain": "pib.gov.in", "title": { "ta": "PIB செய்தி வெளியீடு - APY", "en": "PIB press release - APY" } },
+    { "url": "https://www.pfrda.org.in/web/pfrda/schemes/atal-pension-yojana-apy", "domain": "pfrda.org.in", "title": { "ta": "APY - PFRDA ஒழுங்குமுறை ஆணையம்", "en": "APY - PFRDA regulator page" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (financialservices.gov.in, pib.gov.in, pfrda.org.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "low",
+  "benefitValue": 3
+}

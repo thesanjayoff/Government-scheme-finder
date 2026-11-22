@@ -1,0 +1,95 @@
+{
+  "id": "tn-evr-maniammaiyar-marriage-assistance",
+  "name": {
+    "ta": "இ.வெ.ரா. மணியம்மையார் நினைவு திருமண உதவித் திட்டம் (ஏழ்மையான விதவைகளின் மகள்களுக்கு)",
+    "en": "E.V.R. Maniammaiyar Ninaivu Marriage Assistance Scheme for Daughters of Poor Widows"
+  },
+  "authority": {
+    "ta": "சமூக நலன் மற்றும் மகளிர் அதிகாரமளிப்புத் துறை, தமிழ்நாடு அரசு",
+    "en": "Department of Social Welfare and Women Empowerment, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["women-family", "seniors-widows"],
+  "benefitSummary": {
+    "ta": "ஏழ்மையான விதவையின் மகள் திருமணத்திற்கு ₹25,000 பணமும் 8 கிராம் தங்க நாணயமும்; பட்டப்படிப்பு பெற்றிருந்தால் ₹50,000.",
+    "en": "₹25,000 cash plus an 8-gram gold coin for the marriage of a poor widow's daughter; ₹50,000 if the daughter is a graduate."
+  },
+  "description": {
+    "ta": "இது தமிழ்நாடு சமூக நலத்துறையின் ஒரு திருமண உதவித் திட்டம். ஏழ்மையான விதவைகளின் மகள்களின் திருமணத்திற்கு நிதி உதவியும் தங்க நாணயமும் வழங்கப்படுகிறது. இந்த திட்டத்திற்கு 'தாய் விதவையாக இருக்க வேண்டும்' என்ற நிபந்தனையை இந்த ஆப் தனியாக சரிபார்க்கவில்லை -- உங்கள் குடும்ப நிலையை உள்ளூர் சமூக நல அலுவலகத்தில் விளக்கவும்.",
+    "en": "A Tamil Nadu Social Welfare Department scheme that gives cash assistance and a gold coin for the marriage of a poor widow's daughter. This app does not separately verify the condition that the applicant's mother must be a widow -- explain your family situation at the local Social Welfare office."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "bride-gender-evr",
+      "condition": { "op": "eq", "field": "gender", "value": "female" },
+      "explanation": { "ta": "இந்த உதவி பெண்களுக்கு மட்டும்.", "en": "This assistance is only for girls/women about to be married." }
+    },
+    {
+      "id": "bride-unmarried-evr",
+      "condition": { "op": "eq", "field": "maritalStatus", "value": "unmarried" },
+      "explanation": { "ta": "விண்ணப்பிப்பவர் இன்னும் திருமணமாகாதவராக இருக்க வேண்டும்.", "en": "The applicant must not yet be married." }
+    },
+    {
+      "id": "income-cap-evr",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 120000 },
+      "nearMissMargin": 15000,
+      "nearMissGuidance": {
+        "ta": "உங்கள் குடும்ப வருமானம் வரம்புக்கு சற்று அதிகமாக இருந்தாலும், சமூக நல அலுவலகத்தில் விண்ணப்பிக்க முயற்சிக்கலாம்.",
+        "en": "If your household income is only slightly above the limit, you can still try applying at the Social Welfare office."
+      },
+      "explanation": { "ta": "குடும்ப ஆண்டு வருமானம் ₹1,20,000-க்கு மிகாமல் இருக்க வேண்டும்.", "en": "Household annual income must not exceed ₹1,20,000." }
+    },
+    {
+      "id": "resident-tn-evr",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "mother-widow-certificate",
+      "name": { "ta": "தாயின் விதவை/இறப்புச் சான்றிதழ்", "en": "Mother's widow status proof / father's death certificate" },
+      "description": { "ta": "விண்ணப்பிப்பவரின் தாய் விதவை என்பதை உறுதிப்படுத்த.", "en": "To confirm the applicant's mother is a widow." },
+      "howToGet": { "ta": "ஊராட்சி/நகராட்சி பிறப்பு-இறப்புப் பதிவு அலுவலகத்தில் பெறலாம்.", "en": "Available from the local Panchayat/Municipality birth-death registration office." }
+    },
+    {
+      "id": "income-cert-evr",
+      "name": { "ta": "குடும்ப வருமான சான்றிதழ்", "en": "Family income certificate" },
+      "description": { "ta": "குடும்ப ஆண்டு வருமானத்தை உறுதிப்படுத்த.", "en": "Document confirming annual household income." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk office." }
+    },
+    {
+      "id": "marriage-invitation-evr",
+      "name": { "ta": "திருமண அழைப்பிதழ்/விவரம்", "en": "Marriage invitation card / details" },
+      "description": { "ta": "வரவிருக்கும் திருமணத்தை உறுதிப்படுத்த.", "en": "To confirm the upcoming wedding." },
+      "howToGet": { "ta": "அச்சிடப்பட்ட அழைப்பிதழைப் பயன்படுத்தலாம்.", "en": "Use the printed invitation card." }
+    },
+    {
+      "id": "bank-passbook-evr",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "பணம் ECS மூலம் இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The cash assistance is credited to this account by ECS." },
+      "howToGet": { "ta": "மணமகள் அல்லது தாயின் பெயரில் உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use a passbook in the bride's name or her mother's name." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "மாவட்ட சமூக நல அலுவலர் (DSWO) அலுவலகத்தைச் சென்று விண்ணப்பப் படிவத்தைப் பெறவும்.", "en": "Visit the District Social Welfare Officer (DSWO) office and obtain the application form." } },
+    { "step": 2, "description": { "ta": "படிவத்தைப் பூர்த்தி செய்து, தேவையான ஆவணங்களுடன் திருமணத் தேதிக்கு முன்பே சமர்ப்பிக்கவும்.", "en": "Fill the form and submit it with the required documents before the wedding date." } },
+    { "step": 3, "description": { "ta": "சமூக நலத்துறை அதிகாரிகள் சரிபார்த்தபின், பணம் ECS மூலம் வரவு செய்யப்பட்டு தங்க நாணயம் வழங்கப்படும்.", "en": "After Social Welfare Department verification, the cash is credited by ECS and the gold coin is handed over." } }
+  ],
+  "officialLinks": [
+    { "url": "https://tnsocialwelfare.tn.gov.in/en/specilisationswomen-welfare/marriage-assistance-schemes", "domain": "tnsocialwelfare.tn.gov.in", "title": { "ta": "திருமண உதவித் திட்டங்கள் - தமிழ்நாடு சமூக நலத்துறை", "en": "Marriage Assistance Schemes - Tamil Nadu Social Welfare Department" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் விண்ணப்பிக்கலாம்; திருமணத் தேதிக்கு முன்பே விண்ணப்பிப்பது நல்லது.", "en": "You can apply any time during the year; it is best to apply before the wedding date." }
+  },
+  "sources": [
+    { "url": "https://tnsocialwelfare.tn.gov.in/en/specilisationswomen-welfare/marriage-assistance-schemes", "domain": "tnsocialwelfare.tn.gov.in", "title": { "ta": "திருமண உதவித் திட்டங்கள் - தமிழ்நாடு சமூக நலத்துறை", "en": "Marriage Assistance Schemes - Tamil Nadu Social Welfare Department" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (tnsocialwelfare.tn.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

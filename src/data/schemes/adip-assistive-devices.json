@@ -1,0 +1,98 @@
+{
+  "id": "adip-assistive-devices",
+  "name": {
+    "ta": "ஊனமுற்றோருக்கு உதவிக் கருவிகள் வழங்கும் திட்டம் (ADIP)",
+    "en": "Assistance to Disabled Persons for Purchase/Fitting of Aids and Appliances (ADIP)"
+  },
+  "authority": {
+    "ta": "ஊனமுற்றோர் அதிகாரத்துவத் துறை, சமூக நீதி மற்றும் அதிகாரமளித்தல் அமைச்சகம், இந்திய அரசு",
+    "en": "Department of Empowerment of Persons with Disabilities, Ministry of Social Justice & Empowerment, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["disability"],
+  "benefitSummary": {
+    "ta": "ஊனமுற்றோருக்குத் தேவையான சான்றளிக்கப்பட்ட உதவிக் கருவிகள் (செவித்துணைக் கருவி, செயற்கை கை/கால், சக்கர நாற்காலி, திரிசைக்கிள் முதலியன) இலவசமாக அல்லது மானியத்துடன் வழங்கப்படுகிறது; குடும்ப வருமானத்தைப் பொறுத்து உதவியின் அளவு மாறும்.",
+    "en": "Free or subsidised certified assistive devices (hearing aids, artificial limbs, wheelchairs, tricycles, etc.) for persons with disabilities; the level of assistance depends on household income."
+  },
+  "description": {
+    "ta": "இது 1981 முதல் நடைமுறையில் உள்ள மத்திய அரசு திட்டம். குறைந்த வருமானம் உள்ள ஊனமுற்றோர் தங்களுக்குத் தேவையான தரமான உதவிக் கருவிகளை வாங்க நிதியுதவி பெறுகிறார்கள். ALIMCO, மாவட்ட ஊனமுற்றோர் மறுவாழ்வு மையங்கள், தேசிய நிறுவனங்கள் மற்றும் தன்னார்வ தொண்டு நிறுவனங்கள் மூலம் கருவிகள் வழங்கப்படுகின்றன.",
+    "en": "A central scheme running since 1981 that helps low-income persons with disabilities buy quality, certified assistive devices they need. Devices are distributed through implementing agencies such as ALIMCO, District Disability Rehabilitation Centres, national institutes, and NGOs."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "disability-40-plus",
+      "condition": { "op": "gte", "field": "disabilityPercentage", "value": 40 },
+      "nearMissMargin": 5,
+      "nearMissGuidance": {
+        "ta": "உங்கள் ஊனம் 35% அல்லது அதற்கு மேல் இருந்தால், மாவட்ட ஊனமுற்றோர் மறுவாழ்வு மையத்தில் மீண்டும் மதிப்பீடு செய்து கொள்ளவும்.",
+        "en": "If your disability is around 35% or more, get it re-assessed at your District Disability Rehabilitation Centre."
+      },
+      "explanation": {
+        "ta": "சான்றளிக்கப்பட்ட ஊனம் 40% அல்லது அதற்கு மேல் இருக்க வேண்டும்.",
+        "en": "Your certified disability must be 40% or more."
+      }
+    },
+    {
+      "id": "income-ceiling",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 360000 },
+      "nearMissMargin": 60000,
+      "nearMissGuidance": {
+        "ta": "வருமானம் இதைவிட சற்று அதிகமாக இருந்தாலும் பகுதி மானியம் கிடைக்க வாய்ப்புள்ளது; மாவட்ட ஊனமுற்றோர் மறுவாழ்வு மையத்தில் விசாரிக்கவும்.",
+        "en": "If your income is a little above this limit, you may still get partial assistance -- check with your District Disability Rehabilitation Centre."
+      },
+      "explanation": {
+        "ta": "குடும்ப ஆண்டு வருமானம் ஒரு வரம்புக்குக் கீழ் இருந்தால் முழு மானியம் கிடைக்கும்; அதற்கு மேல் இருந்தால் பகுதி மானியம் மட்டும் கிடைக்கலாம்.",
+        "en": "Full assistance is given below a set household income limit; above it, only partial assistance may be available."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "disability-certificate",
+      "name": { "ta": "ஊனம் மருத்துவச் சான்றிதழ் / UDID அட்டை", "en": "Disability medical certificate / UDID card" },
+      "description": { "ta": "உங்கள் ஊனம் 40% அல்லது அதற்கு மேல் என்பதை உறுதிப்படுத்தும் ஆவணம்.", "en": "Proof that your certified disability is 40% or more." },
+      "howToGet": { "ta": "அரசு மருத்துவமனை அல்லது UDID இணையதளம் மூலம் பெறலாம்.", "en": "Obtain from a government hospital or the UDID portal." }
+    },
+    {
+      "id": "income-certificate",
+      "name": { "ta": "குடும்ப வருமானச் சான்றிதழ்", "en": "Household income certificate" },
+      "description": { "ta": "உதவியின் அளவை நிர்ணயிக்க குடும்ப வருமானம் தெரிவிக்கும் ஆவணம்.", "en": "Document showing household income, used to decide the level of assistance." },
+      "howToGet": { "ta": "கிராம நிர்வாக அலுவலர் / வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Village Administrative Officer or Taluk office." }
+    },
+    {
+      "id": "doctor-recommendation",
+      "name": { "ta": "மருத்துவர் பரிந்துரைச் சான்றிதழ்", "en": "Doctor's recommendation for the device" },
+      "description": { "ta": "உங்களுக்குத் தேவையான குறிப்பிட்ட கருவியை பரிந்துரைக்கும் மருத்துவச் சான்று.", "en": "A medical recommendation specifying which assistive device you need." },
+      "howToGet": { "ta": "அரசு மருத்துவமனை / மாவட்ட மறுவாழ்வு மைய மருத்துவரிடம் பெறலாம்.", "en": "Obtain from a government hospital or your District Disability Rehabilitation Centre's doctor." }
+    },
+    {
+      "id": "aadhaar-card",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாளச் சான்றுக்காக வைத்துக்கொள்ள வேண்டிய ஆவணம்; இந்த ஆப் உங்கள் ஆதார் எண்ணை கேட்காது/சேமிக்காது.", "en": "Kept as an identity document; this app never asks for or stores your Aadhaar number." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையைப் பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "அருகிலுள்ள மாவட்ட ஊனமுற்றோர் மறுவாழ்வு மையம் அல்லது Arjun இணையதளம் (adip.depwd.gov.in) மூலம் விண்ணப்பிக்கவும்.", "en": "Apply through your nearest District Disability Rehabilitation Centre or the Arjun portal (adip.depwd.gov.in)." } },
+    { "step": 2, "description": { "ta": "ஊனச் சான்றிதழ், வருமானச் சான்றிதழ் மற்றும் மருத்துவர் பரிந்துரையை சமர்ப்பிக்கவும்.", "en": "Submit your disability certificate, income certificate, and doctor's recommendation." } },
+    { "step": 3, "description": { "ta": "மதிப்பீட்டுக்குப் பின் கருவி அளவு எடுக்கப்பட்டு, இலவசமாக அல்லது மானியத்துடன் வழங்கப்படும்.", "en": "After assessment, the device is measured/fitted and provided free or at a subsidised cost." } }
+  ],
+  "officialLinks": [
+    { "url": "https://depwd.gov.in/adip/", "domain": "depwd.gov.in", "title": { "ta": "ADIP திட்டம் - DEPwD", "en": "ADIP Scheme - DEPwD" } },
+    { "url": "https://adip.depwd.gov.in/", "domain": "adip.depwd.gov.in", "title": { "ta": "Arjun இணையதளம்", "en": "Arjun portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் விண்ணப்பிக்கலாம்.", "en": "You can apply at any time during the year." }
+  },
+  "sources": [
+    { "url": "https://depwd.gov.in/adip/", "domain": "depwd.gov.in", "title": { "ta": "ADIP திட்டம் - DEPwD", "en": "ADIP Scheme - DEPwD" } },
+    { "url": "https://adip.depwd.gov.in/files/FAQ_English.pdf", "domain": "adip.depwd.gov.in", "title": { "ta": "ADIP அடிக்கடி கேட்கப்படும் கேள்விகள்", "en": "ADIP Frequently Asked Questions" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (depwd.gov.in, adip.depwd.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

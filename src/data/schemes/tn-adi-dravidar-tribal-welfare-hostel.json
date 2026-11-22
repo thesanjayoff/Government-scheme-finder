@@ -1,0 +1,96 @@
+{
+  "id": "tn-adi-dravidar-tribal-welfare-hostel",
+  "name": {
+    "ta": "ஆதி திராவிடர் மற்றும் பழங்குடியினர் நலத்துறை விடுதிகள்",
+    "en": "Adi Dravidar and Tribal Welfare Department Hostels"
+  },
+  "authority": {
+    "ta": "ஆதி திராவிடர் மற்றும் பழங்குடியினர் நலத்துறை, தமிழ்நாடு அரசு",
+    "en": "Adi Dravidar and Tribal Welfare Department, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["education"],
+  "benefitSummary": {
+    "ta": "பட்டியல் சாதி/பழங்குடியின மாணவர்களுக்கு பள்ளி/கல்லூரி படிப்பின் போது இலவச விடுதி வசதி, உணவு மற்றும் அடிப்படை படிப்பு பொருட்கள்.",
+    "en": "Free hostel accommodation, food and basic study materials for SC/ST students while they study in school or college."
+  },
+  "description": {
+    "ta": "இது தமிழ்நாடு அரசின் திட்டம். போக்குவரத்து சிரமம் அல்லது தொலைவு காரணமாக படிப்பை பாதியில் விடும் பட்டியல் சாதி (SC) மற்றும் பழங்குடியின (ST) மாணவர்களுக்கு உதவும் வகையில், அவர்கள் வசிக்கும் பகுதிக்கு அருகில் விடுதிகள் நடத்தப்படுகின்றன. உணவு, படுக்கை பொருட்கள், சீருடை மற்றும் சிறிய மாத செலவுத் தொகை வழங்கப்படுகிறது.",
+    "en": "A Tamil Nadu scheme that runs hostels near the residential areas of Scheduled Caste (SC) and Scheduled Tribe (ST) communities, to prevent dropouts caused by distance or transport difficulty. It provides food, bedding, uniform and a small monthly allowance to hostel residents."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "social-category-sc-st",
+      "condition": { "op": "in", "field": "socialCategory", "values": ["sc", "st"] },
+      "explanation": { "ta": "பட்டியல் சாதி (SC) அல்லது பட்டியல் பழங்குடியினர் (ST) சமூகத்தைச் சேர்ந்தவராக இருக்க வேண்டும்.", "en": "You must belong to a Scheduled Caste (SC) or Scheduled Tribe (ST) community." }
+    },
+    {
+      "id": "resident-tn",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    },
+    {
+      "id": "currently-studying",
+      "condition": { "op": "eq", "field": "currentlyStudying", "value": true },
+      "explanation": { "ta": "பள்ளி அல்லது கல்லூரியில் தற்போது படித்துக் கொண்டிருக்க வேண்டும்.", "en": "You must currently be studying in school or college." }
+    },
+    {
+      "id": "income-limit",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 200000 },
+      "nearMissMargin": 25000,
+      "nearMissGuidance": {
+        "ta": "வருமானம் வரம்பை சற்று தாண்டினாலும் உள்ளூர் ஆதி திராவிடர் நலத்துறை அலுவலகத்தில் கேட்டறியவும்.", "en": "If your income is only slightly above the limit, check with your local Adi Dravidar Welfare office."
+      },
+      "explanation": { "ta": "பெற்றோர்/காப்பாளரின் ஆண்டு வருமானம் ₹2,00,000-க்கு குறைவாக இருக்க வேண்டும்.", "en": "Parent/guardian annual income must be below ₹2,00,000." }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "community-certificate",
+      "name": { "ta": "சமூகச் சான்றிதழ்", "en": "Community certificate" },
+      "description": { "ta": "SC/ST சமூகத்தைச் சேர்ந்தவர் என்பதை உறுதிப்படுத்தும் ஆவணம்.", "en": "Proof that you belong to an SC/ST community." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk office." }
+    },
+    {
+      "id": "income-certificate",
+      "name": { "ta": "வருமானச் சான்றிதழ்", "en": "Income certificate" },
+      "description": { "ta": "பெற்றோர்/காப்பாளரின் வருமானத்தை உறுதிப்படுத்தும் ஆவணம்.", "en": "Proof of the parent/guardian's income." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகத்தில் பெறலாம்.", "en": "Available from the Taluk office." }
+    },
+    {
+      "id": "school-admission-proof",
+      "name": { "ta": "பள்ளி/கல்லூரி சேர்க்கை சான்று", "en": "School/college admission proof" },
+      "description": { "ta": "தற்போது படிக்கும் பள்ளி/கல்லூரியை உறுதிப்படுத்த வேண்டும்.", "en": "Confirms the school/college you are currently enrolled in." },
+      "howToGet": { "ta": "உங்கள் பள்ளி/கல்லூரியில் பெறலாம்.", "en": "Available from your school/college." }
+    },
+    {
+      "id": "passport-photos",
+      "name": { "ta": "பாஸ்போர்ட் அளவு புகைப்படங்கள்", "en": "Passport-size photographs" },
+      "description": { "ta": "விடுதி சேர்க்கை படிவத்துடன் இணைக்க வேண்டும்.", "en": "To attach with the hostel admission form." },
+      "howToGet": { "ta": "அருகிலுள்ள புகைப்பட கடையில் எடுக்கலாம்.", "en": "Can be taken at any nearby photo studio." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "உங்கள் பகுதிக்கு அருகிலுள்ள ஆதி திராவிடர் நலத்துறை விடுதியின் வார்டன்/மேட்ரனை அல்லது மாவட்ட அலுவலகத்தைத் தொடர்பு கொள்ளவும்.", "en": "Contact the warden/matron of the nearest Adi Dravidar Welfare Department hostel, or the district welfare office." } },
+    { "step": 2, "description": { "ta": "சமூகச் சான்றிதழ், வருமானச் சான்றிதழ் உள்ளிட்ட ஆவணங்களுடன் விண்ணப்பிக்கவும்.", "en": "Apply with your community certificate, income certificate and other documents." } },
+    { "step": 3, "description": { "ta": "இடம் கிடைக்கும் அளவுக்கு ஏற்ப இடம் ஒதுக்கப்படும்.", "en": "A seat is allotted based on availability." } },
+    { "step": 4, "description": { "ta": "கல்வி ஆண்டு தொடங்கும் போது விடுதியில் சேரவும்.", "en": "Join the hostel at the start of the academic year." } }
+  ],
+  "officialLinks": [
+    { "url": "https://www.myscheme.gov.in/schemes/adthsg", "domain": "myscheme.gov.in", "title": { "ta": "myScheme - ஆதி திராவிடர் நலத்துறை விடுதி திட்டம்", "en": "myScheme - Adi Dravidar Welfare hostel scheme" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "கல்வி ஆண்டு தொடங்கும் போது இடங்கள் நிரப்பப்படும்; இடம் உள்ளவரை ஆண்டின் மத்தியிலும் விண்ணப்பிக்கலாம்.", "en": "Seats are mainly filled at the start of the academic year; you may also apply mid-year if a seat is available." }
+  },
+  "sources": [
+    { "url": "https://www.myscheme.gov.in/schemes/adthsg", "domain": "myscheme.gov.in", "title": { "ta": "myScheme - ஆதி திராவிடர் நலத்துறை விடுதி திட்டம்", "en": "myScheme - Adi Dravidar Welfare hostel scheme" } },
+    { "url": "https://cms.tn.gov.in/cms_migrated/document/docfiles/adtw_e_cc_2024_25.pdf", "domain": "cms.tn.gov.in", "title": { "ta": "ஆதி திராவிடர் நலத்துறை குடிமக்கள் சாசனம் 2024-25", "en": "Adi Dravidar Welfare Department citizen charter 2024-25" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (myscheme.gov.in, cms.tn.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "low",
+  "benefitValue": 4
+}

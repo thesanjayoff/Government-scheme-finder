@@ -1,0 +1,79 @@
+{
+  "id": "pm-svanidhi",
+  "name": {
+    "ta": "பிஎம் ஸ்வநிதி (தெருவிற்பனையாளர் ஆத்மநிர்பர் நிதி)",
+    "en": "PM SVANidhi (PM Street Vendor's AtmaNirbhar Nidhi)"
+  },
+  "authority": {
+    "ta": "வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகம், இந்திய அரசு",
+    "en": "Ministry of Housing & Urban Affairs, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["workers-employment"],
+  "benefitSummary": {
+    "ta": "தெருவிற்பனையாளர்களுக்கு அடைமானம் இல்லாமல் படிப்படியாக அதிகரிக்கும் சிறு கடன்கள் (முதலில் ₹15,000, பின் ₹25,000, பின் ₹50,000) வட்டி மானியத்துடன்.",
+    "en": "Collateral-free working-capital loans for street vendors, in rising instalments (₹15,000, then ₹25,000, then ₹50,000), with an interest subsidy."
+  },
+  "description": {
+    "ta": "நகர்ப்புற உள்ளாட்சி அமைப்பால் அடையாளம் காணப்பட்ட தெருவிற்பனையாளர்கள், தங்கள் தொழிலுக்கு சிறு கடன் பெற இந்த திட்டத்தின் மூலம் விண்ணப்பிக்கலாம். சரியான நேரத்தில் கடனைத் திருப்பிச் செலுத்தினால், அடுத்த கட்ட அதிக தொகை கடன் பெறலாம்; வட்டியில் மானியமும், டிஜிட்டல் பணப்பரிவர்த்தனைக்கு ஊக்கத்தொகையும் கிடைக்கும்.",
+    "en": "Street vendors identified by their urban local body can apply for a small working-capital loan under this scheme. Repaying on time makes you eligible for the next, larger loan tranche, along with an interest subsidy and a cashback incentive for digital payments."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "street-vendor-occupation",
+      "condition": { "op": "eq", "field": "occupation", "value": "street-vendor" },
+      "explanation": { "ta": "தெருவிற்பனையாளராக இருக்க வேண்டும்.", "en": "You must be a street vendor." }
+    },
+    {
+      "id": "urban-area-svanidhi",
+      "condition": { "op": "eq", "field": "areaType", "value": "urban" },
+      "explanation": {
+        "ta": "நகர்ப்புற உள்ளாட்சி அமைப்பால் சர்வே செய்யப்பட்ட/அடையாளம் காணப்பட்ட தெருவிற்பனையாளராக இருக்க வேண்டும் (அருகிலுள்ள நகர்ப்புறங்களில் விற்பனை செய்யும் சுற்றுப்புற விற்பனையாளர்களும் தகுதி பெறலாம்).",
+        "en": "You must be a street vendor surveyed/identified by an urban local body (peri-urban vendors who sell in nearby urban areas may also qualify)."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "vending-cert-svanidhi",
+      "name": { "ta": "வணிக அனுமதி அட்டை / சர்வே குறிப்பு எண்", "en": "Certificate of Vending / survey reference number" },
+      "description": { "ta": "உள்ளாட்சி அமைப்பு அளிக்கும் விற்பனையாளர் அடையாள ஆவணம்.", "en": "The vendor identity proof issued by your urban local body." },
+      "howToGet": { "ta": "உள்ளாட்சி அமைப்பு அலுவலகத்தில் அல்லது PM SVANidhi போர்ட்டலில் சரிபார்க்கலாம்.", "en": "Check with your urban local body office or on the PM SVANidhi portal." }
+    },
+    {
+      "id": "aadhaar-svanidhi",
+      "name": { "ta": "ஆதார் அட்டை (மொபைல் எண் இணைக்கப்பட்டது)", "en": "Aadhaar card (mobile number linked)" },
+      "description": { "ta": "ஆன்லைனில் விண்ணப்பிக்க ஆதாருடன் மொபைல் எண் இணைந்திருக்க வேண்டும்.", "en": "Your mobile number must be linked to your Aadhaar to apply online." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "bank-account-svanidhi",
+      "name": { "ta": "வங்கிக் கணக்கு விவரம்", "en": "Bank account details" },
+      "description": { "ta": "கடன் தொகை இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The loan amount is credited to this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள வங்கிக் கணக்கை பயன்படுத்தவும்.", "en": "Use your existing bank account." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "உங்கள் உள்ளாட்சி அமைப்பிடம் அல்லது PM SVANidhi போர்ட்டலில் உங்கள் சர்வே குறிப்பு எண்ணை சரிபார்க்கவும்.", "en": "Check your vendor survey status/reference number with your Urban Local Body or on the PM SVANidhi portal." } },
+    { "step": 2, "description": { "ta": "போர்ட்டல், வங்கி அல்லது பொது சேவை மையம் மூலம் முதல் கட்ட கடனுக்கு (₹15,000 வரை) ஆன்லைனில் விண்ணப்பிக்கவும்.", "en": "Apply online for the 1st loan tranche (up to ₹15,000) via the portal, a bank, or a Common Service Centre." } },
+    { "step": 3, "description": { "ta": "மாதாந்திர தவணைகளில் சரியான நேரத்தில் கடனை திருப்பிச் செலுத்தவும்; இது இரண்டாம் கட்டம் (₹25,000 வரை) மற்றும் மூன்றாம் கட்டம் (₹50,000 வரை) கடனுக்கு தகுதி பெற உதவும்.", "en": "Repay the loan on time through monthly instalments; this makes you eligible to apply for the 2nd (up to ₹25,000) and then the 3rd (up to ₹50,000) loan." } }
+  ],
+  "officialLinks": [
+    { "url": "https://pmsvanidhi.mohua.gov.in/", "domain": "pmsvanidhi.mohua.gov.in", "title": { "ta": "PM SVANidhi அலுவல் போர்ட்டல்", "en": "PM SVANidhi official portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் விண்ணப்பிக்கலாம்; கடன் வட்டி 2030 மார்ச் 31 வரை நீட்டிக்கப்பட்டுள்ளது.", "en": "You can apply at any time during the year; the lending period has been extended until 31 March 2030." }
+  },
+  "sources": [
+    { "url": "https://pmsvanidhi.mohua.gov.in/", "domain": "pmsvanidhi.mohua.gov.in", "title": { "ta": "PM SVANidhi அலுவல் போர்ட்டல்", "en": "PM SVANidhi official portal" } },
+    { "url": "https://www.mohua.gov.in/static/uploads/2026/01/a3a17370145e0870a79df74bfbab766f.pdf", "domain": "mohua.gov.in", "title": { "ta": "PM SVANidhi வழிகாட்டுதல்கள் - நகர்ப்புற அமைச்சகம்", "en": "PM SVANidhi guidelines - Ministry of Housing & Urban Affairs" } },
+    { "url": "https://cleartax.in/s/pm-svanidhi-scheme", "domain": "cleartax.in", "title": { "ta": "PM SVANidhi மறுசீரமைப்பு விவரம் (இரண்டாம் நிலை ஆதாரம்)", "en": "PM SVANidhi restructuring details (secondary source)" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (pmsvanidhi.mohua.gov.in, mohua.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

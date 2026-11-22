@@ -1,0 +1,83 @@
+{
+  "id": "tn-old-age-pension",
+  "name": {
+    "ta": "இந்திரா காந்தி தேசிய முதியோர் ஓய்வூதியத் திட்டம் (தமிழ்நாடு)",
+    "en": "Indira Gandhi National Old Age Pension Scheme (Tamil Nadu)"
+  },
+  "authority": {
+    "ta": "வருவாய் நிர்வாகத் துறை, தமிழ்நாடு அரசு",
+    "en": "Commissionerate of Revenue Administration, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["seniors-widows"],
+  "benefitSummary": {
+    "ta": "60 வயது மற்றும் அதற்கு மேற்பட்ட ஏழ்மையான முதியோருக்கு மாதந்தோறும் ஓய்வூதியம் (மாதம் தோராயமாக ₹1,000-1,200, வயதுக் குழுவைப் பொறுத்து).",
+    "en": "A monthly pension for destitute elderly people aged 60 and above (roughly ₹1,000-1,200 per month depending on age band)."
+  },
+  "description": {
+    "ta": "இது மத்திய அரசின் பங்களிப்புடன் தமிழ்நாடு அரசு நடத்தும் திட்டம். வருமானம் இல்லாத அல்லது மிகக் குறைவான வருமானம் உள்ள முதியோருக்கு மாத உதவித்தொகை வழங்கப்படுகிறது.",
+    "en": "A Tamil Nadu government scheme (with central government contribution) that provides a monthly allowance to elderly people with little or no income."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "age-60-plus",
+      "condition": { "op": "gte", "field": "age", "value": 60 },
+      "nearMissMargin": 3,
+      "nearMissGuidance": {
+        "ta": "60 வயது நிரம்பியவுடன் விண்ணப்பிக்கலாம்.",
+        "en": "You can apply once you turn 60."
+      },
+      "explanation": { "ta": "வயது 60 அல்லது அதற்கு மேல் இருக்க வேண்டும்.", "en": "You must be 60 years of age or older." }
+    },
+    {
+      "id": "destitute-bpl",
+      "condition": { "op": "in", "field": "rationCardType", "values": ["bpl", "aay"] },
+      "explanation": {
+        "ta": "வறுமைக்கோட்டிற்கு கீழ் (BPL) அல்லது அன்னபூர்ணா (AAY) குடும்ப அட்டை வைத்திருக்க வேண்டும்.",
+        "en": "You must hold a Below Poverty Line (BPL) or Antyodaya (AAY) ration card."
+      }
+    },
+    {
+      "id": "resident-tn",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "already-other-pension",
+      "condition": { "op": "in", "field": "receivesPension", "values": ["widow-pension", "disability-pension", "other-pension"] },
+      "explanation": {
+        "ta": "வேறு ஒரு மாத ஓய்வூதியம் ஏற்கெனவே பெறுபவர்கள் பொதுவாக இரண்டையும் ஒருசேர பெற முடியாது; உள்ளூர் அலுவலகத்தில் உறுதி செய்யவும்.",
+        "en": "People already receiving another monthly pension usually cannot draw two at once; confirm with the local office."
+      }
+    }
+  ],
+  "requiredDocuments": [
+    { "id": "age-proof", "name": { "ta": "வயது சான்று", "en": "Age proof" }, "description": { "ta": "பிறப்பு சான்றிதழ் அல்லது பள்ளி சான்றிதழ் அல்லது வோட்டர் அட்டை.", "en": "Birth certificate, school certificate, or voter ID." }, "howToGet": { "ta": "ஏற்கெனவே வைத்திருக்கும் ஆவணங்களில் ஒன்றைப் பயன்படுத்தவும்.", "en": "Use any one document you already have." } },
+    { "id": "ration-card", "name": { "ta": "குடும்ப அட்டை", "en": "Ration card" }, "description": { "ta": "BPL/AAY குடும்ப அட்டை நகல்.", "en": "Copy of your BPL/AAY ration card." }, "howToGet": { "ta": "உணவு பொதுக்குறைவு விநியோகத் துறை அலுவலகத்தில் பெறலாம்.", "en": "Available from the Civil Supplies office." } },
+    { "id": "bank-passbook-pension", "name": { "ta": "வங்கி/அஞ்சலக கணக்கு புத்தகம்", "en": "Bank or post-office passbook" }, "description": { "ta": "ஓய்வூதியம் நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The pension is credited directly into this account." }, "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use your existing passbook." } }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "உங்கள் வட்டாட்சியர் அலுவலகம் அல்லது கிராம நிர்வாக அலுவலரை அணுகவும்.", "en": "Visit your Taluk office or Village Administrative Officer." } },
+    { "step": 2, "description": { "ta": "விண்ணப்ப படிவத்தை பூர்த்தி செய்து ஆவணங்களுடன் சமர்ப்பிக்கவும்.", "en": "Fill the application form and submit it with the required documents." } },
+    { "step": 3, "description": { "ta": "வருவாய் அலுவலகத்தின் சரிபார்ப்புக்குப் பின் ஓய்வூதியம் தொடங்கப்படும்.", "en": "The pension begins after verification by the Revenue Department." } }
+  ],
+  "officialLinks": [
+    { "url": "https://cra.tn.gov.in/eleg_schemes.php", "domain": "cra.tn.gov.in", "title": { "ta": "தகுதி விவரங்கள் - CRA தமிழ்நாடு", "en": "Eligibility criteria - CRA Tamil Nadu" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் விண்ணப்பிக்கலாம்.", "en": "You can apply at any time during the year." }
+  },
+  "sources": [
+    { "url": "https://cra.tn.gov.in/eleg_schemes.php", "domain": "cra.tn.gov.in", "title": { "ta": "தகுதி விவரங்கள் - CRA தமிழ்நாடு", "en": "Eligibility criteria - CRA Tamil Nadu" } },
+    { "url": "https://cra.tn.gov.in/about_schemes.php", "domain": "cra.tn.gov.in", "title": { "ta": "திட்ட விவரங்கள் - CRA தமிழ்நாடு", "en": "Scheme details - CRA Tamil Nadu" } },
+    { "url": "https://myscheme.gov.in/schemes/ignoapstn", "domain": "myscheme.gov.in", "title": { "ta": "myScheme - IGNOAPS தமிழ்நாடு", "en": "myScheme - IGNOAPS Tamil Nadu" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (cra.tn.gov.in, myscheme.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

@@ -1,0 +1,105 @@
+{
+  "id": "tn-disability-pension",
+  "name": {
+    "ta": "தமிழ்நாடு ஊனமுற்றோர் ஓய்வூதியத் திட்டம்",
+    "en": "Tamil Nadu Differently Abled Pension Scheme"
+  },
+  "authority": {
+    "ta": "ஊனமுற்றோர் நலத் துறை, தமிழ்நாடு அரசு",
+    "en": "Department for the Welfare of Differently Abled Persons, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["disability"],
+  "benefitSummary": {
+    "ta": "40% அல்லது அதற்கு மேற்பட்ட ஊனமுற்றோருக்கு மாதந்தோறும் ஓய்வூதியம் (தோராயமாக ₹1,500; 80% அல்லது அதற்கு மேல் ஊனமுற்றோருக்கு தோராயமாக ₹1,800).",
+    "en": "A monthly pension for persons with 40% or more disability (around ₹1,500 per month; around ₹1,800 per month for those with 80% or more disability)."
+  },
+  "description": {
+    "ta": "இது தமிழ்நாடு அரசு, மத்திய அரசின் பங்களிப்புடன் நடத்தும் திட்டம். உடல்/புலன்/அறிவுசார் ஊனம் உள்ளவர்களுக்கு மாத உதவித்தொகை நேரடியாக வங்கிக் கணக்கில் வரவு செய்யப்படுகிறது.",
+    "en": "A Tamil Nadu government scheme, run with central government support, that pays a small monthly pension directly into the bank account of persons with physical, sensory, intellectual, or mental disabilities."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "disability-40-plus",
+      "condition": { "op": "gte", "field": "disabilityPercentage", "value": 40 },
+      "nearMissMargin": 5,
+      "nearMissGuidance": {
+        "ta": "உங்கள் ஊனம் 35% அல்லது அதற்கு மேல் இருந்தால், அரசு மருத்துவமனை மதிப்பீட்டு முகாமில் மீண்டும் சரிபார்த்துக் கொள்ளவும்.",
+        "en": "If your disability is around 35% or more, get it re-assessed at a government hospital camp -- you may be closer to qualifying than you think."
+      },
+      "explanation": {
+        "ta": "சான்றளிக்கப்பட்ட ஊனம் 40% அல்லது அதற்கு மேல் இருக்க வேண்டும்.",
+        "en": "Your certified disability must be 40% or more."
+      }
+    },
+    {
+      "id": "age-18-plus",
+      "condition": { "op": "gte", "field": "age", "value": 18 },
+      "explanation": {
+        "ta": "வயது 18 அல்லது அதற்கு மேல் இருக்க வேண்டும்; இந்தத் திட்டத்திற்கு மேல் வயது வரம்பு இல்லை.",
+        "en": "You must be 18 years or older; there is no upper age limit for this scheme."
+      }
+    },
+    {
+      "id": "resident-tn",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": {
+        "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.",
+        "en": "You must be a resident of Tamil Nadu."
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "already-other-pension",
+      "condition": { "op": "in", "field": "receivesPension", "values": ["old-age-pension", "widow-pension", "other-pension"] },
+      "explanation": {
+        "ta": "வேறு மாத ஓய்வூதியம் (முதியோர்/விதவை/மற்றவை) ஏற்கெனவே பெறுபவர்கள் பொதுவாக இரண்டையும் ஒருசேர பெற முடியாது; உள்ளூர் அலுவலகத்தில் உறுதி செய்யவும்.",
+        "en": "People already receiving another monthly pension (old-age/widow/other) usually cannot draw two pensions together; confirm with the local welfare office."
+      }
+    }
+  ],
+  "requiredDocuments": [
+    {
+      "id": "disability-certificate",
+      "name": { "ta": "ஊனம் மருத்துவச் சான்றிதழ் / UDID அட்டை", "en": "Disability medical certificate / UDID card" },
+      "description": { "ta": "உங்கள் ஊனம் 40% அல்லது அதற்கு மேல் என்பதை உறுதிப்படுத்தும் ஆவணம்.", "en": "Proof that your certified disability is 40% or more." },
+      "howToGet": { "ta": "அரசு மருத்துவமனை மதிப்பீட்டு முகாம் அல்லது UDID இணையதளம் மூலம் பெறலாம்.", "en": "Obtain from a government hospital assessment camp or the UDID portal." }
+    },
+    {
+      "id": "age-residence-proof",
+      "name": { "ta": "வயது மற்றும் வசிப்பிடச் சான்று", "en": "Age and residence proof" },
+      "description": { "ta": "வோட்டர் அட்டை, பிறப்புச் சான்றிதழ் அல்லது பள்ளிச் சான்றிதழ் போன்றவை.", "en": "Voter ID, birth certificate, or school certificate." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆவணங்களில் ஒன்றைப் பயன்படுத்தவும்.", "en": "Use any one document you already have." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கி/அஞ்சலக கணக்கு புத்தகம்", "en": "Bank or post-office passbook" },
+      "description": { "ta": "ஓய்வூதியம் நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The pension is credited directly into this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "உங்கள் மாவட்ட ஊனமுற்றோர் நலத்துறை அலுவலகம் அல்லது அருகிலுள்ள e-Sevai மையத்தை அணுகவும்.", "en": "Visit your District Differently Abled Welfare Office or a nearby e-Sevai centre." } },
+    { "step": 2, "description": { "ta": "விண்ணப்பப் படிவத்தை, ஊனச் சான்றிதழுடன் மற்றும் வயது/வசிப்பிடச் சான்றுடன் சமர்ப்பிக்கவும்.", "en": "Submit the application form along with your disability certificate and age/residence proof." } },
+    { "step": 3, "description": { "ta": "சரிபார்ப்புக்குப் பின் ஓய்வூதியம் அனுமதிக்கப்பட்டு, மாதந்தோறும் வங்கிக் கணக்கில் வரவு செய்யப்படும்.", "en": "After verification, the pension is sanctioned and credited to your bank account every month." } }
+  ],
+  "officialLinks": [
+    { "url": "https://cra.tn.gov.in/eleg_schemes.php", "domain": "cra.tn.gov.in", "title": { "ta": "தகுதி விவரங்கள் - CRA தமிழ்நாடு", "en": "Eligibility criteria - CRA Tamil Nadu" } },
+    { "url": "https://tn.gov.in/rti/rti_tamil/proactive/wdap/handbook_wdap.pdf", "domain": "tn.gov.in", "title": { "ta": "ஊனமுற்றோர் நலத்துறை கையேடு", "en": "Differently Abled Welfare Department handbook" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் விண்ணப்பிக்கலாம்.", "en": "You can apply at any time during the year." }
+  },
+  "sources": [
+    { "url": "https://cra.tn.gov.in/eleg_schemes.php", "domain": "cra.tn.gov.in", "title": { "ta": "தகுதி விவரங்கள் - CRA தமிழ்நாடு", "en": "Eligibility criteria - CRA Tamil Nadu" } },
+    { "url": "https://myscheme.gov.in/schemes/ddaps", "domain": "myscheme.gov.in", "title": { "ta": "myScheme - ஊனமுற்றோர் ஓய்வூதியம் தமிழ்நாடு", "en": "myScheme - Differently Abled Pension Tamil Nadu" } },
+    { "url": "https://www.deccanherald.com/india/tamil-nadu-increases-monthly-pension-provided-to-differently-abled-to-rs-1500-1168130.html", "domain": "deccanherald.com", "title": { "ta": "ஓய்வூதிய உயர்வு பற்றிய செய்தி", "en": "News report on the pension increase" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (cra.tn.gov.in, tn.gov.in, myscheme.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

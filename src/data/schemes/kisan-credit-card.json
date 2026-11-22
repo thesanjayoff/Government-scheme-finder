@@ -1,0 +1,88 @@
+{
+  "id": "kisan-credit-card",
+  "name": {
+    "ta": "கிசான் கிரெடிட் கார்டு (KCC) திட்டம்",
+    "en": "Kisan Credit Card (KCC) Scheme"
+  },
+  "authority": {
+    "ta": "வேளாண்மை மற்றும் விவசாயிகள் நலத்துறை அமைச்சகம், இந்திய அரசு",
+    "en": "Ministry of Agriculture & Farmers Welfare, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["farmers"],
+  "benefitSummary": {
+    "ta": "விவசாயிகள், கால்நடை வளர்ப்பாளர்கள், மீனவர்களுக்கு எளிய நடைமுறையில் அடமானம் இல்லாமல் குறைந்த வட்டியில் (மானிய வட்டியுடன் ஆண்டு 7% வரை, ₹3 லட்சம் வரையிலான குறுகிய கால கடனுக்கு) வங்கிக் கார்டு வழியாக கடன் வழங்கப்படுகிறது.",
+    "en": "An easy, low-paperwork credit card for farmers, animal husbandry and fisheries workers, giving collateral-free crop/working-capital loans at a subsidised interest rate (around 7% per year on short-term loans up to ₹3 lakh, with government interest support)."
+  },
+  "description": {
+    "ta": "இது விவசாயிகளின் விதைகள், உரம், பண்ணை செலவுகளுக்கு உடனடியாகக் கடன் கிடைக்கச் செய்யும் திட்டம். வங்கிகள் மற்றும் கூட்டுறவு வங்கிகள் மூலம் வழங்கப்படுகிறது; குறுகிய கால பயிர்க் கடன்களுக்கு மத்திய அரசு வட்டி மானியம் அளிக்கிறது.",
+    "en": "A scheme that gives farmers quick access to credit for seeds, fertiliser, and farm expenses. It is issued through banks and cooperative banks; the central government provides interest subvention on short-term crop loans."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "eligible-occupation",
+      "condition": { "op": "in", "field": "occupation", "values": ["farmer", "agri-labourer", "fisherperson"] },
+      "explanation": {
+        "ta": "நீங்கள் விவசாயி, விவசாய தொழிலாளி அல்லது மீனவராக இருக்க வேண்டும்.",
+        "en": "You must be a farmer, agricultural labourer, or fisherperson."
+      }
+    },
+    {
+      "id": "has-bank-account",
+      "condition": { "op": "eq", "field": "bankAccountExists", "value": true },
+      "explanation": {
+        "ta": "கார்டு வழங்க வங்கியில் கணக்கு தேவை (கணக்கு எண் கேட்கப்படாது).",
+        "en": "A bank account is needed to issue the card (we never ask for your account number)."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "land-or-tenancy-proof",
+      "name": { "ta": "நில ஆவணம் அல்லது குத்தகைச் சான்று", "en": "Land record or tenancy proof" },
+      "description": { "ta": "பயிரிடும் நிலம் அல்லது மீன்பிடி/கால்நடை செயல்பாட்டை உறுதிப்படுத்தும் ஆவணம்.", "en": "Proof of the land you cultivate, or of your fishing/animal husbandry activity." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகம் / கிராம நிர்வாக அலுவலர் மூலம் பெறலாம்.", "en": "Available from the Taluk office or Village Administrative Officer." }
+    },
+    {
+      "id": "identity-proof",
+      "name": { "ta": "அடையாளச் சான்று (வோட்டர் அட்டை)", "en": "Identity proof (voter ID)" },
+      "description": { "ta": "வங்கி விண்ணப்பத்திற்கு தேவையான அடையாள ஆவணம்.", "en": "Identity document needed for the bank application." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள வோட்டர் அட்டையைப் பயன்படுத்தவும்.", "en": "Use your existing voter ID." }
+    },
+    {
+      "id": "aadhaar-card",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாளச் சான்றுக்காக வைத்துக்கொள்ள வேண்டிய ஆவணம்; இந்த ஆப் உங்கள் ஆதார் எண்ணை கேட்காது/சேமிக்காது.", "en": "Kept as an identity document; this app never asks for or stores your Aadhaar number." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையைப் பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "passport-photo",
+      "name": { "ta": "பாஸ்போர்ட் அளவு புகைப்படம்", "en": "Passport-size photograph" },
+      "description": { "ta": "விண்ணப்பப் படிவத்துடன் இணைக்க வேண்டும்.", "en": "To be attached with the application form." },
+      "howToGet": { "ta": "அருகிலுள்ள ஸ்டூடியோவில் எடுக்கலாம்.", "en": "Can be taken at any nearby photo studio." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "அருகிலுள்ள வங்கி கிளை (அரசு/தனியார்/கூட்டுறவு/கிராமப்புற வங்கி) அல்லது வங்கியின் இணையதளம் மூலம் அணுகவும்.", "en": "Approach your nearest bank branch (public/private/cooperative/regional rural bank) or apply via the bank's online portal." } },
+    { "step": 2, "description": { "ta": "நில/குத்தகை ஆவணங்கள் மற்றும் அடையாளச் சான்றுடன் KCC விண்ணப்பப் படிவத்தை சமர்ப்பிக்கவும்.", "en": "Submit the filled KCC application with land/tenancy and identity documents." } },
+    { "step": 3, "description": { "ta": "வங்கி மதிப்பீட்டுக்குப் பின் கடன் வரம்பு நிர்ணயிக்கப்பட்டு, பொதுவாக இரு வாரங்களுக்குள் கார்டு வழங்கப்படும்.", "en": "After the bank assesses your application, a credit limit is sanctioned and the card is usually issued within two weeks." } },
+    { "step": 4, "description": { "ta": "ஏடிஎம்/போஸ் மூலம் பண்ணை செலவுகளுக்கு பயன்படுத்தி, அறுவடைக்குப் பின் திருப்பிச் செலுத்தி மானிய வட்டியைத் தக்கவைக்கவும்.", "en": "Use the card at ATMs/POS for farm expenses, and repay after harvest to keep the subsidised interest rate." } }
+  ],
+  "officialLinks": [
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/mar/doc2026311819801.pdf", "domain": "pib.gov.in", "title": { "ta": "KCC திட்டம் குறித்த PIB அறிக்கை", "en": "PIB release on the KCC scheme" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் வங்கியில் விண்ணப்பிக்கலாம்.", "en": "You can apply at your bank at any time during the year." }
+  },
+  "sources": [
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/mar/doc2026311819801.pdf", "domain": "pib.gov.in", "title": { "ta": "KCC திட்டம் குறித்த PIB அறிக்கை", "en": "PIB release on the KCC scheme" } },
+    { "url": "https://www.drishtiias.com/daily-updates/daily-news-analysis/kisan-credit-card-scheme", "domain": "drishtiias.com", "title": { "ta": "KCC திட்டம் பற்றிய விளக்கம்", "en": "Explainer on the KCC scheme" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (pib.gov.in) and secondary explainer (drishtiias.com); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 4
+}

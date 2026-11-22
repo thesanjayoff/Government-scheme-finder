@@ -1,0 +1,88 @@
+{
+  "id": "pm-kisan",
+  "name": {
+    "ta": "பிஎம்-கிசான் (பிரதான் மந்திரி கிசான் சம்மான் நிதி)",
+    "en": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)"
+  },
+  "authority": {
+    "ta": "மத்திய வேளாண்மை மற்றும் விவசாயிகள் நலத்துறை அமைச்சகம்",
+    "en": "Ministry of Agriculture & Farmers Welfare, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["farmers"],
+  "benefitSummary": {
+    "ta": "நிலம் வைத்திருக்கும் விவசாயக் குடும்பங்களுக்கு ஆண்டுக்கு ₹6,000 (மூன்று தவணைகளாக) நேரடியாக வங்கிக் கணக்கில் வரவு.",
+    "en": "₹6,000 per year, paid in three instalments directly into the bank account of landholding farmer families."
+  },
+  "description": {
+    "ta": "இது ஒரு மத்திய அரசு திட்டம். தங்கள் பெயரில் பயிரிடத் தகுதியான நிலம் பதிவு செய்யப்பட்டுள்ள விவசாயக் குடும்பங்களுக்கு நேரடி பண உதவி வருடத்திற்கு மூன்று முறை வழங்கப்படுகிறது.",
+    "en": "A central scheme that gives direct income support to farmer families whose cultivable land is recorded in their name, paid three times a year."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "has-cultivable-land",
+      "condition": { "op": "gt", "field": "landOwnedAcres", "value": 0 },
+      "explanation": {
+        "ta": "உங்கள் பெயரில் பயிரிடத் தகுதியான நிலம் இருக்க வேண்டும்.",
+        "en": "You must have cultivable land recorded in your name."
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "govt-salaried-exclusion",
+      "condition": { "op": "eq", "field": "occupation", "value": "salaried-govt" },
+      "explanation": {
+        "ta": "அரசு ஊழியர்களில் சில பிரிவினர் (ஓய்வூதியம் ஒரு வரம்புக்கு மேல் பெறுபவர், அரசியலமைப்பு பதவியில் உள்ளோர் போன்றோர்) இதில் விலக்கு பெற்றுள்ளனர். உங்கள் விவரத்தை உள்ளூர் வேளாண் அலுவலகத்தில் உறுதி செய்யவும்.",
+        "en": "Certain categories of government employees and pensioners above a threshold are excluded. Confirm your specific case with the local agriculture office."
+      }
+    }
+  ],
+  "requiredDocuments": [
+    {
+      "id": "land-record",
+      "name": { "ta": "நில உரிமை ஆவணம் (பட்டா/சிட்டா)", "en": "Land ownership record (patta/chitta)" },
+      "description": {
+        "ta": "உங்கள் பெயரில் நிலம் பதிவு செய்யப்பட்டுள்ளதை உறுதிப்படுத்தும் ஆவணம்.",
+        "en": "Proof that cultivable land is recorded in your name."
+      },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகம் / கிராம நிர்வாக அலுவலர் மூலம் பெறலாம்.", "en": "Available from the Taluk office or Village Administrative Officer." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "நேரடி பண வரவுக்காக வங்கிக் கணக்கு விவரம் தேவை.", "en": "Needed so the benefit can be transferred directly to your account." },
+      "howToGet": { "ta": "உங்கள் வங்கியில் கணக்கு வைத்திருந்தால் கையில் உள்ள புத்தகத்தை பயன்படுத்தலாம்.", "en": "Use the passbook of any bank account you already hold." }
+    },
+    {
+      "id": "aadhaar-for-linking",
+      "name": { "ta": "ஆதார் இணைப்புக்கான சான்று", "en": "Aadhaar (for e-KYC linking only)" },
+      "description": {
+        "ta": "இந்த ஆப் உங்கள் ஆதார் எண்ணை கேட்காது/சேமிக்காது -- இது விண்ணப்பிக்கும் போது அரசு இணையதளத்தில் நீங்களே அளிக்க வேண்டிய ஆவணம்.",
+        "en": "This app never asks for or stores your Aadhaar number -- you provide it yourself on the official portal when you apply."
+      },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "pmkisan.gov.in இணையதளத்தில் 'New Farmer Registration' மூலம் விண்ணப்பிக்கவும் அல்லது அருகிலுள்ள பொது சேவை மையம் (CSC) / வேளாண் அலுவலரை அணுகவும்.", "en": "Apply via 'New Farmer Registration' on pmkisan.gov.in, or visit a nearby Common Service Centre (CSC) or your agriculture officer." } },
+    { "step": 2, "description": { "ta": "நில ஆவணங்கள் மற்றும் வங்கி விவரங்களை சமர்ப்பிக்கவும்.", "en": "Submit your land records and bank details." } },
+    { "step": 3, "description": { "ta": "ஆதார் இணைப்பு (e-KYC) செய்து விண்ணப்பத்தை முடிக்கவும்.", "en": "Complete Aadhaar e-KYC to finish the application." } }
+  ],
+  "officialLinks": [
+    { "url": "https://pmkisan.gov.in/", "domain": "pmkisan.gov.in", "title": { "ta": "பிஎம்-கிசான் அலுவல் இணையதளம்", "en": "PM-KISAN official portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் பதிவு செய்யலாம்; தவணைகள் வருடத்திற்கு 3 முறை வழங்கப்படும்.", "en": "Registration is open year-round; instalments are released three times a year." }
+  },
+  "sources": [
+    { "url": "https://pmkisan.gov.in/", "domain": "pmkisan.gov.in", "title": { "ta": "பிஎம்-கிசான் அலுவல் இணையதளம்", "en": "PM-KISAN official portal" } },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc2026620898101.pdf", "domain": "pib.gov.in", "title": { "ta": "PIB செய்தி வெளியீடு - 23வது தவணை", "en": "PIB release on the 23rd instalment" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (pmkisan.gov.in, PIB); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

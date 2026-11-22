@@ -1,0 +1,80 @@
+[
+  {
+    "id": "kisan-call-centre",
+    "name": { "ta": "கிசான் கால் சென்டர்", "en": "Kisan Call Centre" },
+    "type": "helpline",
+    "description": {
+      "ta": "விவசாயம் தொடர்பான கேள்விகளுக்கு விவசாயிகளுக்கான தேசிய உதவி எண். தமிழ்நாடு & பாண்டிச்சேரிக்காக தமிழ்நாடு வேளாண் பல்கலைக்கழக வளாகத்தில் இயங்குகிறது.",
+      "en": "National helpline for farmers' questions about agriculture and farm schemes. The Tamil Nadu & Puducherry centre operates from the Tamil Nadu Agricultural University campus."
+    },
+    "contact": "1800-180-1551",
+    "hours": { "ta": "காலை 6 - இரவு 10, வாரம் முழுவதும்", "en": "6:00 AM - 10:00 PM, all 7 days" },
+    "source": { "url": "https://mkisan.gov.in/Home/AboutKCC", "domain": "mkisan.gov.in" },
+    "lastVerified": "2026-11-22"
+  },
+  {
+    "id": "women-helpline-181",
+    "name": { "ta": "பெண்களுக்கான உதவி எண் 181", "en": "Women Helpline 181" },
+    "type": "helpline",
+    "description": {
+      "ta": "பெண்களுக்கு 24 மணி நேரமும் அவசர மற்றும் ஆலோசனை உதவி, காவல்துறை/மருத்துவமனை/சட்ட உதவியுடன் இணைப்பு.",
+      "en": "24x7 emergency and counselling support for women, linking to police, hospitals, and legal aid as needed."
+    },
+    "contact": "181",
+    "hours": { "ta": "24 மணி நேரமும்", "en": "24 hours" },
+    "source": { "url": "https://www.myscheme.gov.in/schemes/whl-181", "domain": "myscheme.gov.in" },
+    "lastVerified": "2026-11-22"
+  },
+  {
+    "id": "elderline-14567",
+    "name": { "ta": "முதியோர் உதவி எண் (Elderline) 14567", "en": "Elderline (senior citizens' helpline) 14567" },
+    "type": "helpline",
+    "description": {
+      "ta": "முதியோருக்கு தகவல், வழிகாட்டுதல் மற்றும் உணர்வுபூர்வ ஆதரவு வழங்கும் தேசிய உதவி எண்.",
+      "en": "National toll-free helpline giving senior citizens information, guidance, and emotional support."
+    },
+    "contact": "14567",
+    "hours": { "ta": "காலை 8 - இரவு 8", "en": "8:00 AM - 8:00 PM" },
+    "source": { "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1758880", "domain": "pib.gov.in" },
+    "lastVerified": "2026-11-22"
+  },
+  {
+    "id": "tn-esevai-portal",
+    "name": { "ta": "தமிழ்நாடு இ-சேவை மையம்", "en": "Tamil Nadu e-Sevai Centre" },
+    "type": "office-directory",
+    "description": {
+      "ta": "அரசு சான்றிதழ்கள் மற்றும் சேவைகளுக்கு விண்ணப்பிக்க அருகிலுள்ள இ-சேவை மையத்தைக் கண்டறியவும்.",
+      "en": "Find your nearest e-Sevai centre to apply for government certificates and services in person."
+    },
+    "contact": "1800-425-6000",
+    "hours": { "ta": "அலுவலக நேரம்", "en": "Office hours" },
+    "source": { "url": "https://tnesevai.tn.gov.in/Default.aspx", "domain": "tnesevai.tn.gov.in" },
+    "lastVerified": "2026-11-22"
+  },
+  {
+    "id": "csc-locator",
+    "name": { "ta": "பொது சேவை மையம் (CSC)", "en": "Common Service Centre (CSC) locator" },
+    "type": "office-directory",
+    "description": {
+      "ta": "நாடு முழுவதும் உள்ள பொது சேவை மையங்களைக் கண்டறிய அலுவல் இணையதளம்.",
+      "en": "Official portal to locate Common Service Centres across the country."
+    },
+    "contact": null,
+    "hours": null,
+    "source": { "url": "https://csc.gov.in/", "domain": "csc.gov.in" },
+    "lastVerified": "2026-11-22"
+  },
+  {
+    "id": "india-gov-helpline-directory",
+    "name": { "ta": "இந்திய அரசு உதவி எண் அடைவு", "en": "Government of India helpline directory" },
+    "type": "office-directory",
+    "description": {
+      "ta": "பல்வேறு துறைகளின் அலுவல் உதவி எண்களின் முழுமையான பட்டியல்.",
+      "en": "Official, comprehensive directory of helpline numbers across government departments."
+    },
+    "contact": null,
+    "hours": null,
+    "source": { "url": "https://india.gov.in/directory/helpline", "domain": "india.gov.in" },
+    "lastVerified": "2026-11-22"
+  }
+]

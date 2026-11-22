@@ -1,0 +1,100 @@
+{
+  "id": "tn-moovalur-marriage-assistance",
+  "name": {
+    "ta": "மூவலூர் ராமாமிர்தம் அம்மையார் நினைவு திருமண உதவித் திட்டம்",
+    "en": "Moovalur Ramamirtham Ammaiyar Ninaivu Marriage Assistance Scheme"
+  },
+  "authority": {
+    "ta": "சமூக நலன் மற்றும் மகளிர் அதிகாரமளிப்புத் துறை, தமிழ்நாடு அரசு",
+    "en": "Department of Social Welfare and Women Empowerment, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["women-family"],
+  "benefitSummary": {
+    "ta": "10ஆம் வகுப்பு தேர்ச்சி பெற்ற ஏழ்மையான பெண்களின் திருமணத்திற்கு ₹25,000 பணம் (ECS மூலம்) மற்றும் 8 கிராம் தங்க நாணயம்.",
+    "en": "₹25,000 cash (by ECS transfer) plus an 8-gram gold coin for the marriage of a poor girl who has passed Class 10."
+  },
+  "description": {
+    "ta": "இது தமிழ்நாடு சமூக நலத்துறை நடத்தும் திட்டம். குறைந்த வருமானம் உள்ள குடும்பங்களில், 10ஆம் வகுப்பு வரை படித்த பெண்களின் திருமணத்திற்கு நிதி உதவியும் தங்க நாணயமும் வழங்கப்படுகிறது. பட்டப்படிப்பு அல்லது டிப்ளமோ பெற்ற பெண்களுக்கு, இதே திட்டத்தின் இரண்டாம் பிரிவின் கீழ் அதிக தொகை (₹50,000) வழங்கப்படும். ஒரு குடும்பத்தில் ஒரு பெண் மகளுக்கு மட்டும் இந்த உதவி கிடைக்கும்.",
+    "en": "A Tamil Nadu Social Welfare Department scheme that gives cash assistance and a gold coin for the marriage of a girl from a low-income family who has passed Class 10. Graduates and diploma holders can get a higher amount (₹50,000) under the scheme's second tier. Only one daughter per family can benefit."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "resident-tn",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "விண்ணப்பிப்பவர் தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "The applicant must be a resident of Tamil Nadu." }
+    },
+    {
+      "id": "bride-gender",
+      "condition": { "op": "eq", "field": "gender", "value": "female" },
+      "explanation": { "ta": "இந்த உதவி பெண்களுக்கு மட்டும்.", "en": "This assistance is only for girls/women about to be married." }
+    },
+    {
+      "id": "bride-unmarried",
+      "condition": { "op": "eq", "field": "maritalStatus", "value": "unmarried" },
+      "explanation": { "ta": "விண்ணப்பிப்பவர் இன்னும் திருமணமாகாதவராக இருக்க வேண்டும் (திருமணத்திற்கு முன் விண்ணப்பிக்க வேண்டும்).", "en": "The applicant must not yet be married (you apply before the wedding)." }
+    },
+    {
+      "id": "income-cap",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 72000 },
+      "nearMissMargin": 8000,
+      "nearMissGuidance": {
+        "ta": "உங்கள் குடும்ப வருமானம் வரம்புக்கு சற்று அதிகமாக இருந்தாலும், சரியான வருமான சான்றிதழுடன் சமூக நல அலுவலகத்தில் விண்ணப்பிக்க முயற்சிக்கலாம்.",
+        "en": "If your household income is only slightly above the limit, you can still try applying with an accurate income certificate at the Social Welfare office."
+      },
+      "explanation": {
+        "ta": "குடும்ப ஆண்டு வருமானம் ₹72,000-க்கு மிகாமல் இருக்க வேண்டும்.",
+        "en": "Household annual income must not exceed ₹72,000."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "tenth-marksheet",
+      "name": { "ta": "10ஆம் வகுப்பு தேர்ச்சி சான்று", "en": "Class 10 pass certificate/marksheet" },
+      "description": { "ta": "மணமகள் 10ஆம் வகுப்பு தேர்ச்சி பெற்றதை உறுதிப்படுத்தும் ஆவணம் (பட்டியல் பழங்குடி மணமகளுக்கு 5ஆம் வகுப்பு போதும்).", "en": "Proof that the bride passed Class 10 (Class 5 is enough for a Scheduled Tribe bride)." },
+      "howToGet": { "ta": "பள்ளியில் இருந்து மார்க் அட்டை நகலைப் பெறலாம்.", "en": "Obtain a copy of the marksheet from your school." }
+    },
+    {
+      "id": "income-cert",
+      "name": { "ta": "குடும்ப வருமான சான்றிதழ்", "en": "Family income certificate" },
+      "description": { "ta": "குடும்ப ஆண்டு வருமானத்தை உறுதிப்படுத்தும் ஆவணம்.", "en": "Document confirming annual household income." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகம்/கிராம நிர்வாக அலுவலர் மூலம் பெறலாம்.", "en": "Available from the Taluk office or Village Administrative Officer." }
+    },
+    {
+      "id": "marriage-invitation",
+      "name": { "ta": "திருமண அழைப்பிதழ்/திருமண விவரம்", "en": "Marriage invitation card / marriage details" },
+      "description": { "ta": "வரவிருக்கும் திருமணத்தை உறுதிப்படுத்த.", "en": "To confirm the upcoming wedding date." },
+      "howToGet": { "ta": "அச்சிடப்பட்ட அழைப்பிதழ் அல்லது திருமண நிச்சயத்தாணையை பயன்படுத்தலாம்.", "en": "Use the printed invitation card or marriage fixation document." }
+    },
+    {
+      "id": "bank-passbook-marriage",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "பணம் ECS மூலம் இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The cash assistance is credited to this account by ECS." },
+      "howToGet": { "ta": "மணமகள் அல்லது பெற்றோர் பெயரில் உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use a passbook in the bride's name or her parent's name." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "உங்கள் மாவட்ட சமூக நல அலுவலர் (DSWO) அலுவலகத்தைச் சென்று விண்ணப்பப் படிவத்தைப் பெறவும்.", "en": "Visit your District Social Welfare Officer (DSWO) office and obtain the application form." } },
+    { "step": 2, "description": { "ta": "படிவத்தை பூர்த்தி செய்து, தேவையான ஆவணங்களுடன் திருமணத் தேதிக்கு நன்கு முன்பே சமர்ப்பிக்கவும்.", "en": "Fill the form and submit it with the required documents well before the wedding date." } },
+    { "step": 3, "description": { "ta": "சமூக நலத்துறை அதிகாரிகள் ஆவணங்களை சரிபார்ப்பார்கள்.", "en": "Social Welfare Department officials verify the documents." } },
+    { "step": 4, "description": { "ta": "ஒப்புதல் கிடைத்தபின், பணம் ECS மூலம் வரவு செய்யப்பட்டு தங்க நாணயம் வழங்கப்படும்.", "en": "On approval, the cash is credited by ECS and the gold coin is handed over." } }
+  ],
+  "officialLinks": [
+    { "url": "https://tnsocialwelfare.tn.gov.in/en/specilisationswomen-welfare/marriage-assistance-schemes", "domain": "tnsocialwelfare.tn.gov.in", "title": { "ta": "திருமண உதவித் திட்டங்கள் - தமிழ்நாடு சமூக நலத்துறை", "en": "Marriage Assistance Schemes - Tamil Nadu Social Welfare Department" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் விண்ணப்பிக்கலாம்; திருமணத் தேதிக்கு முன்பே விண்ணப்பிப்பது நல்லது.", "en": "You can apply any time during the year; it is best to apply well before the wedding date." }
+  },
+  "sources": [
+    { "url": "https://tnsocialwelfare.tn.gov.in/en/specilisationswomen-welfare/marriage-assistance-schemes", "domain": "tnsocialwelfare.tn.gov.in", "title": { "ta": "திருமண உதவித் திட்டங்கள் - தமிழ்நாடு சமூக நலத்துறை", "en": "Marriage Assistance Schemes - Tamil Nadu Social Welfare Department" } },
+    { "url": "https://www.citizennest.com/scheme/moovalur-ramamirtham-ammaiyar-ninaivu-marriage-assistance-apply-online-tamil-nadu", "domain": "citizennest.com", "title": { "ta": "விண்ணப்ப வழிமுறை - CitizenNest", "en": "Application process guide - CitizenNest" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (tnsocialwelfare.tn.gov.in, and citizennest.com secondary guide); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

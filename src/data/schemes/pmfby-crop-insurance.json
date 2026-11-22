@@ -1,0 +1,81 @@
+{
+  "id": "pmfby-crop-insurance",
+  "name": {
+    "ta": "பிரதான் மந்திரி பசல் பீமா யோஜனா (PMFBY) - பயிர் காப்பீட்டுத் திட்டம்",
+    "en": "Pradhan Mantri Fasal Bima Yojana (PMFBY) - Crop Insurance Scheme"
+  },
+  "authority": {
+    "ta": "வேளாண்மை மற்றும் விவசாயிகள் நலத்துறை அமைச்சகம், இந்திய அரசு",
+    "en": "Ministry of Agriculture & Farmers Welfare, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["farmers"],
+  "benefitSummary": {
+    "ta": "இயற்கைப் பேரிடர், பூச்சி தாக்குதல் அல்லது நோயால் பயிர் சேதமானால், மிகக் குறைந்த பிரீமியத்தில் (காரீஃப் பயிர்களுக்கு 2%, ரபி உணவுப் பயிர்களுக்கு 1.5%, வணிகப்/தோட்டப் பயிர்களுக்கு 5%) காப்பீட்டுத் தொகை கிடைக்கும்.",
+    "en": "If your crop is damaged by natural calamities, pests, or disease, you receive an insurance payout for a very low premium (2% for Kharif crops, 1.5% for Rabi food crops, 5% for commercial/horticultural crops)."
+  },
+  "description": {
+    "ta": "இது மத்திய அரசின் பயிர் காப்பீட்டுத் திட்டம். நிலம் வைத்திருக்கும் மற்றும் குத்தகை/பங்கு விவசாயிகள் உள்ளிட்ட அறிவிக்கப்பட்ட பயிர்களை பயிரிடும் விவசாயிகள் பங்கேற்கலாம். வங்கிக் கடன் பெறும் விவசாயிகளுக்கு இது தானாக இணைக்கப்படும்; மற்றவர்கள் தாமாகவே விண்ணப்பிக்கலாம்.",
+    "en": "A central crop insurance scheme. Farmers growing notified crops, including tenant farmers and sharecroppers, can take part. It is automatically linked for farmers taking a crop loan; others can enrol voluntarily."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "is-farmer",
+      "condition": { "op": "eq", "field": "occupation", "value": "farmer" },
+      "explanation": {
+        "ta": "நீங்கள் அறிவிக்கப்பட்ட பயிர்களை பயிரிடும் விவசாயியாக இருக்க வேண்டும் (நிலம் வைத்திருப்பவர் அல்லது குத்தகை/பங்கு விவசாயி).",
+        "en": "You must be a farmer growing a notified crop (landowner, tenant, or sharecropper)."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "land-or-tenancy-record",
+      "name": { "ta": "நில ஆவணம் அல்லது குத்தகை ஒப்பந்தம்", "en": "Land record or tenancy agreement" },
+      "description": { "ta": "நீங்கள் பயிரிடும் நிலத்தை உறுதிப்படுத்தும் ஆவணம்.", "en": "Proof of the land you are cultivating." },
+      "howToGet": { "ta": "வட்டாட்சியர் அலுவலகம் / கிராம நிர்வாக அலுவலர் மூலம் பெறலாம்.", "en": "Available from the Taluk office or Village Administrative Officer." }
+    },
+    {
+      "id": "sowing-certificate",
+      "name": { "ta": "பயிர் விதைத்த சான்றிதழ்", "en": "Sowing certificate" },
+      "description": { "ta": "எந்தப் பயிரை எவ்வளவு பரப்பில் பயிரிட்டீர்கள் என்பதை உறுதிப்படுத்தும் ஆவணம்.", "en": "Confirms which crop you sowed and on how much area." },
+      "howToGet": { "ta": "கிராம நிர்வாக அலுவலர் / வேளாண் அலுவலரிடம் பெறலாம்.", "en": "Available from the Village Administrative Officer or agriculture officer." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "காப்பீட்டுத் தொகை இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "Any claim payout is credited into this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    },
+    {
+      "id": "aadhaar-card",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாளச் சான்றுக்காக வைத்துக்கொள்ள வேண்டிய ஆவணம்; இந்த ஆப் உங்கள் ஆதார் எண்ணை கேட்காது/சேமிக்காது.", "en": "Kept as an identity document; this app never asks for or stores your Aadhaar number." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையைப் பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "வங்கிக் கடன் வைத்திருப்பவர்களுக்கு தானாக இணைப்பு நடக்கும்; மற்றவர்கள் அருகிலுள்ள வங்கி, பொது சேவை மையம் (CSC) அல்லது pmfby.gov.in இணையதளம் மூலம் விண்ணப்பிக்கலாம்.", "en": "Loanee farmers are enrolled automatically; others can apply through a nearby bank, Common Service Centre (CSC), or pmfby.gov.in." } },
+    { "step": 2, "description": { "ta": "பருவத்திற்கான கடைசி நாளுக்கு முன் பயிர் மற்றும் பரப்பு விவரங்களுடன் படிவத்தை நிரப்பவும்.", "en": "Fill the proposal form with crop and area details before the cut-off date for that season." } },
+    { "step": 3, "description": { "ta": "விவசாயியின் பங்கு பிரீமியத்தை செலுத்தவும்.", "en": "Pay the farmer's share of the premium." } },
+    { "step": 4, "description": { "ta": "பயிர் சேதம் ஏற்பட்டால், 72 மணி நேரத்திற்குள் போர்ட்டல்/உதவி எண் (14447)/வங்கி மூலம் தெரிவிக்கவும்.", "en": "If your crop is damaged, report it within 72 hours through the portal, helpline (14447), or your bank." } }
+  ],
+  "officialLinks": [
+    { "url": "https://pmfby.gov.in/", "domain": "pmfby.gov.in", "title": { "ta": "PMFBY அலுவல் இணையதளம்", "en": "PMFBY official portal" } }
+  ],
+  "deadline": {
+    "type": "annual-cycle",
+    "description": { "ta": "ஒவ்வொரு பருவத்திற்கும் (காரீஃப்/ரபி) தனி கடைசி நாள் உள்ளது; மாநிலம்/மாவட்டத்தைப் பொறுத்து மாறும்.", "en": "Each season (Kharif/Rabi) has its own cut-off date, which varies by state and district." },
+    "cycleNote": { "ta": "ஆண்டுக்கு இரு பருவங்கள் -- காரீஃப் மற்றும் ரபி.", "en": "Twice a year -- Kharif and Rabi seasons." }
+  },
+  "sources": [
+    { "url": "https://pmfby.gov.in/", "domain": "pmfby.gov.in", "title": { "ta": "PMFBY அலுவல் இணையதளம்", "en": "PMFBY official portal" } },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/aug/doc_9735_20260829_18493301.pdf", "domain": "pib.gov.in", "title": { "ta": "PMFBY குறித்த PIB அறிக்கை", "en": "PIB release on PMFBY" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (pmfby.gov.in, pib.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "low",
+  "benefitValue": 4
+}

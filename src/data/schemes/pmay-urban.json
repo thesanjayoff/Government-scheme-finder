@@ -1,0 +1,97 @@
+{
+  "id": "pmay-urban",
+  "name": {
+    "ta": "பிரதான் மந்திரி ஆவாஸ் யோஜனா - நகர்ப்புறம் 2.0 (PMAY-U 2.0)",
+    "en": "Pradhan Mantri Awas Yojana - Urban 2.0 (PMAY-U 2.0)"
+  },
+  "authority": {
+    "ta": "வீட்டுவசதி மற்றும் நகர்ப்புற விவகாரங்கள் அமைச்சகம், இந்திய அரசு",
+    "en": "Ministry of Housing and Urban Affairs, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["housing"],
+  "benefitSummary": {
+    "ta": "நகர்ப்புறத்தில் சொந்த உறுதியான வீடு இல்லாத ஏழை, குறைந்த மற்றும் நடுத்தர வருமானக் குடும்பங்களுக்கு வீடு கட்ட/வாங்க நிதியுதவி அல்லது வட்டி மானியம்.",
+    "en": "Financial assistance or interest subsidy to build or buy a house for low- and middle-income urban families who do not already own a pucca house."
+  },
+  "description": {
+    "ta": "இது மத்திய அரசின் 'அனைவருக்கும் வீடு' நகர்ப்புறத் திட்டம். EWS (ஆண்டு வருமானம் ₹3 லட்சம் வரை), LIG (₹3-6 லட்சம்), MIG (₹6-9 லட்சம்) என மூன்று வருமானப் பிரிவுகளில் உள்ள குடும்பங்கள் விண்ணப்பிக்கலாம். இது நகராட்சி/நகர உள்ளாட்சி அமைப்பு மூலம் செயல்படுத்தப்படுகிறது.",
+    "en": "A central 'Housing for All' urban scheme. Families in three income bands can apply: EWS (annual income up to ₹3 lakh), LIG (₹3-6 lakh), and MIG (₹6-9 lakh). It is implemented through urban local bodies."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "urban-household",
+      "condition": { "op": "eq", "field": "areaType", "value": "urban" },
+      "explanation": { "ta": "நீங்கள் நகர்ப்புறத்தில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must live in an urban area." }
+    },
+    {
+      "id": "no-pucca-house",
+      "condition": { "op": "in", "field": "houseOwnership", "values": ["own-kutcha", "rented", "homeless"] },
+      "explanation": {
+        "ta": "உங்கள் குடும்பத்தில் யாருக்கும் நாட்டில் எங்கும் உறுதியான வீடு இருக்கக்கூடாது.",
+        "en": "No member of your household should own a pucca house anywhere in the country."
+      }
+    },
+    {
+      "id": "income-ceiling",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 900000 },
+      "nearMissMargin": 50000,
+      "nearMissGuidance": {
+        "ta": "வருமானம் இதைவிட சற்று அதிகமாக இருந்தால், உங்கள் நகராட்சி அலுவலகத்தில் தற்போதைய வருமான வரம்புகளை உறுதி செய்து கொள்ளவும்.",
+        "en": "If your income is a little above this limit, confirm the current income bands with your urban local body office."
+      },
+      "explanation": {
+        "ta": "குடும்ப ஆண்டு வருமானம் ₹9 லட்சத்திற்குள் இருக்க வேண்டும் (EWS/LIG/MIG பிரிவுகள்).",
+        "en": "Household annual income must be within ₹9 lakh (covers the EWS, LIG and MIG bands)."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "aadhaar-card",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாளச் சான்றுக்காக வைத்துக்கொள்ள வேண்டிய ஆவணம்; இந்த ஆப் உங்கள் ஆதார் எண்ணை கேட்காது/சேமிக்காது.", "en": "Kept as an identity document; this app never asks for or stores your Aadhaar number." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையைப் பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "income-certificate",
+      "name": { "ta": "குடும்ப வருமானச் சான்றிதழ்", "en": "Household income certificate" },
+      "description": { "ta": "EWS/LIG/MIG பிரிவை நிர்ணயிக்க தேவை.", "en": "Needed to confirm your EWS/LIG/MIG income band." },
+      "howToGet": { "ta": "வருவாய்த் துறை அலுவலகத்தில் பெறலாம்.", "en": "Available from the Revenue Department office." }
+    },
+    {
+      "id": "no-pucca-declaration",
+      "name": { "ta": "வீடு இல்லை என்ற சுய அறிக்கை", "en": "Self-declaration of not owning a pucca house" },
+      "description": { "ta": "குடும்பத்தில் யாருக்கும் உறுதியான வீடு இல்லை என உறுதிப்படுத்தும் படிவம்.", "en": "A form declaring that no household member owns a pucca house." },
+      "howToGet": { "ta": "நகராட்சி அலுவலகத்தில் படிவத்தைப் பெறலாம்.", "en": "Available from your urban local body office." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "நிதியுதவி/வட்டி மானியம் இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The assistance/interest subsidy is credited into this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "pmaymis.gov.in இணையதளம் அல்லது உங்கள் நகராட்சி/நகர உள்ளாட்சி அலுவலகத்தை அணுகவும்.", "en": "Visit the pmaymis.gov.in portal or your urban local body office." } },
+    { "step": 2, "description": { "ta": "உங்களுக்குப் பொருந்தும் உட்கூறை (BLC/AHP/ISS/CLSS) தேர்ந்தெடுத்து, தேவையான ஆவணங்களுடன் விண்ணப்பிக்கவும்.", "en": "Select the applicable component (BLC/AHP/ISS/CLSS) and apply with the required documents." } },
+    { "step": 3, "description": { "ta": "ஒப்புதலுக்குப் பின், நிதியுதவி அல்லது வட்டி மானியம் நிலைகளில் வரவு செய்யப்படும்.", "en": "After approval, the assistance or interest subsidy is released in stages." } }
+  ],
+  "officialLinks": [
+    { "url": "https://pmaymis.gov.in/", "domain": "pmaymis.gov.in", "title": { "ta": "PMAY-நகர்ப்புறம் அலுவல் இணையதளம்", "en": "PMAY-Urban official portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் விண்ணப்பிக்கலாம்; தேர்வு நகராட்சி அளவில் நடைபெறும்.", "en": "You can apply any time during the year; selection happens at the urban local body level." }
+  },
+  "sources": [
+    { "url": "https://pmaymis.gov.in/", "domain": "pmaymis.gov.in", "title": { "ta": "PMAY-நகர்ப்புறம் அலுவல் இணையதளம்", "en": "PMAY-Urban official portal" } },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/aug/doc2024810372701.pdf", "domain": "pib.gov.in", "title": { "ta": "PMAY-நகர்ப்புறம் 2.0 அறிவிப்பு - PIB", "en": "PMAY-Urban 2.0 launch release - PIB" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (pmaymis.gov.in, pib.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "high",
+  "benefitValue": 5
+}

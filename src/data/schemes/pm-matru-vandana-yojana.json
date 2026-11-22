@@ -1,0 +1,93 @@
+{
+  "id": "pm-matru-vandana-yojana",
+  "name": {
+    "ta": "பிரதான் மந்திரி மாத்ரு வந்தனா யோஜனா (PMMVY)",
+    "en": "Pradhan Mantri Matru Vandana Yojana (PMMVY)"
+  },
+  "authority": {
+    "ta": "மகளிர் மற்றும் குழந்தைகள் மேம்பாட்டு அமைச்சகம், இந்திய அரசு",
+    "en": "Ministry of Women and Child Development, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["women-family"],
+  "benefitSummary": {
+    "ta": "முதல் குழந்தை பிறப்புக்கு ₹5,000 (மூன்று தவணைகளாக); இரண்டாவது குழந்தை பெண் குழந்தையாக இருந்தால் கூடுதலாக ₹6,000.",
+    "en": "₹5,000 (in three instalments) for the first living child; an additional ₹6,000 if the second child is a girl."
+  },
+  "description": {
+    "ta": "கர்ப்பிணிப் பெண்கள் மற்றும் பாலூட்டும் தாய்மார்களுக்கு, குழந்தையின் பிறப்புக்கு முன்னும் பின்னும் ஏற்படும் வருமான இழப்பை ஈடுசெய்ய நேரடி பண உதவி வங்கிக் கணக்கில் வரவு செய்யப்படுகிறது. அங்கன்வாடி மையத்தில் பதிவு செய்து படிப்படியாக உதவி பெறலாம்.",
+    "en": "A central scheme that gives pregnant women and lactating mothers direct cash support to partly make up for the income and wage loss around childbirth. Register at your nearest Anganwadi Centre and receive the assistance in stages."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "applicant-gender",
+      "condition": { "op": "eq", "field": "gender", "value": "female" },
+      "explanation": {
+        "ta": "இந்த உதவி கர்ப்பிணிப் பெண்கள்/பாலூட்டும் தாய்மார்களுக்கு மட்டும். (குழந்தை கருவுற்றிருக்க வேண்டும் அல்லது அண்மையில் பிறந்திருக்க வேண்டும் -- இதை இந்த ஆப் தனியாக கேட்காது; உறுதி செய்ய அங்கன்வாடி மையத்தை அணுகவும்.)",
+        "en": "This benefit is only for pregnant women / lactating mothers. (You must currently be pregnant or have recently given birth -- this app does not separately ask that; confirm with your Anganwadi Centre.)"
+      }
+    },
+    {
+      "id": "minimum-age",
+      "condition": { "op": "gte", "field": "age", "value": 19 },
+      "nearMissMargin": 1,
+      "nearMissGuidance": {
+        "ta": "19 வயது நிரம்பியவுடன் இந்த உதவிக்கு விண்ணப்பிக்கலாம்.",
+        "en": "You can apply for this benefit once you turn 19."
+      },
+      "explanation": { "ta": "விண்ணப்பிப்பவரின் வயது குறைந்தது 19 ஆக இருக்க வேண்டும்.", "en": "The applicant must be at least 19 years old." }
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "govt-employee-exclusion",
+      "condition": { "op": "eq", "field": "occupation", "value": "salaried-govt" },
+      "explanation": {
+        "ta": "மத்திய/மாநில அரசு ஊழியர்கள் அல்லது பொது நிறுவன ஊழியர்கள், வேறு ஏதேனும் மகப்பேறு உதவியை ஏற்கெனவே பெறுபவர்கள், பொதுவாக இத்திட்டத்திற்கு தகுதி பெறமாட்டார்கள். உங்கள் விவரத்தை அங்கன்வாடி மையத்தில் உறுதி செய்யவும்.",
+        "en": "Central/state government employees or public-sector employees who already receive a similar maternity benefit are generally not eligible. Confirm your specific case at your Anganwadi Centre."
+      }
+    }
+  ],
+  "requiredDocuments": [
+    {
+      "id": "mcp-card",
+      "name": { "ta": "தாய்-குழந்தை பாதுகாப்பு அட்டை (MCP Card)", "en": "Mother and Child Protection (MCP) Card" },
+      "description": { "ta": "கர்ப்பகாலப் பதிவுக்கும் பின்தொடர்தலுக்கும் பயன்படும் அட்டை.", "en": "Used to register and track the pregnancy." },
+      "howToGet": { "ta": "அருகிலுள்ள அங்கன்வாடி மையம்/அரசு மருத்துவமனையில் பெறலாம்.", "en": "Available from your nearest Anganwadi Centre or government hospital." }
+    },
+    {
+      "id": "aadhaar-mother",
+      "name": { "ta": "ஆதார் அட்டை (அடையாளச் சான்றுக்காக மட்டும்)", "en": "Aadhaar card (for identity verification only)" },
+      "description": { "ta": "இந்த ஆப் உங்கள் ஆதார் எண்ணைக் கேட்காது/சேமிக்காது -- இது விண்ணப்பிக்கும் போது நீங்களே அளிக்க வேண்டிய ஆவணம்.", "en": "This app never asks for or stores your Aadhaar number -- you provide it yourself when applying." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "bank-passbook-pmmvy",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "உதவித்தொகை நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The benefit is credited directly to this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "கர்ப்பம் உறுதியானவுடன், விரைவில் அருகிலுள்ள அங்கன்வாடி மையம்/அங்கன்வாடி தொழிலாளரிடம் பதிவு செய்யவும்.", "en": "As soon as pregnancy is confirmed, register early at your nearest Anganwadi Centre or with the Anganwadi worker." } },
+    { "step": 2, "description": { "ta": "முதல் தவணைக்கான படிவத்தை (1A) பதிவு செய்து, கர்ப்பகால பரிசோதனை முடிந்ததும் இரண்டாவது படிவத்தை (1B) சமர்ப்பிக்கவும்.", "en": "Submit the first-instalment form (1A) at registration, and the second form (1B) after your antenatal check-up." } },
+    { "step": 3, "description": { "ta": "குழந்தை பிறந்து, பிறப்புப் பதிவு மற்றும் தடுப்பூசி முடிந்ததும் மூன்றாவது படிவத்தை (1C) சமர்ப்பித்து இறுதித் தவணையைப் பெறவும்.", "en": "After birth registration and the child's first vaccination round, submit the third form (1C) to receive the final instalment." } }
+  ],
+  "officialLinks": [
+    { "url": "https://pmmvy.wcd.gov.in/", "domain": "pmmvy.wcd.gov.in", "title": { "ta": "PMMVY அலுவல் இணையதளம்", "en": "PMMVY official portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "கர்ப்பம் உறுதியானவுடன் விரைவில் பதிவு செய்யவும்; ஒவ்வொரு தவணைக்கும் குறிப்பிட்ட காலக்கெடு உள்ளது, எனவே தாமதிக்காமல் விண்ணப்பிக்கவும்.", "en": "Register as soon as pregnancy is confirmed; each instalment has its own time window, so do not delay." }
+  },
+  "sources": [
+    { "url": "https://pmmvy.wcd.gov.in/", "domain": "pmmvy.wcd.gov.in", "title": { "ta": "PMMVY அலுவல் இணையதளம்", "en": "PMMVY official portal" } },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2022/jan/doc20221195901.pdf", "domain": "pib.gov.in", "title": { "ta": "PIB செய்தி குறிப்பு - PMMVY", "en": "PIB press note on PMMVY" } },
+    { "url": "https://wcd.nic.in/sites/default/files/FINAL%20PMMVY%20%28FAQ%29%20BOOKELT_0.pdf", "domain": "wcd.nic.in", "title": { "ta": "PMMVY FAQ கையேடு - மகளிர் குழந்தைகள் மேம்பாட்டு அமைச்சகம்", "en": "PMMVY FAQ booklet - Ministry of Women and Child Development" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (pmmvy.wcd.gov.in, pib.gov.in, wcd.nic.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 2
+}

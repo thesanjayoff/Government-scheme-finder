@@ -1,0 +1,95 @@
+{
+  "id": "tn-muthulakshmi-reddy-maternity-benefit",
+  "name": {
+    "ta": "டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு உதவித் திட்டம்",
+    "en": "Dr. Muthulakshmi Reddy Maternity Benefit Scheme"
+  },
+  "authority": {
+    "ta": "பொது சுகாதாரம் மற்றும் குடும்ப நலத்துறை, தமிழ்நாடு அரசு",
+    "en": "Department of Public Health and Preventive Medicine, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["women-family"],
+  "benefitSummary": {
+    "ta": "கர்ப்பகாலம் மற்றும் குழந்தை பிறப்புக் காலத்தில், மொத்தம் தோராயமாக ₹18,000 மதிப்புள்ள பணம் மற்றும் சத்துணவு பொட்டலங்கள் (PICME வழியாக).",
+    "en": "Cash instalments plus nutrition kits worth a combined total of about ₹18,000, paid during pregnancy and after childbirth, through the PICME portal."
+  },
+  "description": {
+    "ta": "இது தமிழ்நாடு அரசின் ஒரு பழமையான மகப்பேறு உதவித் திட்டம். கர்ப்பிணிப் பெண்களுக்கு நிறைமாத நேரத்திலும், குழந்தை பிறந்த பின்பும், பணமும் சத்துணவுப் பொட்டலங்களும் படிப்படியாக வழங்கப்படுகின்றன. இது மத்திய அரசின் PMMVY திட்டத்துடன் இணைக்கப்பட்டு PICME போர்ட்டல் மூலம் நிர்வகிக்கப்படுகிறது. கச்சிதமான தவணை வரிசை மற்றும் தொகை பிரிவு ஆண்டுக்கு ஆண்டு மாறக்கூடும்; துல்லியமான விவரத்திற்கு உங்கள் அருகிலுள்ள PHC/அங்கன்வாடி மையத்தைத் தொடர்பு கொள்ளவும்.",
+    "en": "A long-running Tamil Nadu maternity benefit scheme that pays pregnant women cash and nutrition kits in stages -- during pregnancy and after delivery. It is now run jointly with the central PMMVY scheme through the PICME portal. The exact instalment schedule and cash/kit split can change from year to year, so check with your nearest Primary Health Centre or Anganwadi for current figures."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "pregnant-gender",
+      "condition": { "op": "eq", "field": "gender", "value": "female" },
+      "explanation": {
+        "ta": "இந்த உதவி கர்ப்பிணிப் பெண்களுக்கு மட்டும். (நீங்கள் தற்போது கர்ப்பமாக இருக்க வேண்டும் -- இதை இந்த ஆப் தனியாக கேட்காது; அருகிலுள்ள PHC/அங்கன்வாடி மையத்தில் பதிவு செய்யவும்.)",
+        "en": "This benefit is only for pregnant women. (You must currently be pregnant -- this app does not separately ask that; register at your nearest PHC/Anganwadi.)"
+      }
+    },
+    {
+      "id": "min-age-mrmbs",
+      "condition": { "op": "gte", "field": "age", "value": 19 },
+      "nearMissMargin": 1,
+      "nearMissGuidance": { "ta": "19 வயது நிரம்பியவுடன் இந்த உதவிக்கு பதிவு செய்யலாம்.", "en": "You can register for this benefit once you turn 19." },
+      "explanation": { "ta": "விண்ணப்பிப்பவரின் வயது குறைந்தது 19 ஆக இருக்க வேண்டும்.", "en": "The applicant must be at least 19 years old." }
+    },
+    {
+      "id": "resident-tn-mrmbs",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "govt-employee-exclusion-mrmbs",
+      "condition": { "op": "eq", "field": "occupation", "value": "salaried-govt" },
+      "explanation": {
+        "ta": "அரசு/அரசு நிறுவன ஊழியர்கள், வேறு மகப்பேறு விடுப்பு/உதவி பெறுபவர்களாக இருப்பின், பொதுவாக இத்திட்டத்திற்கு தகுதி பெறமாட்டார்கள். உங்கள் விவரத்தை PHC/அங்கன்வாடி மையத்தில் உறுதி செய்யவும்.",
+        "en": "Government or public-sector employees who already get maternity leave/benefit through their employer are generally not eligible. Confirm your specific case at your PHC/Anganwadi Centre."
+      }
+    }
+  ],
+  "requiredDocuments": [
+    {
+      "id": "picme-registration",
+      "name": { "ta": "PICME பதிவு விவரம் (Mother RCH ID)", "en": "PICME registration details (Mother RCH ID)" },
+      "description": { "ta": "கர்ப்பகாலப் பதிவு எண், இது மூலமே பலன்கள் கண்காணிக்கப்படும்.", "en": "Your pregnancy registration number, used to track all benefits." },
+      "howToGet": { "ta": "அருகிலுள்ள PHC/அங்கன்வாடி மையத்தில் பதிவு செய்தவுடன் பெறலாம்.", "en": "Issued when you register at your nearest PHC or Anganwadi Centre." }
+    },
+    {
+      "id": "aadhaar-mrmbs",
+      "name": { "ta": "ஆதார் அட்டை (அடையாளச் சான்றுக்காக மட்டும்)", "en": "Aadhaar card (for identity verification only)" },
+      "description": { "ta": "இந்த ஆப் உங்கள் ஆதார் எண்ணைக் கேட்காது/சேமிக்காது.", "en": "This app never asks for or stores your Aadhaar number." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையைப் பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "bank-passbook-mrmbs",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "பணத் தவணைகள் நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The cash instalments are credited directly into this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "கர்ப்பம் உறுதியானவுடன், அருகிலுள்ள PHC/அங்கன்வாடி மையத்தில் PICME போர்ட்டலில் பதிவு செய்யவும்.", "en": "As soon as pregnancy is confirmed, register on the PICME portal at your nearest PHC or Anganwadi Centre." } },
+    { "step": 2, "description": { "ta": "ஒவ்வொரு கர்ப்பகால பரிசோதனைக்கும் முறையாக சென்று, தேவையான விவரங்களை புதுப்பிக்கவும்.", "en": "Attend each scheduled antenatal check-up and keep your details updated." } },
+    { "step": 3, "description": { "ta": "குழந்தை பிறந்து பதிவு செய்தபின், எஞ்சிய தவணைகளையும் சத்துணவுப் பொட்டலங்களையும் பெறவும்.", "en": "After the child's birth is registered, receive the remaining instalments and nutrition kits." } }
+  ],
+  "officialLinks": [
+    { "url": "https://picme.tn.gov.in/picme_public", "domain": "picme.tn.gov.in", "title": { "ta": "PICME பொது போர்ட்டல்", "en": "PICME public portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "கர்ப்பம் உறுதியானவுடன் விரைவில் பதிவு செய்யவும்.", "en": "Register as early as possible once pregnancy is confirmed." }
+  },
+  "sources": [
+    { "url": "https://picme.tn.gov.in/picme_public", "domain": "picme.tn.gov.in", "title": { "ta": "PICME பொது போர்ட்டல்", "en": "PICME public portal" } },
+    { "url": "https://krishnagiri.nic.in/?p=24734", "domain": "krishnagiri.nic.in", "title": { "ta": "டாக்டர் முத்துலட்சுமி மகப்பேறு உதவித் திட்டம் - கிருஷ்ணகிரி மாவட்டம்", "en": "Dr. Muthulakshmi Maternity Benefit Scheme - Krishnagiri district portal" } },
+    { "url": "https://www.dtnext.in/amp/story/news/chennai/ma-subramanian-launches-integrated-maternity-benefit-scheme-746794", "domain": "dtnext.in", "title": { "ta": "ஒருங்கிணைந்த மகப்பேறு உதவித் திட்டம் தொடக்கம் - DT Next", "en": "Integrated maternity benefit scheme launch - DT Next" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (picme.tn.gov.in, krishnagiri.nic.in district portal; dtnext.in secondary news report); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 2
+}

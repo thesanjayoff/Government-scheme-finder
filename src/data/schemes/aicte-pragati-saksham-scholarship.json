@@ -1,0 +1,94 @@
+{
+  "id": "aicte-pragati-saksham-scholarship",
+  "name": {
+    "ta": "தொழில்நுட்பக் கல்விக்கான AICTE பிரகதி & சக்ஷம் உதவித்தொகை",
+    "en": "AICTE Pragati & Saksham Scholarship for Technical Education"
+  },
+  "authority": {
+    "ta": "அகில இந்திய தொழில்நுட்பக் கல்வி கவுன்சில் (AICTE), கல்வி அமைச்சகம், இந்திய அரசு",
+    "en": "All India Council for Technical Education (AICTE), Ministry of Education, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["education"],
+  "benefitSummary": {
+    "ta": "AICTE அங்கீகரிக்கப்பட்ட நிறுவனத்தில் தொழில்நுட்ப டிப்ளமோ/பட்டப்படிப்பு படிக்கும் பெண் மாணவிகளுக்கு (பிரகதி) அல்லது குறைந்தது 40% ஊனம் உள்ள மாணவர்களுக்கு (சக்ஷம்) ஆண்டுக்கு ₹50,000.",
+    "en": "₹50,000 per year for girl students (Pragati) or students with at least 40% disability (Saksham) pursuing a technical diploma or degree course at an AICTE-approved institution."
+  },
+  "description": {
+    "ta": "இவை மத்திய அரசின் இரு இணை திட்டங்கள். பிரகதி திட்டம் தொழில்நுட்ப படிப்பு படிக்கும் பெண் மாணவிகளுக்காகவும், சக்ஷம் திட்டம் குறைந்தது 40% ஊனம் உள்ள மாணவர்களுக்காகவும் உள்ளது. இரண்டு திட்டங்களிலும் ஆண்டுக்கு ₹50,000 வரை நேரடி பணப் பரிமாற்றம் மூலம் வழங்கப்படுகிறது; ஒரு குடும்பத்தில் இருவர் வரை பெறலாம்.",
+    "en": "Two parallel central schemes -- Pragati for girl students in technical education, and Saksham for students with at least 40% disability. Both provide up to ₹50,000 a year by direct bank transfer; up to two students per family can benefit."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "currently-studying",
+      "condition": { "op": "eq", "field": "currentlyStudying", "value": true },
+      "explanation": { "ta": "தற்போது படித்துக் கொண்டிருக்க வேண்டும்.", "en": "You must currently be studying." }
+    },
+    {
+      "id": "technical-course-level",
+      "condition": { "op": "in", "field": "educationLevel", "values": ["iti-polytechnic", "undergraduate"] },
+      "explanation": { "ta": "தொழில்நுட்ப டிப்ளமோ அல்லது பட்டப்படிப்பு படிப்பவர்களுக்கு மட்டும் (AICTE அங்கீகரிக்கப்பட்ட நிறுவனத்தில்).", "en": "Only for students pursuing a technical diploma or degree course at an AICTE-approved institution." }
+    },
+    {
+      "id": "girl-or-disabled",
+      "condition": {
+        "op": "or",
+        "conditions": [
+          { "op": "eq", "field": "gender", "value": "female" },
+          { "op": "gte", "field": "disabilityPercentage", "value": 40 }
+        ]
+      },
+      "explanation": { "ta": "பெண் மாணவிகளுக்கு (பிரகதி) அல்லது குறைந்தது 40% ஊனம் உள்ள மாணவர்களுக்கு (சக்ஷம்) மட்டும்.", "en": "Only for girl students (Pragati) or students with at least 40% disability (Saksham)." }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "college-bonafide",
+      "name": { "ta": "கல்லூரி சேர்க்கை/பணாஃபைடு சான்று", "en": "College admission/bonafide certificate" },
+      "description": { "ta": "AICTE அங்கீகரிக்கப்பட்ட நிறுவனத்தில் படிக்கிறீர்கள் என்பதை உறுதிப்படுத்த வேண்டும்.", "en": "Confirms you are enrolled at an AICTE-approved institution." },
+      "howToGet": { "ta": "உங்கள் கல்லூரியில் பெறலாம்.", "en": "Available from your college." }
+    },
+    {
+      "id": "previous-marksheet",
+      "name": { "ta": "முந்தைய வகுப்பு மதிப்பெண் சான்றிதழ்", "en": "Previous class marksheet" },
+      "description": { "ta": "முந்தைய படிப்பின் முடிவை உறுதிப்படுத்த வேண்டும்.", "en": "Confirms your result in the previous course." },
+      "howToGet": { "ta": "உங்கள் முந்தைய பள்ளி/கல்லூரியில் பெறலாம்.", "en": "Available from your previous school/college." }
+    },
+    {
+      "id": "disability-certificate",
+      "name": { "ta": "ஊனமுற்றோர் சான்றிதழ் (சக்ஷம் விண்ணப்பதாரர்களுக்கு மட்டும்)", "en": "Disability certificate (for Saksham applicants only)" },
+      "description": { "ta": "குறைந்தது 40% ஊனம் உள்ளது என்பதை உறுதிப்படுத்தும் அரசு மருத்துவச் சான்று.", "en": "A government medical certificate confirming at least 40% disability." },
+      "howToGet": { "ta": "அரசு மருத்துவமனையில் பெறலாம்.", "en": "Available from a government hospital." }
+    },
+    {
+      "id": "bank-passbook",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "உதவித்தொகை நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The scholarship is credited directly into this account." },
+      "howToGet": { "ta": "உங்கள் பெயரில் உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use a bank account passbook in your name." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "scholarships.gov.in (தேசிய உதவித்தொகை போர்ட்டல்) இல் பதிவு செய்து AICTE பிரகதி அல்லது சக்ஷம் திட்டத்தைத் தேர்ந்தெடுக்கவும்.", "en": "Register on the National Scholarship Portal (scholarships.gov.in) and choose the AICTE Pragati or Saksham scheme." } },
+    { "step": 2, "description": { "ta": "படிப்பு, குடும்ப விவரங்களை பதிவு செய்து ஆவணங்களை பதிவேற்றவும்.", "en": "Enter your course and family details, and upload the required documents." } },
+    { "step": 3, "description": { "ta": "உங்கள் நிறுவனம் விவரங்களை சரிபார்த்து AICTE-க்கு அனுப்பும்.", "en": "Your institution verifies your details and forwards them to AICTE." } },
+    { "step": 4, "description": { "ta": "ஒப்புதல் கிடைத்த பின் தொகை நேரடியாக வரவு செய்யப்படும்.", "en": "Once approved, the amount is credited directly to your account." } }
+  ],
+  "officialLinks": [
+    { "url": "https://scholarships.gov.in/", "domain": "scholarships.gov.in", "title": { "ta": "தேசிய உதவித்தொகை போர்ட்டல்", "en": "National Scholarship Portal" } }
+  ],
+  "deadline": {
+    "type": "annual-cycle",
+    "description": { "ta": "2026-27 ஆம் ஆண்டுக்கு விண்ணப்ப கடைசி தேதி 31 அக்டோபர் 2026 எனவும், சரிபார்ப்பு 15-30 நவம்பர் 2026 வரை எனவும் அறிவிக்கப்பட்டது; ஒவ்வொரு ஆண்டும் தேதிகள் மாறும், போர்ட்டலில் சரிபார்க்கவும்.", "en": "For 2026-27, applications closed on 31 October 2026 with verification windows up to 15-30 November 2026; dates shift each year, so check the portal." },
+    "cycleNote": { "ta": "பொதுவாக ஆகஸ்ட் முதல் அக்டோபர்/நவம்பர் வரை", "en": "Typically between August and October/November" }
+  },
+  "sources": [
+    { "url": "https://scholarships.gov.in/", "domain": "scholarships.gov.in", "title": { "ta": "தேசிய உதவித்தொகை போர்ட்டல்", "en": "National Scholarship Portal" } },
+    { "url": "https://www.aicte-india.org/schemes/students-development-schemes", "domain": "aicte-india.org", "title": { "ta": "AICTE மாணவர் மேம்பாட்டுத் திட்டங்கள்", "en": "AICTE student development schemes" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (scholarships.gov.in, aicte-india.org); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}

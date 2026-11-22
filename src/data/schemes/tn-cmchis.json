@@ -1,0 +1,92 @@
+{
+  "id": "tn-cmchis",
+  "name": {
+    "ta": "முதலமைச்சரின் விரிவான சுகாதார காப்பீட்டுத் திட்டம் (CMCHIS)",
+    "en": "Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)"
+  },
+  "authority": {
+    "ta": "சுகாதாரத் துறை, தமிழ்நாடு அரசு (தமிழ்நாடு சுகாதார அமைப்புத் திட்டத்தின் வழியாக)",
+    "en": "Health Department, Government of Tamil Nadu (through the Tamil Nadu Health Systems Project)"
+  },
+  "level": "state",
+  "lifeAreas": ["health-insurance"],
+  "benefitSummary": {
+    "ta": "குறைந்த வருமானம் உள்ள தமிழ்நாடு குடும்பங்களுக்கு ஆண்டுக்கு ஒரு குடும்பத்திற்கு ₹5 லட்சம் வரை பணமில்லா மருத்துவமனை சிகிச்சை காப்பீடு.",
+    "en": "Cashless hospital treatment insurance of up to ₹5 lakh per family per year for low-income Tamil Nadu families."
+  },
+  "description": {
+    "ta": "இது தமிழ்நாடு அரசின் ஒரு சுகாதார காப்பீட்டுத் திட்டம். குடும்ப அட்டை வைத்திருக்கும், குறைந்த ஆண்டு வருமானம் உள்ள குடும்பங்கள், பட்டியலிடப்பட்ட அரசு மற்றும் தனியார் மருத்துவமனைகளில் பணமில்லாமல் சிகிச்சை பெறலாம். (தற்போதைய ₹5 லட்சம் காப்பீட்டை அதிகரிக்கும் முன்மொழிவு அரசால் அறிவிக்கப்பட்டுள்ளது; செயல்படுத்தும் விதிமுறைகள் இன்னும் வெளியிடப்படவில்லை.)",
+    "en": "A Tamil Nadu state health insurance scheme. Families holding a family ration card and with a low annual income can get cashless treatment at listed government and private hospitals. (The state has announced a proposal to raise the current ₹5 lakh cover; the implementation rules have not yet been issued.)"
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "tn-resident-cmchis",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    },
+    {
+      "id": "low-income-cmchis",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 120000 },
+      "nearMissMargin": 20000,
+      "nearMissGuidance": {
+        "ta": "வருமானம் சற்று கூடுதலாக இருந்தாலும், சிறப்பு வகையில் (ஊனமுற்றோர் உள்ள குடும்பம் போன்றவை) விண்ணப்பிக்க முடியுமா என உள்ளூர் அலுவலகத்தில் சரிபார்க்கவும்.",
+        "en": "Even if your income is slightly higher, check with your local office whether a special category (such as a family with a person with disability) applies to you."
+      },
+      "explanation": {
+        "ta": "குடும்ப ஆண்டு வருமானம் ₹1,20,000-ஐ தாண்டக்கூடாது.",
+        "en": "Your household's annual income should not exceed ₹1,20,000."
+      }
+    },
+    {
+      "id": "has-ration-card-cmchis",
+      "condition": { "op": "notIn", "field": "rationCardType", "values": ["none"] },
+      "explanation": {
+        "ta": "உங்கள் குடும்பத்திடம் தமிழ்நாடு குடும்ப அட்டை இருக்க வேண்டும்.",
+        "en": "Your family must hold a Tamil Nadu family ration card."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "family-card-cmchis",
+      "name": { "ta": "குடும்ப அட்டை", "en": "Family ration card" },
+      "description": { "ta": "குடும்ப தகுதி சரிபார்ப்பிற்கு தேவை.", "en": "Needed to verify your family's eligibility." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள குடும்ப அட்டையை பயன்படுத்தவும்.", "en": "Use your existing family ration card." }
+    },
+    {
+      "id": "aadhaar-cmchis",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாள சரிபார்ப்பு மற்றும் அட்டை தயாரிப்புக்கு தேவை.", "en": "Needed for identity verification and card creation." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "photo-cmchis",
+      "name": { "ta": "பாஸ்போர்ட் அளவு புகைப்படம்", "en": "Passport-size photograph" },
+      "description": { "ta": "CMCHIS ஸ்மார்ட் அட்டை தயாரிக்க தேவை.", "en": "Needed to create your CMCHIS smart card." },
+      "howToGet": { "ta": "அருகிலுள்ள புகைப்பட ஸ்டூடியோவில் எடுக்கலாம்.", "en": "Can be taken at any nearby photo studio." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "CMCHIS பதிவு முகாம், பொது சேவை மையம், அல்லது வட்டாட்சியர் அலுவலகத்தை குடும்ப அட்டை மற்றும் ஆதாருடன் அணுகவும்.", "en": "Visit a CMCHIS enrolment camp, Common Service Centre, or your Taluk office with your family ration card and Aadhaar." } },
+    { "step": 2, "description": { "ta": "பயோமெட்ரிக் பதிவை முடித்து CMCHIS ஸ்மார்ட் அட்டையை பெறவும்.", "en": "Complete biometric enrolment to get your CMCHIS smart card." } },
+    { "step": 3, "description": { "ta": "பட்டியலிடப்பட்ட எந்த அரசு/தனியார் மருத்துவமனையிலும் இந்த அட்டையுடன் பணமில்லாமல் சிகிச்சை பெறலாம்.", "en": "Use the card for cashless treatment at any listed government or private hospital." } }
+  ],
+  "officialLinks": [
+    { "url": "https://myscheme.gov.in/schemes/cmchis-tn", "domain": "myscheme.gov.in", "title": { "ta": "CMCHIS - myScheme", "en": "CMCHIS - myScheme" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் பதிவு செய்யலாம்.", "en": "You can enrol at any time during the year." }
+  },
+  "sources": [
+    { "url": "https://myscheme.gov.in/schemes/cmchis-tn", "domain": "myscheme.gov.in", "title": { "ta": "CMCHIS - myScheme", "en": "CMCHIS - myScheme" } },
+    { "url": "https://www.dtnext.in/explainer/how-to-apply-for-tamil-nadu-cms-comprehensive-health-insurance-scheme-eligibility-documents-and-process", "domain": "dtnext.in", "title": { "ta": "CMCHIS விண்ணப்பிக்கும் முறை - DT Next விளக்கம்", "en": "How to apply for CMCHIS - DT Next explainer" } },
+    { "url": "https://www.policybazaar.com/health-insurance/govt-scheme/chief-minister-comprehensive-health-insurance-scheme/", "domain": "policybazaar.com", "title": { "ta": "CMCHIS தகுதி மற்றும் விவரம் (இரண்டாம் நிலை ஆதாரம்)", "en": "CMCHIS eligibility and details (secondary source)" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (myscheme.gov.in, dtnext.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "low",
+  "benefitValue": 5
+}

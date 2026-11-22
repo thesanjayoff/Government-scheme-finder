@@ -1,0 +1,85 @@
+{
+  "id": "pmsby",
+  "name": {
+    "ta": "பிரதான் மந்திரி பாதுகாப்பு பீமா யோஜனா (PMSBY)",
+    "en": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+  },
+  "authority": {
+    "ta": "நிதி சேவைகள் துறை, இந்திய அரசு",
+    "en": "Department of Financial Services, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["workers-employment", "health-insurance"],
+  "benefitSummary": {
+    "ta": "ஆண்டுக்கு வெறும் ₹20 பிரீமியத்தில், விபத்தால் ஏற்படும் மரணம் அல்லது முழு ஊனத்திற்கு ₹2 லட்சம் வரை காப்பீடு.",
+    "en": "For just ₹20 a year, get accident insurance cover of up to ₹2 lakh for accidental death or total disability."
+  },
+  "description": {
+    "ta": "வங்கி அல்லது அஞ்சலக கணக்கு வைத்திருக்கும் 18 முதல் 70 வயது வரையிலான எவரும் இணையக்கூடிய ஒரு விபத்து காப்பீட்டுத் திட்டம். சிறிய ஆண்டு பிரீமியம் உங்கள் கணக்கிலிருந்து தானாக பிடிக்கப்படும். விபத்தால் மரணம் அல்லது இரு கைகள்/கால்கள்/கண்கள் இழப்பு ஏற்பட்டால் ₹2 லட்சமும், ஒரு கை/கால்/கண் இழப்பு ஏற்பட்டால் ₹1 லட்சமும் வழங்கப்படும்.",
+    "en": "An accident insurance scheme open to anyone aged 18-70 who holds a bank or post-office account. A small annual premium is auto-debited from your account. It pays ₹2 lakh for accidental death or loss of both limbs/eyes, and ₹1 lakh for loss of one limb or eye."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "age-18-70",
+      "condition": { "op": "between", "field": "age", "min": 18, "max": 70 },
+      "nearMissMargin": 1,
+      "nearMissGuidance": {
+        "ta": "வயது வரம்புக்கு வெளியே இருந்தால் இணைய முடியாது; உங்கள் வங்கியில் விசாரிக்கவும்.",
+        "en": "You cannot join outside this age range; check with your bank for your exact situation."
+      },
+      "explanation": { "ta": "வயது 18 முதல் 70 வரை இருக்க வேண்டும்.", "en": "You must be between 18 and 70 years of age." }
+    },
+    {
+      "id": "has-bank-account",
+      "condition": { "op": "eq", "field": "bankAccountExists", "value": true },
+      "explanation": {
+        "ta": "உங்கள் பெயரில் வங்கி அல்லது அஞ்சலக சேமிப்புக் கணக்கு இருக்க வேண்டும் (பிரீமியம் அதிலிருந்து பிடிக்கப்படும்).",
+        "en": "You must have a bank or post-office savings account in your name (the premium is auto-debited from it)."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "bank-passbook-pmsby",
+      "name": { "ta": "வங்கி/அஞ்சலக கணக்கு புத்தகம்", "en": "Bank or post-office passbook" },
+      "description": { "ta": "பதிவு மற்றும் வருடாந்திர பிரீமியம் பிடித்தத்திற்கு தேவை.", "en": "Needed for enrolment and the yearly premium auto-debit." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    },
+    {
+      "id": "aadhaar-pmsby",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாள சரிபார்ப்புக்காக தேவை.", "en": "Needed for identity verification." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "nominee-form-pmsby",
+      "name": { "ta": "பதிவு-ஒப்புதல் படிவம் மற்றும் வாரிசு விவரம்", "en": "Enrolment-cum-consent form with nominee details" },
+      "description": { "ta": "காப்பீட்டுத் தொகை பெற வாரிசு பெயரை குறிப்பிட வேண்டும்.", "en": "You must name a nominee who will receive the insured amount." },
+      "howToGet": { "ta": "உங்கள் வங்கி/அஞ்சலக கிளையில் இந்த படிவம் கிடைக்கும்.", "en": "Available at your bank branch or post office." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "உங்கள் வங்கி கிளை அல்லது அஞ்சலகத்தை அணுகவும்.", "en": "Visit your bank branch or post office." } },
+    { "step": 2, "description": { "ta": "PMSBY பதிவு-ஒப்புதல் படிவத்தை பூர்த்தி செய்து வாரிசு விவரத்தை குறிப்பிடவும்.", "en": "Fill the PMSBY enrolment-cum-consent form and give your nominee's details." } },
+    { "step": 3, "description": { "ta": "ஆண்டுக்கு ₹20 பிரீமியம் தானாக பிடிக்கப்பட ஒப்புதல் அளிக்கவும்; ஜூன் 1 முதல் மே 31 வரை காப்பீடு செல்லும்.", "en": "Authorise the ₹20 annual premium auto-debit; cover runs from 1 June to 31 May each year." } }
+  ],
+  "officialLinks": [
+    { "url": "https://financialservices.gov.in/pmsby", "domain": "financialservices.gov.in", "title": { "ta": "PMSBY - நிதி சேவைகள் துறை", "en": "PMSBY - Department of Financial Services" } }
+  ],
+  "deadline": {
+    "type": "annual-cycle",
+    "description": { "ta": "ஒவ்வொரு ஆண்டும் புதுப்பிக்க வேண்டும்.", "en": "The cover must be renewed every year." },
+    "cycleNote": { "ta": "காப்பீட்டு காலம்: ஜூன் 1 முதல் அடுத்த ஆண்டு மே 31 வரை.", "en": "Cover period: 1 June to 31 May of the following year." }
+  },
+  "sources": [
+    { "url": "https://financialservices.gov.in/pmsby", "domain": "financialservices.gov.in", "title": { "ta": "PMSBY - நிதி சேவைகள் துறை", "en": "PMSBY - Department of Financial Services" } },
+    { "url": "https://newindiasamachar.pib.gov.in/WriteReadData/flipbook/2026/May/1st/English/files/basic-html/page43.html", "domain": "pib.gov.in", "title": { "ta": "New India Samachar - PMSBY பிரீமியம் விவரம்", "en": "New India Samachar - PMSBY premium details" } },
+    { "url": "https://www.motilaloswal.com/personal-finance/saving-schemes/pradhan-mantri-suraksha-bima-yojana-eligibility-list-features-of-pmsby", "domain": "motilaloswal.com", "title": { "ta": "PMSBY தகுதி மற்றும் அம்சங்கள் (இரண்டாம் நிலை ஆதாரம்)", "en": "PMSBY eligibility and features (secondary source)" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (financialservices.gov.in, pib.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "low",
+  "benefitValue": 2
+}

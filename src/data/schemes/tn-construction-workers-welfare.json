@@ -1,0 +1,89 @@
+{
+  "id": "tn-construction-workers-welfare",
+  "name": {
+    "ta": "தமிழ்நாடு கட்டுமானத் தொழிலாளர் நலவாரியம் - கல்வி மற்றும் திருமண உதவி",
+    "en": "Tamil Nadu Construction Workers Welfare Board - Education & Marriage Assistance"
+  },
+  "authority": {
+    "ta": "தமிழ்நாடு கட்டுமான தொழிலாளர் நலவாரியம், தொழிலாளர் நலத்துறை, தமிழ்நாடு அரசு",
+    "en": "Tamil Nadu Construction Workers Welfare Board, Labour Welfare Department, Government of Tamil Nadu"
+  },
+  "level": "state",
+  "lifeAreas": ["workers-employment"],
+  "benefitSummary": {
+    "ta": "பதிவு செய்த கட்டுமானத் தொழிலாளர்களின் குழந்தைகளுக்கு கல்வி உதவித்தொகை (வகுப்பைப் பொறுத்து ₹1,000-₹8,000) மற்றும் குடும்ப உறுப்பினர் திருமணத்திற்கு உதவித்தொகை (ஆணுக்கு ₹3,000, பெண்ணுக்கு ₹5,000).",
+    "en": "Education assistance for children of registered construction workers (roughly ₹1,000-₹8,000 depending on class/course) and marriage assistance (₹3,000 for a male member/dependent, ₹5,000 for a female)."
+  },
+  "description": {
+    "ta": "கட்டுமானத் துறையில் வேலை செய்யும் தொழிலாளர்கள் நலவாரியத்தில் பதிவு செய்தால், தங்கள் குழந்தைகளின் படிப்புக்கும், குடும்ப உறுப்பினர் திருமணத்திற்கும் நிதி உதவி பெறலாம். கட்டுமானப் பணிகளுக்கு வசூலிக்கப்படும் 1% செஸ் தொகையிலிருந்து இந்த உதவி வழங்கப்படுகிறது.",
+    "en": "Construction workers who register with the Welfare Board can get financial help for their children's education and for a family member's marriage. The assistance is funded from a 1% cess collected on the value of construction works."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "construction-occupation",
+      "condition": { "op": "eq", "field": "occupation", "value": "construction-worker" },
+      "explanation": { "ta": "கட்டுமானத் தொழிலாளராக இருக்க வேண்டும்.", "en": "You must work as a construction worker." }
+    },
+    {
+      "id": "tn-resident-cwwb",
+      "condition": { "op": "eq", "field": "state", "value": "tamil-nadu" },
+      "explanation": { "ta": "தமிழ்நாட்டில் வசிப்பவராக இருக்க வேண்டும்.", "en": "You must be a resident of Tamil Nadu." }
+    },
+    {
+      "id": "board-registered",
+      "condition": { "op": "eq", "field": "employmentRegistered", "value": true },
+      "explanation": {
+        "ta": "தமிழ்நாடு கட்டுமான தொழிலாளர் நலவாரியத்தில் தொழிலாளராக பதிவு செய்திருக்க வேண்டும்.",
+        "en": "You must be registered as a worker with the Tamil Nadu Construction Workers Welfare Board."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "board-id-cwwb",
+      "name": { "ta": "நலவாரிய பதிவு அட்டை", "en": "Welfare Board registration/ID card" },
+      "description": { "ta": "நீங்கள் பதிவு செய்த தொழிலாளர் என்பதை உறுதி செய்யும் அட்டை.", "en": "Proof that you are a registered worker with the Board." },
+      "howToGet": { "ta": "நலவாரியப் பதிவின் போது வழங்கப்படும்.", "en": "Issued when you register with the Board." }
+    },
+    {
+      "id": "aadhaar-cwwb",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "அடையாள சரிபார்ப்புக்காக தேவை.", "en": "Needed for identity verification." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "bank-passbook-cwwb",
+      "name": { "ta": "வங்கிக் கணக்கு புத்தகம்", "en": "Bank passbook" },
+      "description": { "ta": "உதவித்தொகை இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The assistance amount is credited to this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    },
+    {
+      "id": "proof-of-event-cwwb",
+      "name": { "ta": "படிப்பு/திருமண சான்று", "en": "Proof of education or marriage" },
+      "description": { "ta": "கல்வி உதவிக்கு பள்ளி/கல்லூரி சேர்க்கை அல்லது மதிப்பெண் சான்றிதழ்; திருமண உதவிக்கு திருமண பதிவு/அழைப்பிதழ்.", "en": "For education assistance: school/college admission or mark certificate. For marriage assistance: marriage registration certificate or invitation." },
+      "howToGet": { "ta": "பள்ளி/கல்லூரி அல்லது திருமணப் பதிவு அலுவலகத்தில் பெறலாம்.", "en": "Available from the school/college or the marriage registration office." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "tnuwwb.tn.gov.in இணையதளத்தில் அல்லது உங்கள் தொழிலாளர் நலஅலுவலகத்தில் கட்டுமானத் தொழிலாளராக பதிவு செய்யவும் (கடந்த ஆண்டில் குறைந்தது 90 நாட்கள் வேலை செய்ததற்கான சான்று தேவை).", "en": "Register as a construction worker at tnuwwb.tn.gov.in or your Labour Welfare office (requires proof of at least 90 days of construction work in the past year)." } },
+    { "step": 2, "description": { "ta": "பதிவு முடிந்தபின், தேவையான உதவிக்கு (கல்வி அல்லது திருமணம்) தொடர்புடைய ஆதாரத்துடன் தனியாக விண்ணப்பிக்கவும்.", "en": "After registration, apply separately for the specific benefit (education or marriage) with the relevant proof attached." } },
+    { "step": 3, "description": { "ta": "விண்ணப்பம் சரிபார்க்கப்பட்டதும், உதவித்தொகை உங்கள் வங்கிக் கணக்கில் வரவு செய்யப்படும்.", "en": "Once verified, the assistance amount is credited to your bank account." } }
+  ],
+  "officialLinks": [
+    { "url": "https://labour.tn.gov.in/uwwb", "domain": "labour.tn.gov.in", "title": { "ta": "அமைப்புசாரா தொழிலாளர் நலவாரியங்கள் - தமிழ்நாடு தொழிலாளர் துறை", "en": "Unorganised Workers Welfare Boards - Tamil Nadu Labour Department" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "பதிவு ஆண்டு முழுவதும் திறந்துள்ளது; திருமண உதவிக்கு பொதுவாக திருமணம் நடந்த சில மாதங்களுக்குள் விண்ணப்பிக்க வேண்டும்.", "en": "Registration is open year-round; marriage assistance usually needs to be applied for within a few months of the marriage." }
+  },
+  "sources": [
+    { "url": "https://labour.tn.gov.in/uwwb", "domain": "labour.tn.gov.in", "title": { "ta": "அமைப்புசாரா தொழிலாளர் நலவாரியங்கள் - தமிழ்நாடு தொழிலாளர் துறை", "en": "Unorganised Workers Welfare Boards - Tamil Nadu Labour Department" } },
+    { "url": "https://saiindia.gov.in/uploads/download_audit_report/2024/Report-No.-3,-2024,-Tamil-Nadu-06a2be5a1865290.38939548.pdf", "domain": "saiindia.gov.in", "title": { "ta": "CAG தமிழ்நாடு தணிக்கை அறிக்கை - நலவாரிய திட்டங்கள்", "en": "CAG Tamil Nadu audit report - welfare board schemes" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (labour.tn.gov.in, saiindia.gov.in CAG report); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 2
+}

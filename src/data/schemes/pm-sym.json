@@ -1,0 +1,101 @@
+{
+  "id": "pm-sym",
+  "name": {
+    "ta": "பிரதான் மந்திரி ஸ்ரம் யோகி மான்-தன் (PM-SYM)",
+    "en": "Pradhan Mantri Shram Yogi Maandhan (PM-SYM)"
+  },
+  "authority": {
+    "ta": "தொழிலாளர் மற்றும் வேலைவாய்ப்பு அமைச்சகம், இந்திய அரசு",
+    "en": "Ministry of Labour & Employment, Government of India"
+  },
+  "level": "central",
+  "lifeAreas": ["workers-employment"],
+  "benefitSummary": {
+    "ta": "அமைப்புசாரா தொழிலாளர்களுக்கு 60 வயதுக்குப் பிறகு மாதம் ₹3,000 உறுதியான ஓய்வூதியம்; உங்கள் பங்களிப்புக்கு இணையான தொகையை மத்திய அரசே செலுத்தும்.",
+    "en": "A guaranteed ₹3,000 monthly pension after age 60 for unorganised-sector workers; the Central Government matches your contribution rupee for rupee."
+  },
+  "description": {
+    "ta": "18 முதல் 40 வயது வரையிலான, குறைந்த வருமானம் பெறும் அமைப்புசாரா தொழிலாளர்கள் இந்த ஓய்வூதியத் திட்டத்தில் தாமாக முன்வந்து இணையலாம். உங்கள் வயதைப் பொறுத்து ஒவ்வொரு மாதமும் சிறிய தொகை (₹55-₹200) உங்கள் வங்கிக் கணக்கிலிருந்து தானாக பிடிக்கப்படும்; இதற்கு இணையான தொகையை அரசும் சேர்த்து, 60 வயதில் மாத ஓய்வூதியமாக திரும்பக் கிடைக்கும். EPFO/ESIC/NPS-ல் ஏற்கெனவே உள்ளவர்கள் அல்லது வருமான வரி செலுத்துவோர் இதில் இணைய முடியாது.",
+    "en": "A voluntary pension scheme that unorganised-sector workers aged 18-40 with low income can join. A small monthly amount (₹55-₹200, depending on your age) is auto-debited from your bank account; the government matches it, and you receive a monthly pension from age 60. People already covered by EPFO/ESIC/NPS, or who pay income tax, cannot join."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "age-18-40",
+      "condition": { "op": "between", "field": "age", "min": 18, "max": 40 },
+      "nearMissMargin": 2,
+      "nearMissGuidance": {
+        "ta": "18 வயது முதல் 40 வயது வரை மட்டுமே இணைய முடியும். வயது தாண்டிவிட்டால் விண்ணப்பிக்க முடியாது.",
+        "en": "You can only join between ages 18 and 40. Once you cross 40, you can no longer enrol."
+      },
+      "explanation": { "ta": "வயது 18 முதல் 40 வரை இருக்க வேண்டும்.", "en": "You must be between 18 and 40 years of age." }
+    },
+    {
+      "id": "unorganised-occupation",
+      "condition": {
+        "op": "in",
+        "field": "occupation",
+        "values": ["agri-labourer", "fisherperson", "construction-worker", "street-vendor", "domestic-worker", "unorganised-worker", "self-employed"]
+      },
+      "explanation": {
+        "ta": "அமைப்புசாரா துறையில் வேலை செய்பவராக இருக்க வேண்டும் (எ.கா. கட்டுமானத் தொழிலாளர், தெருவிற்பனையாளர், வீட்டு பணியாளர், சுயதொழில் செய்பவர்).",
+        "en": "You must work in the unorganised sector (e.g. construction worker, street vendor, domestic worker, self-employed)."
+      }
+    },
+    {
+      "id": "low-income",
+      "condition": { "op": "lte", "field": "householdIncomeAnnual", "value": 180000 },
+      "nearMissMargin": 24000,
+      "nearMissGuidance": {
+        "ta": "வருமானம் சற்று கூடுதலாக இருந்தாலும், உள்ளூர் தொழிலாளர் அலுவலகத்தில் விண்ணப்பித்து பார்க்கலாம்.",
+        "en": "Even if your income is slightly higher, you can still check with your local labour office."
+      },
+      "explanation": {
+        "ta": "மாத வருமானம் ₹15,000-ஐ தாண்டக்கூடாது (ஆண்டுக்கு தோராயமாக ₹1.8 லட்சம்).",
+        "en": "Your monthly income should not exceed ₹15,000 (about ₹1.8 lakh a year)."
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "aadhaar-pmsym",
+      "name": { "ta": "ஆதார் அட்டை", "en": "Aadhaar card" },
+      "description": { "ta": "பதிவு செய்யும் போது அடையாள சரிபார்ப்புக்காக தேவை.", "en": "Needed for identity verification at enrolment." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள ஆதார் அட்டையை பயன்படுத்தவும்.", "en": "Use your existing Aadhaar card." }
+    },
+    {
+      "id": "bank-passbook-pmsym",
+      "name": { "ta": "சேமிப்பு வங்கிக் கணக்கு புத்தகம் / ஜன்தன் கணக்கு", "en": "Savings bank or Jan Dhan account passbook" },
+      "description": { "ta": "மாத பங்களிப்பு தொகை இந்த கணக்கிலிருந்து தானாக பிடிக்கப்படும்.", "en": "Your monthly contribution is auto-debited from this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தை பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    },
+    {
+      "id": "mobile-pmsym",
+      "name": { "ta": "மொபைல் எண்", "en": "Mobile number" },
+      "description": { "ta": "பதிவு மற்றும் அறிவிப்புகளுக்காக தேவை.", "en": "Needed for registration and notifications." },
+      "howToGet": { "ta": "உங்கள் சொந்த மொபைல் எண்ணை பயன்படுத்தவும்.", "en": "Use your own mobile number." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "ஆதார் அட்டை மற்றும் வங்கிக் கணக்கு புத்தகத்துடன் அருகிலுள்ள பொது சேவை மையத்தை (CSC) அணுகவும்.", "en": "Visit your nearest Common Service Centre (CSC) with your Aadhaar card and bank passbook." } },
+    { "step": 2, "description": { "ta": "உங்கள் வயதுக்கேற்ப மாதாந்திர தொகை வங்கிக் கணக்கிலிருந்து தானாக பிடிக்கப்பட ஒப்புதல் அளிக்கவும்.", "en": "Give your consent for the age-based monthly amount to be auto-debited from your bank account." } },
+    { "step": 3, "description": { "ta": "பதிவு நிறைவானதும், PM-SYM கார்டு/பதிவு எண்ணை பெற்று பாதுகாக்கவும்.", "en": "Once registration is complete, keep your PM-SYM card/registration number as proof." } }
+  ],
+  "officialLinks": [
+    { "url": "https://labour.gov.in/pm-sym", "domain": "labour.gov.in", "title": { "ta": "PM-SYM - தொழிலாளர் அமைச்சகம்", "en": "PM-SYM - Ministry of Labour & Employment" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "ஆண்டு முழுவதும் எந்த நேரத்திலும் பதிவு செய்யலாம்.", "en": "You can register at any time during the year." }
+  },
+  "sources": [
+    { "url": "https://labour.gov.in/pm-sym", "domain": "labour.gov.in", "title": { "ta": "PM-SYM - தொழிலாளர் அமைச்சகம்", "en": "PM-SYM - Ministry of Labour & Employment" } },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/mar/doc202534512301.pdf", "domain": "pib.gov.in", "title": { "ta": "PIB செய்தி வெளியீடு - PM-SYM 6 ஆண்டுகள்", "en": "PIB release - six years of PM-SYM" } },
+    { "url": "https://www.india.gov.in/spotlight/pradhanmantri-shram-yogi-maan-dhan-pm-sym-pension-scheme-unorganised-workers", "domain": "india.gov.in", "title": { "ta": "PM-SYM - India.gov.in சுருக்கம்", "en": "PM-SYM - India.gov.in summary" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (labour.gov.in, pib.gov.in, india.gov.in); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "low",
+  "benefitValue": 3
+}

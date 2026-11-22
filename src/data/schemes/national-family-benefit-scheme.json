@@ -1,0 +1,99 @@
+{
+  "id": "national-family-benefit-scheme",
+  "name": {
+    "ta": "தேசிய குடும்ப உதவித் திட்டம் (NFBS)",
+    "en": "National Family Benefit Scheme (NFBS)"
+  },
+  "authority": {
+    "ta": "ஊரக வளர்ச்சி அமைச்சகம், இந்திய அரசு (தேசிய சமூக உதவித் திட்டம் - NSAP)",
+    "en": "Ministry of Rural Development, Government of India (under the National Social Assistance Programme - NSAP)"
+  },
+  "level": "central",
+  "lifeAreas": ["women-family", "seniors-widows"],
+  "benefitSummary": {
+    "ta": "ஏழ்மையான குடும்பத்தின் முதன்மை சம்பாதிப்பாளர் இறந்தால், அந்தக் குடும்பத்திற்கு ஒரு முறை ₹20,000 பண உதவி.",
+    "en": "A one-time cash grant of ₹20,000 to a poor household when its primary breadwinner passes away."
+  },
+  "description": {
+    "ta": "தேசிய சமூக உதவித் திட்டத்தின் (NSAP) ஒரு பகுதியான இந்தத் திட்டம், வறுமைக்கோட்டிற்குக் கீழ் (BPL) உள்ள குடும்பத்தின் முதன்மை சம்பாதிப்பாளர் (18-59 வயதுக்கு இடைப்பட்டவர்) இறந்தால், அந்த குடும்பத்திற்கு ஒரு முறை நிதி உதவி வழங்குகிறது. இறப்பு நடந்த 1 ஆண்டுக்குள் விண்ணப்பிக்க வேண்டும்.",
+    "en": "Part of the National Social Assistance Programme (NSAP), this scheme gives a one-time cash grant to a Below Poverty Line (BPL) household when its primary breadwinner (aged 18-59) dies of any cause. The claim must be made within one year of the death."
+  },
+  "eligibilityCriteria": [
+    {
+      "id": "bpl-household",
+      "condition": {
+        "op": "or",
+        "conditions": [
+          { "op": "in", "field": "rationCardType", "values": ["bpl", "aay"] },
+          {
+            "op": "and",
+            "conditions": [
+              { "op": "eq", "field": "areaType", "value": "rural" },
+              { "op": "lte", "field": "householdIncomeAnnual", "value": 46000 }
+            ]
+          },
+          {
+            "op": "and",
+            "conditions": [
+              { "op": "eq", "field": "areaType", "value": "urban" },
+              { "op": "lte", "field": "householdIncomeAnnual", "value": 56000 }
+            ]
+          }
+        ]
+      },
+      "explanation": {
+        "ta": "குடும்பம் வறுமைக்கோட்டிற்குக் கீழ் (BPL/AAY குடும்ப அட்டை) இருக்க வேண்டும் அல்லது குடும்ப ஆண்டு வருமானம் குறிப்பிட்ட வரம்புக்குக் (கிராமப்புறத்தில் ₹46,000, நகர்ப்புறத்தில் ₹56,000) கீழ் இருக்க வேண்டும். (இந்தத் திட்டத்தின் முக்கிய நிபந்தனை -- 'முதன்மை சம்பாதிப்பாளர் 18-59 வயதில் இறந்திருக்க வேண்டும்' -- இந்த ஆப்பில் தனியாக கேட்கப்படவில்லை; உள்ளூர் அலுவலகத்தில் இதை உறுதி செய்யவும்.)",
+        "en": "The household must hold a BPL/AAY ration card, or have an annual income below the set limit (₹46,000 rural / ₹56,000 urban). (This scheme's core condition -- that the primary breadwinner died between ages 18 and 59 -- is not separately asked by this app; confirm it at your local office.)"
+      }
+    }
+  ],
+  "exclusions": [],
+  "requiredDocuments": [
+    {
+      "id": "breadwinner-death-certificate",
+      "name": { "ta": "சம்பாதிப்பாளரின் இறப்புச் சான்றிதழ்", "en": "Death certificate of the breadwinner" },
+      "description": { "ta": "இறப்பை உறுதிப்படுத்தும் ஆவணம்.", "en": "Document confirming the death." },
+      "howToGet": { "ta": "ஊராட்சி/நகராட்சி பிறப்பு-இறப்புப் பதிவு அலுவலகத்தில் பெறலாம்.", "en": "Available from the local Panchayat/Municipality birth-death registration office." }
+    },
+    {
+      "id": "bpl-certificate-nfbs",
+      "name": { "ta": "BPL/AAY குடும்ப அட்டை அல்லது சான்றிதழ்", "en": "BPL/AAY ration card or certificate" },
+      "description": { "ta": "குடும்பம் வறுமைக்கோட்டிற்குக் கீழ் என்பதை உறுதிப்படுத்த.", "en": "To confirm the household is Below Poverty Line." },
+      "howToGet": { "ta": "உணவு பொதுக்குறைவு விநியோகத் துறை அலுவலகத்தில் பெறலாம்.", "en": "Available from the Civil Supplies office." }
+    },
+    {
+      "id": "age-proof-deceased",
+      "name": { "ta": "இறந்தவரின் வயது சான்று", "en": "Age proof of the deceased" },
+      "description": { "ta": "இறந்த சம்பாதிப்பாளரின் வயது 18-59 வரம்பில் இருந்ததை உறுதிப்படுத்த.", "en": "To confirm the deceased breadwinner's age was within the 18-59 range." },
+      "howToGet": { "ta": "பிறப்புச் சான்றிதழ், பள்ளிச் சான்றிதழ் அல்லது ஆதார் அட்டையைப் பயன்படுத்தலாம்.", "en": "Use a birth certificate, school certificate, or Aadhaar card." }
+    },
+    {
+      "id": "bank-passbook-nfbs",
+      "name": { "ta": "விண்ணப்பதாரரின் வங்கிக் கணக்கு புத்தகம்", "en": "Claimant's bank passbook" },
+      "description": { "ta": "உதவித்தொகை நேரடியாக இந்த கணக்கில் வரவு செய்யப்படும்.", "en": "The grant is credited directly into this account." },
+      "howToGet": { "ta": "ஏற்கெனவே உள்ள கணக்கு புத்தகத்தைப் பயன்படுத்தவும்.", "en": "Use your existing passbook." }
+    }
+  ],
+  "applicationSteps": [
+    { "step": 1, "description": { "ta": "இறப்பு நடந்த 1 ஆண்டுக்குள், உங்கள் ஊராட்சி/வட்டாரத் வளர்ச்சி அலுவலகத்தை அணுகவும்.", "en": "Within one year of the death, visit your Gram Panchayat or Block Development Office." } },
+    { "step": 2, "description": { "ta": "விண்ணப்பப் படிவத்தைப் பூர்த்தி செய்து தேவையான ஆவணங்களுடன் சமர்ப்பிக்கவும் (nsap.nic.in / UMANG ஆப் மூலமும் விண்ணப்பிக்கலாம்).", "en": "Fill the application form and submit it with the required documents (you can also apply online via nsap.nic.in or the UMANG app)." } },
+    { "step": 3, "description": { "ta": "உள்ளூர் நிர்வாகத்தின் சரிபார்ப்புக்குப் பின், ₹20,000 ஒரு முறையாக வங்கிக் கணக்கில் வரவு செய்யப்படும்.", "en": "After local verification, the ₹20,000 one-time grant is credited to the bank account." } }
+  ],
+  "officialLinks": [
+    { "url": "https://nsap.nic.in/", "domain": "nsap.nic.in", "title": { "ta": "NSAP அலுவல் இணையதளம்", "en": "NSAP official portal" } }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "description": { "ta": "சம்பாதிப்பாளரின் இறப்பு நடந்த 1 ஆண்டுக்குள் விண்ணப்பிக்க வேண்டும்.", "en": "The claim must be made within one year of the breadwinner's death." }
+  },
+  "sources": [
+    { "url": "https://nsap.nic.in/", "domain": "nsap.nic.in", "title": { "ta": "NSAP அலுவல் இணையதளம்", "en": "NSAP official portal" } },
+    { "url": "https://www.citizennest.com/guide/national-family-benefit-scheme", "domain": "citizennest.com", "title": { "ta": "NFBS விண்ணப்ப வழிகாட்டி - CitizenNest", "en": "NFBS application guide - CitizenNest" } },
+    { "url": "https://ssepd.odisha.gov.in/sites/default/files/2024-04/Guideline%20on%20National%20Social%20Assistance%20Programme%20-%20NSAP.pdf", "domain": "ssepd.odisha.gov.in", "title": { "ta": "NSAP வழிகாட்டுதல் ஆவணம் (ஒடிசா அரசு நகல்)", "en": "NSAP guideline document (Odisha government mirror)" } }
+  ],
+  "lastVerified": "2026-11-22",
+  "reviewer": "Drafted from cited official sources (nsap.nic.in; ssepd.odisha.gov.in and citizennest.com secondary); pending human subject-matter review before production publish",
+  "status": "needs-review",
+  "applicationEffort": "medium",
+  "benefitValue": 3
+}
