@@ -1,0 +1,119 @@
+{
+  "app": {
+    "name": "Thagaval Thunai",
+    "tagline": "Find government schemes you may be eligible for"
+  },
+  "nav": {
+    "home": "Home",
+    "results": "Results",
+    "tracker": "Tracker",
+    "helpCentres": "Help centres",
+    "scamCheck": "Check a link/message",
+    "privacy": "Privacy",
+    "settings": "Settings"
+  },
+  "home": {
+    "startButton": "Start",
+    "assistedModeButton": "Assisted mode (for helpers)",
+    "householdModeButton": "Add a household member",
+    "intro": "Answer a few simple questions. We'll show government schemes you may be eligible for, with reasons, documents needed, and official links.",
+    "disclaimerShort": "This is information only. It never decides your eligibility and never applies on your behalf.",
+    "continueLast": "Continue where you left off",
+    "startNew": "Start a new session"
+  },
+  "question": {
+    "progress": "Question {current} of about {estimate}",
+    "skip": "Skip this question",
+    "seeResultsNow": "See results now",
+    "why": "Why we ask",
+    "back": "Back",
+    "next": "Next",
+    "speakQuestion": "Listen",
+    "speakAnswer": "Answer by voice",
+    "listening": "Listening...",
+    "sensitiveNotice": "This question is optional. You can skip it -- schemes needing it will just show as \"unknown\".",
+    "explainSimply": "Explain this simply"
+  },
+  "results": {
+    "title": "Your results",
+    "disclaimer": "These schemes look like a match based on the published rules. The department makes the final decision. Please confirm at the official office or website.",
+    "eligible": "Likely eligible",
+    "almostEligible": "Almost eligible",
+    "unknown": "Need more information",
+    "noResults": "We didn't find a confident match yet. Answer a few more questions, or browse all schemes below.",
+    "whyYouMatch": "Why you match",
+    "documentsNeeded": "Documents needed",
+    "applicationSteps": "How to apply",
+    "officialLink": "Official link",
+    "officialBadge": "Official government site",
+    "nonOfficialWarning": "This link is not on our verified official-domain list. Be careful.",
+    "lastVerified": "Last verified: {date}",
+    "staleWarning": "This information hasn't been re-checked in a while. Please confirm at the official source.",
+    "nearMissGuidance": "What would change this",
+    "sortHighestValue": "Highest value first",
+    "sortDefault": "Best match first",
+    "printSummary": "Print / save as PDF",
+    "share": "Share",
+    "addToTracker": "Add to my tracker",
+    "myDocuments": "Documents I already have",
+    "stillNeeded": "Still needed across all schemes",
+    "antiScam": {
+      "title": "Stay safe",
+      "noFee": "Official schemes never charge a fee to apply.",
+      "noGuarantee": "No one can guarantee your application will be approved.",
+      "noOtp": "Never share an OTP with anyone, even someone claiming to help.",
+      "checkDomain": "Always check that the website address is official before entering details."
+    }
+  },
+  "household": {
+    "title": "Household",
+    "addMember": "Add a household member",
+    "nicknamePlaceholder": "Nickname (e.g. \"Amma\", \"Thatha\") -- no real names needed",
+    "removeMember": "Remove",
+    "sharedQuestions": "These questions apply to the whole household",
+    "familyLevelSchemes": "Family-level schemes"
+  },
+  "privacy": {
+    "title": "Your privacy",
+    "body": "Your answers stay on this device. We never send them to a server. Nothing you type or say is stored anywhere except your own phone or computer, unless you choose to share a summary yourself.",
+    "deleteAll": "Delete everything",
+    "deleteConfirm": "This will permanently delete all your answers, household members, and tracker entries from this device. Continue?",
+    "noticeLink": "Read the full privacy notice"
+  },
+  "assistedMode": {
+    "title": "Assisted mode",
+    "subtitle": "For volunteers, teachers, and operators helping several people",
+    "largeTextMode": "Large text display",
+    "resetForNextPerson": "Reset for next person",
+    "resetConfirm": "This clears the current session so you can help the next person. Nothing is stored. Continue?",
+    "sessionSummary": "Session summary"
+  },
+  "scamCheck": {
+    "title": "Check a link or message",
+    "placeholder": "Paste the link or message text here",
+    "checkButton": "Check",
+    "officialVerdict": "This domain is on our verified official list.",
+    "notOfficialVerdict": "This domain is NOT on our verified official list. Be cautious.",
+    "scamPatternFound": "This message contains a common scam pattern: {pattern}",
+    "caveat": "This check cannot be 100% certain. When in doubt, visit the official website directly by typing its address yourself, or ask at your nearest help centre."
+  },
+  "helpCentres": {
+    "title": "Nearby help",
+    "eSevai": "e-Sevai Centre",
+    "csc": "Common Service Centre",
+    "talukOffice": "Taluk Office",
+    "helpline": "Helpline"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong.",
+    "yes": "Yes",
+    "no": "No",
+    "notSure": "Not sure",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "close": "Close"
+  }
+}
